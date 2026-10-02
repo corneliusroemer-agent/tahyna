@@ -1,0 +1,48 @@
+# Phylogenetic workflow configuration for Tahyna virus (TAHV).
+
+# Ingest outputs to build from (relative to this Snakefile's directory).
+ingest_results: "../ingest/results"
+
+# One build per genome segment. label = the value in the curated metadata
+# `segment` column; min_length = augur filter floor, ~50% of the RefSeq
+# segment length (user decision 2026-10-02: S >= ~490, M >= ~2245, L >= ~3490).
+segments:
+  s:
+    label: "S"
+    min_length: 490    # NC_055206.1 = 978 nt
+  m:
+    label: "M"
+    min_length: 2245   # NC_055205.1 = 4489 nt
+  l:
+    label: "L"
+    min_length: 3490   # NC_055207.1 = 6979 nt
+
+# Per-segment nextclade custom reference packages (reference.fasta +
+# annotation.gff3 + pathogen.json; see references/ in the repo root).
+references:
+  s: "../references/s"
+  m: "../references/m"
+  l: "../references/l"
+
+# QC gate: PENDING REVIEW - the criterion is proposed in docs/qc-review.md and
+# wired into the workflow after that review. Treeless nextclade can compute:
+# coverage, totalMissing, totalSubstitutions (vs reference), frameshifts,
+# stop codons. Private mutations need a reference tree (later refinement).
+
+# --- Locked tree settings (user decisions 2026-10-02) ---
+tree:
+  method: iqtree   # augur 34 passes fixed GTR + '--ninit 2 -n 2 --epsilon 0.05 -T AUTO --redo'
+  nthreads: 4
+refine:
+  timetree: true
+  date_confidence: true
+  coalescent: opt       # no --stochastic-resolve: polytomies kept
+  date_inference: marginal
+  root: best            # auto-best for v1; outgroup rooting deferred
+  clock_filter_iqd: 10  # loosened from default 4 to keep historic/imputed tips
+ancestral:
+  inference: joint
+traits:
+  columns:
+    - country
+    - region

@@ -1,0 +1,121 @@
+"""
+Phylogenetic Snakefile for Tahyna virus (TAHV).
+
+One time-resolved build per genome segment (S, M, L): filter the curated ingest
+output to the segment + a per-segment length floor, align and QC with nextclade
+(treeless, custom reference), QC-gate, then the standard augur chain
+(tree -> refine -> ancestral -> translate -> traits -> export).
+
+CHECKPOINT (2026-10-02): the DAG below intentionally stops after the nextclade
+align+QC stage. The QC gate and tree-building rules are added after the QC
+criterion is reviewed (docs/qc-review.md).
+
+Run (from this directory):
+    snakemake -s Snakefile -j4 --dry-run
+    snakemake -s Snakefile -j4
+"""
+import os
+
+workdir: workflow.current_basedir
+
+configfile: "defaults/config.yaml"
+
+SEGMENTS = sorted(config["segments"].keys())  # ['l', 'm', 's']
+
+wildcard_constraints:
+    segment = "|".join(SEGMENTS)
+
+
+def seg_label(wc) -> str:
+    """Uppercase genome-segment label for a lowercase build name."""
+    return config["segments"][wc.segment]["label"]
+
+
+rule all:
+    input:
+        expand("results/aligned_{segment}.fasta", segment=SEGMENTS),
+        expand("results/nextclade_{segment}.tsv", segment=SEGMENTS),
+
+
+# --- Inputs from ingest ------------------------------------------------------
+rule copy_metadata:
+    input:
+        os.path.join(config["ingest_results"], "metadata.tsv"),
+    output:
+        "results/metadata.tsv",
+    log:
+        "logs/copy_metadata.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        cp {input:q} {output:q}
+        """
+
+
+rule copy_sequences:
+    input:
+        os.path.join(config["ingest_results"], "sequences.fasta"),
+    output:
+        "results/sequences.fasta",
+    log:
+        "logs/copy_sequences.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        cp {input:q} {output:q}
+        """
+
+
+# --- Per-segment builds -------------------------------------------------------
+rule filter:
+    input:
+        metadata="results/metadata.tsv",
+        sequences="results/sequences.fasta",
+    output:
+        metadata="results/filtered_{segment}_metadata.tsv",
+        sequences="results/filtered_{segment}.fasta",
+    params:
+        label=seg_label,
+        min_length=lambda wc: config["segments"][wc.segment]["min_length"],
+    log:
+        "logs/filter_{segment}.log",
+    benchmark:
+        "benchmarks/filter_{segment}.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur filter \
+            --metadata {input.metadata:q} \
+            --sequences {input.sequences:q} \
+            --query 'segment=="{params.label}"' \
+            --query-columns segment:str \
+            --min-length {params.min_length} \
+            --output-metadata {output.metadata:q} \
+            --output-sequences {output.sequences:q}
+        """
+
+
+rule nextclade:
+    input:
+        sequences="results/filtered_{segment}.fasta",
+        reference=lambda wc: os.path.join(config["references"][wc.segment], "reference.fasta"),
+        annotation=lambda wc: os.path.join(config["references"][wc.segment], "annotation.gff3"),
+        pathogen_json=lambda wc: os.path.join(config["references"][wc.segment], "pathogen.json"),
+    output:
+        fasta="results/aligned_{segment}.fasta",
+        tsv="results/nextclade_{segment}.tsv",
+    log:
+        "logs/nextclade_{segment}.log",
+    benchmark:
+        "benchmarks/nextclade_{segment}.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        nextclade run \
+            --input-ref {input.reference:q} \
+            --input-annotation {input.annotation:q} \
+            --input-pathogen-json {input.pathogen_json:q} \
+            --output-fasta {output.fasta:q} \
+            --output-tsv {output.tsv:q} \
+            {input.sequences:q}
+        """
