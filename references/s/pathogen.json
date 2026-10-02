@@ -1,0 +1,37 @@
+{
+  "qc": {
+    "missingData": {
+      "enabled": true,
+      "missingDataThreshold": 500,
+      "scoreBias": 50
+    },
+    "mixedSites": {
+      "enabled": true,
+      "mixedSitesThreshold": 10
+    },
+    "frameShifts": {
+      "enabled": true
+    },
+    "stopCodons": {
+      "enabled": true
+    },
+    "privateMutations": {
+      "enabled": true,
+      "typical": 25,
+      "cutoff": 100,
+      "weightLabeledSubstitutions": 4,
+      "weightReversionSubstitutions": 6,
+      "weightUnlabeledSubstitutions": 1,
+      "weightLabeledDeletions": 1,
+      "weightReversionDeletions": 1,
+      "weightUnlabeledDeletions": 1
+    },
+    "snpClusters": {
+      "enabled": true,
+      "windowSize": 100,
+      "clusterCutOff": 6,
+      "scoreWeight": 50
+    }
+  },
+  "schemaVersion": "3.0.0"
+}

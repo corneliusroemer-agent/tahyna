@@ -1,0 +1,128 @@
+# Ingest configuration for Tahyna virus (TAHV).
+# All required parameters have defaults here; override via --config / --configfile
+# or a config.yaml in the analysis directory.
+
+# NCBI taxon to fetch. 3052445 = Orthobunyavirus tahynaense (species node).
+# Chosen over the virus node 45270: 6 records (MZ245724-729, Austria 2019) are
+# classified directly under the species and are invisible at 45270
+# (121 vs 115 records; see investigations/2026-10-02-tahyna-nextstrain/01).
+ncbi_taxon_id: "3052445"
+
+# false: use the cached NCBI Datasets package in `cached_package` (default: the
+# fixture captured 2026-10-02, 121 records). true: run `datasets download`
+# against NCBI. Both paths produce data/ncbi_dataset.zip and share every rule
+# downstream of the fetch.
+live_fetch: false
+cached_package: "../fixture/ncbi_dataset.zip"
+
+# Fields requested from NCBI Datasets (dataformat mnemonics). The resulting TSV
+# column names (Title Case, e.g. "Source database") are what the curate
+# field_map below renames. Kept lean on purpose: dropped is-annotated,
+# gene/protein/mat_peptide counts, host-tax-id, lab-host (free text), sra-accs
+# (empty for all 121), bioprojects — none are used downstream; add back here if
+# that changes.
+ncbi_datasets_fields:
+  - accession
+  - segment
+  - completeness
+  - length
+  - sourcedb
+  - isolate-lineage
+  - isolate-collection-date
+  - geo-location
+  - geo-region
+  - host-name
+  - is-lab-host
+  - virus-name
+  - submitter-names
+  - submitter-country
+  - submitter-affiliation
+  - biosample-acc
+  - release-date
+  - update-date
+
+curate:
+  # Rename NCBI Datasets TSV columns -> Nextstrain-standard field names.
+  # Keys must match dataformat's Title Case headers verbatim (verified against
+  # the fixture TSV: "Source database", "BioSample accession", "Is Lab Host").
+  field_map:
+    Accession: accession
+    Segment: segment
+    Completeness: completeness
+    Length: length
+    Source database: database
+    Isolate Lineage: strain
+    Isolate Collection date: date
+    Geographic Location: location
+    Geographic Region: region
+    Host Name: host
+    Is Lab Host: is_lab_host
+    Virus Name: virus_name
+    Submitter Names: authors
+    Submitter Country: submitter_country
+    Submitter Affiliation: institution
+    BioSample accession: biosample_accession
+    Release date: date_submitted
+    Update date: date_updated
+
+  # transform-strain-name: '.+' matches any non-empty strain; empty strains
+  # back off to the accession so no record is dropped here (downstream filters
+  # decide what is kept).
+  strain_regex: ".+"
+  strain_backup_fields: accession
+
+  date_fields:
+    - date
+    - date_submitted
+    - date_updated
+  expected_date_formats:
+    - "%Y"
+    - "%Y-%m"
+    - "%Y-%m-%d"
+    - "%Y-%m-%dT%H:%M:%SZ"
+
+  # parse-genbank-location needs `database` (renamed from sourcedb) with values
+  # GenBank/RefSeq; it splits "Austria: Lower Austria, Rohrau" into
+  # country/division/location.
+  genbank_location_field: location
+
+  titlecase_fields:
+    - region
+    - country
+    - division
+    - location
+
+  authors_field: authors
+  authors_default_value: "?"
+  abbr_authors_field: abbr_authors
+
+  # Date imputation for the 27 records with no Isolate Collection date:
+  # a curated 3-column mapping (accession, field, value) documented inline.
+  # apply-record-annotations only overwrites existing fields, so the fields it
+  # sets must be created empty first (see init_empty_fields).
+  annotations: defaults/date_imputation.tsv
+  annotations_id: accession
+  init_empty_fields:
+    - date_imputed
+    - date_source
+
+  # The record id written into FASTA headers and used by every downstream
+  # stage: the display tip name ("strain + accession", set_strain_display.py).
+  output_id_field: strain
+  output_sequence_field: sequence
+
+# Mechanical segment-label fixes (not curation): NCBI labels 19 M-segment
+# records "M-RNA" (GQ386823-841). Everything else (S/M/L, blank) passes through.
+segment_map:
+  "M-RNA": "M"
+
+# Segment assignment for records NCBI leaves blank (11 of 121): nextclade is
+# run against each segment reference over all sequences and blank-labelled
+# records take the best-coverage segment, if it clears this floor. Labelled
+# records keep their NCBI label whatever their coverage.
+nextclade:
+  references:
+    s: "../references/s"
+    m: "../references/m"
+    l: "../references/l"
+  assign_min_coverage: 0.5

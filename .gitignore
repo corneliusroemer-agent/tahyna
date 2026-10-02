@@ -1,0 +1,6 @@
+# Regenerable snakemake bookkeeping
+.snakemake/
+__pycache__/
+# Nextclade scratch (aligned FASTAs etc. are kept under results/, not here)
+logs/
+benchmarks/

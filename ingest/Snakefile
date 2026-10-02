@@ -1,0 +1,255 @@
+"""
+Ingest Snakefile for Tahyna virus (TAHV).
+
+Fetches all Orthobunyavirus tahynaense (species taxid 3052445) sequences from
+NCBI Datasets, curates the metadata with the standard augur curate chain,
+imputes missing collection dates from a curated mapping, assigns genome
+segments (NCBI label, else nextclade coverage argmax for the records NCBI
+leaves blank), and writes a single metadata TSV + sequences FASTA covering
+all genome segments.
+
+Default outputs:
+    results/sequences.fasta
+    results/metadata.tsv
+
+Run (from anywhere; paths are Snakefile-relative):
+    snakemake -s ingest/Snakefile -j4 --dry-run
+    snakemake -s ingest/Snakefile -j4                     # cached fixture package
+    snakemake -s ingest/Snakefile -j4 --config live_fetch=true   # live NCBI fetch
+"""
+import os
+
+workdir: workflow.current_basedir
+
+configfile: "defaults/config.yaml"
+
+
+def format_field_map(field_map: dict) -> str:
+    """Format dict as `"key1"="value1" "key2"="value2"` for --field-map."""
+    return " ".join(f'"{key}"="{value}"' for key, value in field_map.items())
+
+
+def format_pair_map(pair_map: dict) -> str:
+    """Format dict as `K1=V1,K2=V2` for --map style flags."""
+    return ",".join(f"{key}={value}" for key, value in pair_map.items())
+
+
+SEGMENTS = sorted(config["nextclade"]["references"].keys())  # ['l', 'm', 's']
+
+wildcard_constraints:
+    segment = "|".join(SEGMENTS)
+
+
+rule all:
+    input:
+        "results/sequences.fasta",
+        "results/metadata.tsv",
+
+
+# --- Fetch -----------------------------------------------------------------
+# One zip path into the rest of the workflow; live fetch or cached fixture.
+if config["live_fetch"]:
+    rule fetch_ncbi_dataset_package:
+        output:
+            "data/ncbi_dataset.zip",
+        retries: 5
+        log:
+            "logs/fetch_ncbi_dataset_package.log",
+        shell:
+            r"""
+            exec &> >(tee {log:q})
+            datasets download virus genome taxon {config[ncbi_taxon_id]:q} \
+                --no-progressbar \
+                --filename {output:q}
+            """
+else:
+    rule use_cached_ncbi_dataset_package:
+        input:
+            package=config["cached_package"],
+        output:
+            "data/ncbi_dataset.zip",
+        log:
+            "logs/use_cached_ncbi_dataset_package.log",
+        shell:
+            r"""
+            exec &> >(tee {log:q})
+            cp {input.package:q} {output:q}
+            """
+
+
+rule extract_ncbi_dataset_sequences:
+    input:
+        "data/ncbi_dataset.zip",
+    output:
+        "data/ncbi_sequences.fasta",
+    log:
+        "logs/extract_ncbi_dataset_sequences.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        unzip -jp {input:q} ncbi_dataset/data/genomic.fna > {output:q}
+        """
+
+
+rule format_ncbi_dataset_report:
+    input:
+        "data/ncbi_dataset.zip",
+    output:
+        "data/ncbi_metadata.tsv",
+    params:
+        fields=",".join(config["ncbi_datasets_fields"]),
+    log:
+        "logs/format_ncbi_dataset_report.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        dataformat tsv virus-genome \
+            --package {input:q} \
+            --fields {params.fields:q} \
+            > {output:q}
+        """
+
+
+rule format_ncbi_datasets_ndjson:
+    input:
+        metadata="data/ncbi_metadata.tsv",
+        sequences="data/ncbi_sequences.fasta",
+    output:
+        "data/ncbi.ndjson",
+    log:
+        "logs/format_ncbi_datasets_ndjson.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur curate passthru \
+            --metadata {input.metadata:q} \
+            --fasta {input.sequences:q} \
+            --seq-id-column Accession \
+            --seq-field sequence \
+            --unmatched-reporting warn \
+            --duplicate-reporting warn \
+            > {output:q}
+        """
+
+
+# --- Curate ----------------------------------------------------------------
+# One streaming NDJSON pipe; the terminator materialises TSV + FASTA.
+rule curate:
+    input:
+        ndjson="data/ncbi.ndjson",
+        annotations=config["curate"]["annotations"],
+        normalize_segments="bin/normalize_segments.py",
+        set_strain_display="bin/set_strain_display.py",
+    output:
+        metadata="data/curated_metadata.tsv",
+        sequences="results/sequences.fasta",
+    params:
+        field_map=format_field_map(config["curate"]["field_map"]),
+        strain_regex=config["curate"]["strain_regex"],
+        strain_backup_fields=config["curate"]["strain_backup_fields"],
+        date_fields=" ".join(config["curate"]["date_fields"]),
+        expected_date_formats=" ".join(config["curate"]["expected_date_formats"]),
+        genbank_location_field=config["curate"]["genbank_location_field"],
+        titlecase_fields=" ".join(config["curate"]["titlecase_fields"]),
+        authors_field=config["curate"]["authors_field"],
+        authors_default_value=config["curate"]["authors_default_value"],
+        abbr_authors_field=config["curate"]["abbr_authors_field"],
+        annotations_id=config["curate"]["annotations_id"],
+        init_empty_fields=" ".join(
+            f"--init-empty-field {field}" for field in config["curate"].get("init_empty_fields", [])
+        ),
+        segment_map=format_pair_map(config["segment_map"]),
+        id_field=config["curate"]["output_id_field"],
+        sequence_field=config["curate"]["output_sequence_field"],
+    log:
+        "logs/curate.log",
+    benchmark:
+        "benchmarks/curate.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+
+        cat {input.ndjson:q} \
+            | augur curate rename \
+                --field-map {params.field_map} \
+            | augur curate normalize-strings \
+            | augur curate transform-strain-name \
+                --strain-regex {params.strain_regex:q} \
+                --backup-fields {params.strain_backup_fields} \
+            | python3 {input.set_strain_display:q} \
+                {params.init_empty_fields} \
+            | augur curate format-dates \
+                --date-fields {params.date_fields} \
+                --expected-date-formats {params.expected_date_formats} \
+            | python3 {input.normalize_segments:q} \
+                --map {params.segment_map:q} \
+            | augur curate parse-genbank-location \
+                --location-field {params.genbank_location_field:q} \
+            | augur curate titlecase \
+                --titlecase-fields {params.titlecase_fields} \
+            | augur curate abbreviate-authors \
+                --authors-field {params.authors_field:q} \
+                --default-value {params.authors_default_value:q} \
+                --abbr-authors-field {params.abbr_authors_field:q} \
+            | augur curate apply-geolocation-rules \
+            | augur curate apply-record-annotations \
+                --annotations {input.annotations:q} \
+                --id-field {params.annotations_id:q} \
+                --output-metadata {output.metadata:q} \
+                --output-fasta {output.sequences:q} \
+                --output-id-field {params.id_field:q} \
+                --output-seq-field {params.sequence_field:q}
+        """
+
+
+# --- Segment assignment ------------------------------------------------------
+# Assignment-only nextclade runs (treeless): coverage against each segment
+# reference decides records whose NCBI segment label is blank.
+rule nextclade_classify_segment:
+    input:
+        sequences="results/sequences.fasta",
+        reference=lambda wc: os.path.join(config["nextclade"]["references"][wc.segment], "reference.fasta"),
+        annotation=lambda wc: os.path.join(config["nextclade"]["references"][wc.segment], "annotation.gff3"),
+        pathogen_json=lambda wc: os.path.join(config["nextclade"]["references"][wc.segment], "pathogen.json"),
+    output:
+        tsv="data/nextclade_classify_{segment}.tsv",
+    log:
+        "logs/nextclade_classify_{segment}.log",
+    benchmark:
+        "benchmarks/nextclade_classify_{segment}.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        nextclade run \
+            --input-ref {input.reference:q} \
+            --input-annotation {input.annotation:q} \
+            --input-pathogen-json {input.pathogen_json:q} \
+            --output-tsv {output.tsv:q} \
+            {input.sequences:q}
+        """
+
+
+rule assign_segment:
+    input:
+        metadata="data/curated_metadata.tsv",
+        ncl=expand("data/nextclade_classify_{segment}.tsv", segment=SEGMENTS),
+        script="bin/assign_segment.py",
+    output:
+        "results/metadata.tsv",
+    params:
+        segments=" ".join(SEGMENTS),
+        min_coverage=config["nextclade"]["assign_min_coverage"],
+    log:
+        "logs/assign_segment.log",
+    benchmark:
+        "benchmarks/assign_segment.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        python3 {input.script:q} \
+            --metadata {input.metadata:q} \
+            --nextclade {input.ncl:q} \
+            --segments {params.segments} \
+            --min-coverage {params.min_coverage} \
+            --output {output:q}
+        """

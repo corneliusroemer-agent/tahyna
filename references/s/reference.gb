@@ -1,0 +1,104 @@
+LOCUS       NC_055206                978 bp    RNA     linear   VRL 07-JUN-2021
+DEFINITION  Tahyna virus strain XJ0625 segment S, complete sequence.
+ACCESSION   NC_055206
+VERSION     NC_055206.1
+DBLINK      BioProject: PRJNA485481
+KEYWORDS    RefSeq.
+SOURCE      Tahyna virus
+  ORGANISM  Tahyna virus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Bunyaviricetes; Elliovirales; Peribunyaviridae;
+            Orthobunyavirus; Orthobunyavirus tahynaense.
+REFERENCE   1  (bases 1 to 978)
+  AUTHORS   Lu,Z., Lu,X.J., Fu,S.H., Zhang,S., Li,Z.X., Yao,X.H., Feng,Y.P.,
+            Lambert,A.J., Ni da,X., Wang,F.T., Tong,S.X., Nasci,R.S., Feng,Y.,
+            Dong,Q., Zhai,Y.G., Gao,X.Y., Wang,H.Y., Tang,Q. and Liang,G.D.
+  TITLE     Tahyna virus and human infection, China
+  JOURNAL   Emerging Infect. Dis. 15 (2), 306-309 (2009)
+   PUBMED   19193280
+REFERENCE   2  (bases 1 to 978)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Full length genomic sequencing and molecular characterization of
+            Tahyna virus isolates reveals a diversity of genotypes circulating
+            in Xinjiang, China
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 978)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-2021) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   4  (bases 1 to 978)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-MAY-2010) Viral Encephalitis, Institute for Viral
+            Disease Control and Prevention, Chinese Center for Disease Control
+            and Prevention, 100 Yingxin Jie, Xuanwu Qu, Beijing, Beijing 100052,
+            China
+  REMARK    Sequence update by submitter
+REFERENCE   5  (bases 1 to 978)
+  AUTHORS   Lu,Z. and Liang,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-APR-2008) Viral Encephalitis, Institute for Viral
+            Disease Control and Prevention, Chinese Center for Disease Control
+            and Prevention, 100 Yingxin Jie, Xuanwu Qu, Beijing, Beijing 100052,
+            China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to EU622820.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..978
+                     /organism="Tahyna virus"
+                     /mol_type="genomic RNA"
+                     /strain="XJ0625"
+                     /host="Culex sp. (mosquito)"
+                     /db_xref="taxon:45270"
+                     /segment="S"
+                     /lab_host="passaged in BHK-21 cells"
+                     /geo_loc_name="China"
+                     /collection_date="2006"
+     gene            79..786
+                     /locus_tag="KM532_sSgp1"
+                     /db_xref="GeneID:65100148"
+     CDS             79..786
+                     /locus_tag="KM532_sSgp1"
+                     /note="nucleotide protein"
+                     /codon_start=1
+                     /product="N protein"
+                     /protein_id="YP_010085092.1"
+                     /db_xref="GeneID:65100148"
+                     /translation="MSDLVFYDVASTGANGFDPDAGYVDFCVKYGEAINLHSVRIFFLN
+                     AAKAKAALARKPERKASPKFGEWQVEVVNNHFPGNRNNPIDNNDLTIHRLSGYLARWVL
+                     EQFKENEDAAQRELIKTTVINPIAESNGIRWDNGAEIYLAFFPGTEMFLETFNFYPLTI
+                     GIYRVKQGMMDPQYLKKALRQRYGPLTADKWMSQKTVAIAKSLKDVEQLKWGRGGLSDT
+                     ARTFLQKFGIRLP"
+     gene            98..391
+                     /locus_tag="KM532_sSgp2"
+                     /db_xref="GeneID:65100147"
+     CDS             98..391
+                     /locus_tag="KM532_sSgp2"
+                     /note="non-structural protein"
+                     /codon_start=1
+                     /product="NSs protein"
+                     /protein_id="YP_010085093.1"
+                     /db_xref="GeneID:65100147"
+                     /translation="MMSHPPVQMDLILTQGMWTSVLNMGKQLISIPLGSSSLMPQKPRL
+                     LSLVSQRGRLVLNLESGRWRLSIIIFLETGTTQLITTILPSTGCQGIWLDGC"
+ORIGIN
+        1 agtagtgtac tccacttgaa tactttgaga ataatttgtc ataacttgag ataccgagag
+       61 gaataacttg gaagtgtgat gtctgatttg gttttttatg atgtcgcatc caccggtgca
+      121 aatggatttg atcctgacgc agggtatgtg gacttctgtg ttaaatatgg ggaagcaatt
+      181 aatctccatt ccgttaggat cttcttcctt aatgccgcaa aagccaaggc tgctctcgct
+      241 cgtaagccag agaggaaggc tagtcctaaa tttggagagt ggcaggtgga ggttgtcaat
+      301 aatcattttc ctggaaacag gaacaaccca attgataaca acgatcttac catccaccgg
+      361 ctgtcagggt atttggctag atgggtgcta gagcagttca aagaaaatga ggatgcagcc
+      421 cagcgggagt tgatcaagac aacggtcatc aacccgatag ctgaatccaa tgggatcaga
+      481 tgggataatg gagcagaaat ctatttggca ttcttcccgg gaacagaaat gttcttggaa
+      541 actttcaatt tttacccgtt gacaattggc atctacagag tcaagcaagg aatgatggat
+      601 ccccaatact taaagaaggc attaaggcag cgctatgggc ctctcactgc agacaaatgg
+      661 atgtcgcaga agaccgtcgc catagctaag agcctgaagg atgttgaaca gctcaagtgg
+      721 ggaagaggtg gtctcagcga cactgcaaga acattcctgc agaaatttgg aatcagactt
+      781 ccataaaatg ggagtagatt ttaaattaga tccaaaattc taaatttcat agtaataatt
+      841 tggtcataat tggccatcca aaagggttcc ccaagagccc acaataatag cagctaaatg
+      901 ggtgggtggt aggggacagc aaaaaaatag aagttagatc atttatttta taaaaggtat
+      961 tcagtggagc acactact
+//

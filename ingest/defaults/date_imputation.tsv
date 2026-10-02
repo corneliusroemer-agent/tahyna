@@ -1,0 +1,119 @@
+# Date imputation for the 27 of 121 NCBI records that have no Isolate
+# Collection date. Curated mapping, not a blind transform (coordinator
+# decision 2026-10-02). Every imputed record gets date_imputed=true; records
+# with a real NCBI date never appear in this file (their date_imputed field
+# stays empty, matching NCBI's boolean convention: true when present, empty
+# otherwise).
+#
+# Method, in priority order:
+#   1. Isolate-level year from Camp et al. 2021 (Parasit Vectors 14:544,
+#      PMC8556901) Supplementary Table S5, accession-level mapping via
+#      investigations/2026-10-02-tahyna-nextstrain/04-literature/isolate-table.tsv.
+#      This resolves the 19 GQ3868xx M segments to per-isolate years
+#      1958-1968 - they are NOT one 2009 study year; the study that
+#      sequenced them is 2009, the mosquito isolates are 1958-1968.
+#   2. Strain-name year suffix, verified in the literature:
+#      - 181/57 (AF229129.1 "181-57", GU390677.1 "181/57"): isolated 1957 from
+#        a sick child, Czechoslovakia (Ruzek et al. 2020, Microbiol Res
+#        Announc 9: e00961-20, PMID 33020166; complete genomes EU277663-665 -
+#        which are NOT part of this record set).
+#      - prototype "92" Bardos: isolated 1958, Aedes caspius, former
+#        Czechoslovakia (Camp S5): AF123485.1 "Bardos 92", HM243136.1
+#        "prototype Bardos 92", U47142.1 "Prototype Bardos 92", Z68497.1 "92".
+#        EU185046.1 "Bardos 92-like" (963 nt L fragment) is imputed to the
+#        prototype year too; lower confidence - a "92-like" field isolate
+#        would have its own (unknown) isolation year.
+#   3. Release-date year, last resort: AX230490.1 (294 nt patent fragment,
+#      no isolate lineage, no geo, no collection date; released 2001).
+#
+# Release-year would be decades off for every old record (released 1996-2011),
+# so it was used only where no better signal exists (AX230490.1).
+#
+# Format: 3 columns, no header - <accession> <field> <value> - consumed by
+# `augur curate apply-record-annotations --id-field accession`. '#' lines and
+# inline trailing '#' comments are ignored by augur. Edit rows here to revise.
+# Camp S5 per-isolate years, mapped by accession:
+AF123485.1	date	1958
+AF123485.1	date_imputed	true
+AF123485.1	date_source	camp2021-s5-prototype-92-bardos
+GQ386823.1	date	1963
+GQ386823.1	date_imputed	true
+GQ386823.1	date_source	camp2021-s5-isolate-29
+GQ386824.1	date	1963
+GQ386824.1	date_imputed	true
+GQ386824.1	date_source	camp2021-s5-isolate-76
+GQ386825.1	date	1963
+GQ386825.1	date_imputed	true
+GQ386825.1	date_source	camp2021-s5-isolate-83
+GQ386826.1	date	1963
+GQ386826.1	date_imputed	true
+GQ386826.1	date_source	camp2021-s5-isolate-89
+GQ386827.1	date	1963
+GQ386827.1	date_imputed	true
+GQ386827.1	date_source	camp2021-s5-isolate-90
+GQ386828.1	date	1963
+GQ386828.1	date_imputed	true
+GQ386828.1	date_source	camp2021-s5-isolate-94
+GQ386829.1	date	1963
+GQ386829.1	date_imputed	true
+GQ386829.1	date_source	camp2021-s5-isolate-105
+GQ386830.1	date	1963
+GQ386830.1	date_imputed	true
+GQ386830.1	date_source	camp2021-s5-isolate-106
+GQ386831.1	date	1962
+GQ386831.1	date_imputed	true
+GQ386831.1	date_source	camp2021-s5-isolate-181
+GQ386832.1	date	1958
+GQ386832.1	date_imputed	true
+GQ386832.1	date_source	camp2021-s5-isolate-236
+GQ386833.1	date	1964
+GQ386833.1	date_imputed	true
+GQ386833.1	date_source	camp2021-s5-isolate-1014
+GQ386834.1	date	1966
+GQ386834.1	date_imputed	true
+GQ386834.1	date_source	camp2021-s5-isolate-4019
+GQ386835.1	date	1966
+GQ386835.1	date_imputed	true
+GQ386835.1	date_source	camp2021-s5-isolate-4020
+GQ386836.1	date	1966
+GQ386836.1	date_imputed	true
+GQ386836.1	date_source	camp2021-s5-isolate-4030
+GQ386837.1	date	1966
+GQ386837.1	date_imputed	true
+GQ386837.1	date_source	camp2021-s5-isolate-4033
+GQ386838.1	date	1966
+GQ386838.1	date_imputed	true
+GQ386838.1	date_source	camp2021-s5-isolate-4034
+GQ386839.1	date	1966
+GQ386839.1	date_imputed	true
+GQ386839.1	date_source	camp2021-s5-isolate-4057
+GQ386840.1	date	1966
+GQ386840.1	date_imputed	true
+GQ386840.1	date_source	camp2021-s5-isolate-4060
+GQ386841.1	date	1968
+GQ386841.1	date_imputed	true
+GQ386841.1	date_source	camp2021-s5-isolate-5060
+# Strain-name year suffixes, literature-verified:
+AF229129.1	date	1957
+AF229129.1	date_imputed	true
+AF229129.1	date_source	strain-name-181-57-ruzek2020
+GU390677.1	date	1957
+GU390677.1	date_imputed	true
+GU390677.1	date_source	strain-name-181-57-ruzek2020
+U47142.1	date	1958
+U47142.1	date_imputed	true
+U47142.1	date_source	strain-name-prototype-92-camp2021-s5
+Z68497.1	date	1958
+Z68497.1	date_imputed	true
+Z68497.1	date_source	strain-name-prototype-92-camp2021-s5
+HM243136.1	date	1958
+HM243136.1	date_imputed	true
+HM243136.1	date_source	strain-name-prototype-92-camp2021-s5
+# Prototype-lineage inference, lower confidence:
+EU185046.1	date	1958
+EU185046.1	date_imputed	true
+EU185046.1	date_source	prototype-lineage-bardos-92-like
+# Release-year fallback (no other signal):
+AX230490.1	date	2001
+AX230490.1	date_imputed	true
+AX230490.1	date_source	release-year

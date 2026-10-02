@@ -1,0 +1,19 @@
+# Tool versions this workflow was built and validated with.
+# The `bioinfo` micromamba env in this devcontainer already provides all of
+# these at the pinned versions (verify: `augur --version && nextclade --version
+# && snakemake --version && dataformat --version`). Do NOT create a new conda
+# env to run the workflow; this file documents the versions.
+name: tahyna
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - snakemake-minimal =9.21.0
+  - augur =34.0.0
+  - nextclade =3.21.2
+  - ncbi-datasets-cli =18.33.1   # provides `datasets` + `dataformat`
+  - iqtree =3.1.2                # `iqtree --version`
+  - biopython                    # reference bootstrap + helpers
+  - unzip
+  - curl

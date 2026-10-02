@@ -1,0 +1,490 @@
+LOCUS       NC_055205               4489 bp    RNA     linear   VRL 07-JUN-2021
+DEFINITION  Tahyna virus strain XJ0625 segment M, complete sequence.
+ACCESSION   NC_055205
+VERSION     NC_055205.1
+DBLINK      BioProject: PRJNA485481
+KEYWORDS    RefSeq.
+SOURCE      Tahyna virus
+  ORGANISM  Tahyna virus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Bunyaviricetes; Elliovirales; Peribunyaviridae;
+            Orthobunyavirus; Orthobunyavirus tahynaense.
+REFERENCE   1  (bases 1 to 4489)
+  AUTHORS   Lu,Z., Lu,X.J., Fu,S.H., Zhang,S., Li,Z.X., Yao,X.H., Feng,Y.P.,
+            Lambert,A.J., Ni da,X., Wang,F.T., Tong,S.X., Nasci,R.S., Feng,Y.,
+            Dong,Q., Zhai,Y.G., Gao,X.Y., Wang,H.Y., Tang,Q. and Liang,G.D.
+  TITLE     Tahyna virus and human infection, China
+  JOURNAL   Emerging Infect. Dis. 15 (2), 306-309 (2009)
+   PUBMED   19193280
+REFERENCE   2  (bases 1 to 4489)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Full length genomic sequencing and molecular characterization of
+            Tahyna virus isolates reveals a diversity of genotypes circulating
+            in Xinjiang, China
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 4489)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-2021) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   4  (bases 1 to 4489)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-MAY-2010) Viral Encephalitis, Institute for Viral
+            Disease Control and Prevention, Chinese Center for Disease Control
+            and Prevention, 100 Yingxin Jie, Xuanwu Qu, Beijing, Beijing
+            100052, China
+  REMARK    Sequence update by submitter
+REFERENCE   5  (bases 1 to 4489)
+  AUTHORS   Lu,Z. and Liang,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-APR-2008) Viral Encephalitis, Institute for Viral
+            Disease Control and Prevention, Chinese Center for Disease Control
+            and Prevention, 100 Yingxin Jie, Xuanwu Qu, Beijing, Beijing
+            100052, China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to EU622819.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..4489
+                     /organism="Tahyna virus"
+                     /mol_type="genomic RNA"
+                     /strain="XJ0625"
+                     /host="Culex sp. (mosquito)"
+                     /db_xref="taxon:45270"
+                     /segment="M"
+                     /lab_host="passaged in BHK-21 cells"
+                     /geo_loc_name="China"
+                     /collection_date="2006"
+                     /serogroup="California"
+     gene            62..4384
+                     /locus_tag="KM532_sMgp1"
+                     /db_xref="GeneID:65100145"
+     CDS             62..4384
+                     /locus_tag="KM532_sMgp1"
+                     /codon_start=1
+                     /product="polyprotein"
+                     /protein_id="YP_010085091.1"
+                     /db_xref="GeneID:65100145"
+                     /translation="MMFVLFFIALSTASPVYQRCFQDGAIVKQNPSKQAVTEVCLKDD
+                     VSMIKTEARYFKNATGTYANNVAIRKWLVSDWHDCRPKKVAGGHINVIEVGDDLTLHT
+                     EAYVCNADCTIGVDKETAQVRLQTDTTNHFEIAGTTVKSGWFKSTTYITLDQTCEHLK
+                     VSCGPKSVQFHACFNQHMSCVRFLHRTILPGSIASSICQNVEIIILTVLTLLIFILLS
+                     ILSKTYICYLLMPIFIPLAYVYGVIYNKSCKKCKLCGLVYHPFTECGTHCVCGARYET
+                     SDRMKLHRASGLCPGYKSLRAARVMCKSKGPASILSVITAVLILTFVTPINAMVAGDT
+                     QETFKLEDLPDDMLSMAMKIQMYYIMCIVNYIVTWSFIVCALIIALIFKKYQHRFLNF
+                     YAMYCHECDMYHDRSGLKYNGDFTNKCRQCTCGQYEDAAGLLTHRKTYNCLVQYKSKW
+                     LVNFLIIYILLMLVKDSVLIVQAEGTDFEKCSGEINITWNCTGPFLNLGNCEKKQKKE
+                     PYSNIATQLKGLDAISILDIPMISRIPEDIAGALRFIEEQNSYHVQLTAEYAMLTRYC
+                     DYYTQFSDNSGYSQKTWRVYLRSHDFEACILYPNQHFCRCVKHGDKCSSSNWDFASEM
+                     KNYYTGKQLKFNKDLNLALMSFHHAFRGTSSFYVAKLLREKNNEELVNYTEKIKDKYP
+                     GNALLKAIIDYIKYMKNLSEMTNFKHDEMWDDFVFNSPPTKSPSVRRSDSAYDFKNNI
+                     NSNPSHICQNIKTVICLSPKSGVSYDSIIACGEPSQPTIYKKPESRVFQSNADQTHFC
+                     LADTHCLENYETVGEEILDAIKKSKCWETDFTEYIQFKQSDGVRSCRMKDSGECTVTT
+                     HRWPIILCDNNKFYYSELQKDYDKDQDIGHFCLSPRCNTIRHPINQKHISNCTWQVSH
+                     NNIEKIEVHELENLEQYKKAITQKLQTSLTLFKYSKTKNLPHIKPMYKYITIEGTETA
+                     EGIESAYIESEIPALAGTSIGFKITSKSGKHLLDVIGYVKSASYSAVYTKLYTTGPTI
+                     GVNTKHDELCTGPCPVNVPHGTGWLTFAKERTSSWGCEEFGCLAISDGCVFGSCQDII
+                     KEELAVYRKETEETTDVELCLTFADKTYCTNLNAITPIITDQFEVQFKTVESYSLPRI
+                     IAVRNHEIMVGQINDIGVYSKGCGNVQKVNNTNYGNGVPKFDYLCHLASRKEVIVRKC
+                     FDNDYQACKFLQTPASYRLEEEGGSVTVIDYKKILGTIKMKAILGDVKYKTFADNVDL
+                     TVEGVCTGCINCFENIHCELTIHSTVEASCPVTSSCTVFHDRILITPNEHKYAIKVIC
+                     AEKPGPSLQFKICNAKTDAAMTLADAKPILELAPVDQTTYIKEKDVRCKTWMCRVRDE
+                     GLQVIFEPFKNLFGSYIGIFYTFLITLIAVFVVIYIVLPICFKLRDTLRQHEDAYKRE
+                     MKIR"
+ORIGIN      
+        1 agtagtgtgc taccaagtat agataacgtt taaaagttaa agtcaattca caagttccaa
+       61 gatgatgttt gtattgttct ttatagcact aagtactgca agtccagtgt accaaaggtg
+      121 tttccaagat ggtgcaattg tgaagcagaa cccatccaaa caggctgtaa cagaagtatg
+      181 cctgaaggat gatgttagca tgataaaaac agaagctagg tatttcaaaa atgctactgg
+      241 aacatatgca aataatgttg caatcaggaa atggttggtt tcagactggc atgattgtag
+      301 accaaaaaaa gtagcaggag gccacataaa tgtcatagaa gtaggggatg acttaacctt
+      361 acatactgaa gcctatgtat gcaatgcaga ctgcacaata ggagtggaca aagaaactgc
+      421 acaggtgagg ttgcagacag acacaacgaa ccattttgag attgcaggta caactgttaa
+      481 atcagggtgg ttcaaaagca caacatatat cacccttgat caaacttgcg agcatttaaa
+      541 ggtttcctgc ggcccaaaat ctgtccagtt ccatgcttgc ttcaatcagc acatgtcttg
+      601 tgtaagattt ctgcacagga ctatactgcc tggctctata gcgagttcca tatgtcaaaa
+      661 tgtagaaata ataattttaa cagtgctaac cttactaatt ttcatattac ttagtatact
+      721 aagcaaaaca tatatatgct atctattgat gccaatattt atcccacttg cctatgtata
+      781 tggtgttata tataacaaat catgcaaaaa atgtaaatta tgcggtttag tttaccaccc
+      841 attcacagaa tgtggcactc attgcgtgtg tggtgctaga tatgaaactt ctgataggat
+      901 gaaattgcat agggcgtcag gcttatgccc aggttacaaa agtctgaggg cagcacgagt
+      961 tatgtgtaag tcgaaagggc cagcatctat actatctgta ataactgcag tattgatact
+     1021 aacatttgtg accccaataa atgcaatggt tgctggagat acgcaagaaa catttaagct
+     1081 tgaagatctg ccggatgata tgttaagtat ggctatgaaa atacagatgt attatataat
+     1141 gtgcattgtc aactatattg tcacttggtc gttcattgta tgtgctttaa taattgcctt
+     1201 gatttttaag aagtaccaac acagattctt aaatttttat gccatgtatt gtcatgaatg
+     1261 cgatatgtac catgataggt caggcttaaa atataatggg gacttcacaa acaaatgtag
+     1321 gcagtgcaca tgtggtcagt atgaagatgc tgcaggctta ctaacccata ggaaaacata
+     1381 caattgccta gtacaataca aatcgaagtg gttagtgaat tttttgataa tatacatact
+     1441 tctgatgctt gtaaaagatt cagtactaat agtccaagca gaaggcacag attttgaaaa
+     1501 atgtagtggg gaaataaaca taacctggaa ttgcacagga cctttcctaa acttaggcaa
+     1561 ttgtgagaag aaacaaaaga aggagccata cagcaacata gcgacacaat tgaagggcct
+     1621 agatgctata tctattttag acatcccaat gatatcaagg atacctgaag atatagctgg
+     1681 agctctgagg tttattgaag agcaaaattc ataccatgtg cagctgactg cagaatatgc
+     1741 aatgctaacc agatattgtg actattacac tcaatttagt gataattcag gttatagcca
+     1801 aaaaacatgg agagtatact taagatccca tgatttcgaa gcatgtatat tgtacccaaa
+     1861 ccagcatttt tgcagatgtg ttaagcatgg tgacaaatgt tcaagctcaa actgggactt
+     1921 tgctagtgag atgaagaatt attacactgg caaacaactg aaatttaata aagatttaaa
+     1981 tttagctctg atgtcttttc atcatgcttt tagagggaca tctagcttct atgttgcaaa
+     2041 actcctaaga gagaaaaata atgaggaatt ggtgaattac acagaaaaga taaaagataa
+     2101 gtacccaggc aatgcacttt tgaaagctat aattgactac ataaaatata tgaagaacct
+     2161 aagtgagatg accaacttta aacatgatga gatgtgggat gattttgttt ttaatagtcc
+     2221 cccaactaaa agcccttctg taagacgctc agactctgca tatgatttca agaataatat
+     2281 aaattcaaat ccatcacata tatgccagaa tataaaaact gttatatgtc tatcaccaaa
+     2341 atctggagta tcttacgatt caataatagc ttgtggcgaa ccgagtcagc cgacaattta
+     2401 taaaaagcca gaaagcagag tgtttcagtc aaatgcagat caaacacact tctgtttagc
+     2461 agatacccat tgcctggaga actatgagac agtaggtgaa gaaattcttg acgctattaa
+     2521 gaaatcaaaa tgttgggaga cagattttac tgagtacatt caattcaaac aaagtgacgg
+     2581 agtaagaagc tgcagaatga aagattcagg agaatgtaca gtgaccaccc acagatggcc
+     2641 tatcatactg tgcgacaata acaagtttta ctactctgaa ttgcaaaagg actatgacaa
+     2701 agatcaagat ataggccatt tctgcctcag ccccagatgc aatacaatca ggcatccaat
+     2761 aaatcagaag cacatatcaa attgcacatg gcaagtcagt cacaataata tcgagaagat
+     2821 tgaagtgcac gagttggaaa atctggagca atataagaag gctataactc aaaagttaca
+     2881 gacaagttta acattattca agtattctaa aacaaaaaac ctaccccata ttaagccaat
+     2941 gtacaaatac ataactattg agggtacaga aacagcagaa ggtattgaaa gtgcctatat
+     3001 agagtcagaa atacctgcat tagctggaac atcaataggg tttaaaatca catccaagtc
+     3061 aggaaagcac ttattagatg tgataggtta tgtcaaaagt gcatcttact cagctgttta
+     3121 tacaaagttg tacacaacag gcccaacaat cggtgtcaac acaaagcatg atgagttgtg
+     3181 tacaggccca tgtccagtta atgtaccaca cggcactggt tggctaacat ttgctaaaga
+     3241 gagaacaagc tcgtggggtt gtgaggagtt tggttgcctg gcgattagcg acgggtgtgt
+     3301 ctttggctca tgtcaagata ttataaaaga agagctagct gtttatagga aagaaactga
+     3361 agagactaca gatgtagaat tatgcctaac ctttgcagat aaaacttatt gcaccaatct
+     3421 gaacgcaata acaccaataa tcactgacca atttgaagtt caattcaaaa cagtcgaatc
+     3481 ttatagttta cctagaatta ttgctgtacg aaaccatgaa atcatggtgg gacagataaa
+     3541 tgatatcggc gtttattcga aaggttgcgg aaatgtgcaa aaggtaaata atacaaacta
+     3601 tgggaatggt gtacccaaat ttgattattt atgccattta gcaagtagga aagaagtaat
+     3661 agtcagaaaa tgctttgata acgattatca ggcttgcaaa tttctacaaa caccagcaag
+     3721 ctatagacta gaggaagagg gcggttctgt tacagttata gattataaaa agattctcgg
+     3781 aacaataaag atgaaggcta ttctgggaga tgtaaaatac aaaacgtttg cagacaatgt
+     3841 agatttaact gttgaagggg tgtgcacagg gtgtatcaat tgttttgaaa atatacactg
+     3901 tgaactgaca atacatagca cagtggaagc aagttgccca gtgacaagct catgcactgt
+     3961 gtttcacgat agaatcctga taacaccaaa cgagcacaaa tacgctataa aggtaatttg
+     4021 tgctgaaaaa ccagggccat cattacagtt caaaatatgt aatgcaaaaa ctgatgcagc
+     4081 tatgacatta gcagatgcaa aaccaatatt agaattagcg ccagttgatc agacaacata
+     4141 tataaaggaa aaagatgtga gatgcaaaac ctggatgtgt agagtcagag atgaaggcct
+     4201 ccaagttata tttgaaccat tcaagaacct atttggctct tatataggca tattttatac
+     4261 atttttaata accttaattg ccgtattcgt agtcatatac atcgtgctgc caatatgctt
+     4321 taaacttaga gacactttga ggcagcatga agatgcctac aagagagaaa tgaaaattag
+     4381 ataagaagcg tagctgctaa gaaatagggg tttaggtatt aaggggtggg gggctaacaa
+     4441 cagcgtaatc tatttgacaa acattattta tacttggtag cacactact
+//
+
+LOCUS       NC_055206                978 bp    RNA     linear   VRL 07-JUN-2021
+DEFINITION  Tahyna virus strain XJ0625 segment S, complete sequence.
+ACCESSION   NC_055206
+VERSION     NC_055206.1
+DBLINK      BioProject: PRJNA485481
+KEYWORDS    RefSeq.
+SOURCE      Tahyna virus
+  ORGANISM  Tahyna virus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Bunyaviricetes; Elliovirales; Peribunyaviridae;
+            Orthobunyavirus; Orthobunyavirus tahynaense.
+REFERENCE   1  (bases 1 to 978)
+  AUTHORS   Lu,Z., Lu,X.J., Fu,S.H., Zhang,S., Li,Z.X., Yao,X.H., Feng,Y.P.,
+            Lambert,A.J., Ni da,X., Wang,F.T., Tong,S.X., Nasci,R.S., Feng,Y.,
+            Dong,Q., Zhai,Y.G., Gao,X.Y., Wang,H.Y., Tang,Q. and Liang,G.D.
+  TITLE     Tahyna virus and human infection, China
+  JOURNAL   Emerging Infect. Dis. 15 (2), 306-309 (2009)
+   PUBMED   19193280
+REFERENCE   2  (bases 1 to 978)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Full length genomic sequencing and molecular characterization of
+            Tahyna virus isolates reveals a diversity of genotypes circulating
+            in Xinjiang, China
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 978)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-2021) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   4  (bases 1 to 978)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-MAY-2010) Viral Encephalitis, Institute for Viral
+            Disease Control and Prevention, Chinese Center for Disease Control
+            and Prevention, 100 Yingxin Jie, Xuanwu Qu, Beijing, Beijing
+            100052, China
+  REMARK    Sequence update by submitter
+REFERENCE   5  (bases 1 to 978)
+  AUTHORS   Lu,Z. and Liang,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-APR-2008) Viral Encephalitis, Institute for Viral
+            Disease Control and Prevention, Chinese Center for Disease Control
+            and Prevention, 100 Yingxin Jie, Xuanwu Qu, Beijing, Beijing
+            100052, China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to EU622820.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..978
+                     /organism="Tahyna virus"
+                     /mol_type="genomic RNA"
+                     /strain="XJ0625"
+                     /host="Culex sp. (mosquito)"
+                     /db_xref="taxon:45270"
+                     /segment="S"
+                     /lab_host="passaged in BHK-21 cells"
+                     /geo_loc_name="China"
+                     /collection_date="2006"
+     gene            79..786
+                     /locus_tag="KM532_sSgp1"
+                     /db_xref="GeneID:65100148"
+     CDS             79..786
+                     /locus_tag="KM532_sSgp1"
+                     /note="nucleotide protein"
+                     /codon_start=1
+                     /product="N protein"
+                     /protein_id="YP_010085092.1"
+                     /db_xref="GeneID:65100148"
+                     /translation="MSDLVFYDVASTGANGFDPDAGYVDFCVKYGEAINLHSVRIFFL
+                     NAAKAKAALARKPERKASPKFGEWQVEVVNNHFPGNRNNPIDNNDLTIHRLSGYLARW
+                     VLEQFKENEDAAQRELIKTTVINPIAESNGIRWDNGAEIYLAFFPGTEMFLETFNFYP
+                     LTIGIYRVKQGMMDPQYLKKALRQRYGPLTADKWMSQKTVAIAKSLKDVEQLKWGRGG
+                     LSDTARTFLQKFGIRLP"
+     gene            98..391
+                     /locus_tag="KM532_sSgp2"
+                     /db_xref="GeneID:65100147"
+     CDS             98..391
+                     /locus_tag="KM532_sSgp2"
+                     /note="non-structural protein"
+                     /codon_start=1
+                     /product="NSs protein"
+                     /protein_id="YP_010085093.1"
+                     /db_xref="GeneID:65100147"
+                     /translation="MMSHPPVQMDLILTQGMWTSVLNMGKQLISIPLGSSSLMPQKPR
+                     LLSLVSQRGRLVLNLESGRWRLSIIIFLETGTTQLITTILPSTGCQGIWLDGC"
+ORIGIN      
+        1 agtagtgtac tccacttgaa tactttgaga ataatttgtc ataacttgag ataccgagag
+       61 gaataacttg gaagtgtgat gtctgatttg gttttttatg atgtcgcatc caccggtgca
+      121 aatggatttg atcctgacgc agggtatgtg gacttctgtg ttaaatatgg ggaagcaatt
+      181 aatctccatt ccgttaggat cttcttcctt aatgccgcaa aagccaaggc tgctctcgct
+      241 cgtaagccag agaggaaggc tagtcctaaa tttggagagt ggcaggtgga ggttgtcaat
+      301 aatcattttc ctggaaacag gaacaaccca attgataaca acgatcttac catccaccgg
+      361 ctgtcagggt atttggctag atgggtgcta gagcagttca aagaaaatga ggatgcagcc
+      421 cagcgggagt tgatcaagac aacggtcatc aacccgatag ctgaatccaa tgggatcaga
+      481 tgggataatg gagcagaaat ctatttggca ttcttcccgg gaacagaaat gttcttggaa
+      541 actttcaatt tttacccgtt gacaattggc atctacagag tcaagcaagg aatgatggat
+      601 ccccaatact taaagaaggc attaaggcag cgctatgggc ctctcactgc agacaaatgg
+      661 atgtcgcaga agaccgtcgc catagctaag agcctgaagg atgttgaaca gctcaagtgg
+      721 ggaagaggtg gtctcagcga cactgcaaga acattcctgc agaaatttgg aatcagactt
+      781 ccataaaatg ggagtagatt ttaaattaga tccaaaattc taaatttcat agtaataatt
+      841 tggtcataat tggccatcca aaagggttcc ccaagagccc acaataatag cagctaaatg
+      901 ggtgggtggt aggggacagc aaaaaaatag aagttagatc atttatttta taaaaggtat
+      961 tcagtggagc acactact
+//
+
+LOCUS       NC_055207               6979 bp    RNA     linear   VRL 07-JUN-2021
+DEFINITION  Tahyna virus strain XJ0625 segment L, complete sequence.
+ACCESSION   NC_055207
+VERSION     NC_055207.1
+DBLINK      BioProject: PRJNA485481
+KEYWORDS    RefSeq.
+SOURCE      Tahyna virus
+  ORGANISM  Tahyna virus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Bunyaviricetes; Elliovirales; Peribunyaviridae;
+            Orthobunyavirus; Orthobunyavirus tahynaense.
+REFERENCE   1  (bases 1 to 6979)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Full length genomic sequencing and molecular characterization of
+            Tahyna virus isolates reveals a diversity of genotypes circulating
+            in Xinjiang, China
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 6979)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-2021) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (bases 1 to 6979)
+  AUTHORS   Lu,Z., Fu,S. and Liang,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-APR-2008) Viral Encephalitis, Institute for Viral
+            Disease Control and Prevention, Chinese Center for Disease Control
+            and Prevention, 100 Yingxin Jie, Xuanwu Qu, Beijing, Beijing
+            100052, China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to EU665255.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..6979
+                     /organism="Tahyna virus"
+                     /mol_type="genomic RNA"
+                     /strain="XJ0625"
+                     /host="Culex sp. (mosquito)"
+                     /db_xref="taxon:45270"
+                     /segment="L"
+                     /lab_host="passaged in BHK-21 cells"
+                     /geo_loc_name="China"
+                     /collection_date="2006"
+     gene            62..6853
+                     /locus_tag="KM532_sLgp1"
+                     /db_xref="GeneID:65100150"
+     CDS             62..6853
+                     /locus_tag="KM532_sLgp1"
+                     /note="RdRP"
+                     /codon_start=1
+                     /product="RNA dependent RNA polymerase"
+                     /protein_id="YP_010085094.1"
+                     /db_xref="GeneID:65100150"
+                     /translation="MDHQEYQQFLARINAARDACVAKDIDVDLLMARHDYFGKELSKS
+                     LNIEYRNDVPFIDIILDIRPEADPLTVDAPHITPDNYLYIDNILYLIDYKVSVSNESS
+                     MITYDKYYELTRDISRRMNIEIEIVIIRIDPVSKELHISSNRFKELYPALVVDINFNQ
+                     FFDLKQLLYEKFGDDEEFLLKVSHGDFTLTAPWCKEGCPEFWKHPIYKEFKMSMPVPE
+                     RRLFEESVKFNAYESERWNTNLIKVREYTKKDYSDFITKSAKDIFLATGFYKQPNKNE
+                     ISEGWDLMIERVHEQRNVTKSLHEQKPSIHFIWGPHNPGNSNNSTFKLILLSKSLQSI
+                     KGLSTYTEAFKSLGRMMDIGDRATEYESHCENLKSKARASWKQVMNKKLEPKQINTAL
+                     VLWEQQFMVNNEIIDKNDRIKLLKNFCGIGKHKQFKNKMLDDIDNSKPTILDFDDENV
+                     YLASLTMMEQTKRILSRPSGLKSDNFILNEFGLRIKDCNKDTYENMYQIFETRYWQCI
+                     SDFSTLMKNILSVSQYNRHNTFRVAMCANNNVFAIVFPSADIKTRKATVVYSIVVLHK
+                     EENNVLNPGCLHGTFKCMNGYISISRAIRLDKERCQRIVSSPGLFLTTCLLFKHENPT
+                     LVMNDVMNFSIYTSLSITKSVLSLTEPARYMIMNSLAISSNIKAYIAEKFSPYTKTLF
+                     SVYMTKLIKNACFDAYGQRERVQLRDIYLSDYDITQKGIKDNRELVSIWFPGSVTLKE
+                     YLTQVYLPFYFNAKGLHEKHHVMVDLAKTILEIESDQRENITEIWSTNCTKQTVNLKI
+                     LIHSLCKNLLADTSRHNHLRNRIENRNNFRRSITTISTFTSSKSCLKIGDFRKEKELQ
+                     NAKQRKLLENESRKRRLANPIFVTDEQVNLEVGHCNYNMLREAMPNYTDYISTKVFDR
+                     LYELLDTKVLSDKPVIEQIMDMMVNHKKFYFTFFNKGQKTSKDREIFVGEYEAKMCMY
+                     AVERIAKERCKLNPDEMISEPGDGKLKVLEQKSEQEIRFLVETTRQKNRDIDEAISAL
+                     ASENFEDNIERIEKLSRGKSRGLKMEINADMSKWSAQDVFYKYFWLIALDPILYPQEK
+                     ERILFFMCNYMQKELILPDELLFNLLDQKITYQNDIISTMTNQLNTNTVPIKRNWLQG
+                     NFNYTSSYVHSCAMSVYKDILKEAITLLDGSILVNSLVHSDDNQTSITIVQDKTTNEI
+                     LIDFAMREFEKSCLTFGCQANMKKTYVTNCIKEFVSLFNLYGEPFSIYGRFLLTSVGD
+                     CAYIGPYEDLASRISSAQTAIKHGCPPSLAWVSIAISHWMTYLTYNMLPGQSNDPIDY
+                     FPAETRREIPIELNGILDAPLSMISTVGLEAGNLNFLINLLNKYTPVMMKRESVVNQI
+                     AEVRSWKVEDLTDNEIFRLKILRFLVLDAEMDPNDIMGETSDMRGRSLLTPRKFTTAG
+                     SLRKLYSFSKYQDRLSAPGGMEELFAYLLEKPELLVTKGEDSKDYMESVIFRYNSKRF
+                     KESLSIQNPAQLFIEQILFSHKPVIDFSGIRDKYINLHDSRAIEKEPDILGKVTFTEA
+                     YRMLMKDLSSLALTNEDIQVIYSYIILNDPLMITIANTHVLSIYGSPQKRMGMSCSTM
+                     PEFRNLKLIHHSPALVLRAYSKNNPDVQGADPTEMARDLVHLKEFVENTGLEEKMKLR
+                     IAQNEAEKGQRDIVFELKEMTRFYQVCYEYVKSTEHKIKVFILPAKAYTTTDFCALMQ
+                     GNLIKDKEWYTVHYLKQILSGGHKAIMQHNATSEQNIAFECFKLIVHFADSFIEASSR
+                     SAFLQLVMEQFSYKDVRVHKLYDIIKNGHNRTDFIPLLFRTGDLKQADLDKYDAMKSH
+                     ERVTWNDWQTSRHLDMGVINLTITGYNRSITIIGEDNKLTYAELCITRKTPENITISG
+                     RKLLSARHGLKFENMTKIPTYPGNYYITFRKKDRHQYVYQIHSHESITRRNEEHMAIR
+                     TRIFNEITPVCVVNVAEVDGDQRILIRKLDFLNNDVFTLSRIKVGLDEFATIKKAHFS
+                     KMVSFDGPPIKTGLLDLTELMKSQDLLNLNYDNIRNSNLISFSKLICCEGSEDIDDGL
+                     EFLSDDPMNFTEGESIHSTPIFNIYYSKRGESHMTYRNAIKQLIDRETATFEEAFTFS
+                     TNGFVSPENLGCLEAIVSLIKILRTNEWSTVIDRCIHICLIKNGMDHMYHSFDIPKCF
+                     VDNPINREVNWVMYREFINNLPATRIPPWNVMMDNFKKKCLALINSKLETQRDFSEFV
+                     QMMKKDGGRGNLEFD"
+ORIGIN      
+        1 agtagtgtgc tcctatctac aaaacttaca aaaacttcag ttaagaacca ctataagcat
+       61 catggaccac caagagtatc agcagttcct tgctaggatt aatgctgcaa gagatgcatg
+      121 cgttgcaaaa gacatagatg tagacctatt aatggctaga catgattatt ttgggaaaga
+      181 actgagtaaa tcattaaaca tagagtatag aaatgatgta cccttcatag acataatctt
+      241 agacattaga ccagaagcag accccttaac agtagatgct ccccatataa ctccagataa
+      301 ttatctatat atagacaata tattgtattt gatagactat aaggtgtctg tttctaatga
+      361 gagtagtatg ataacctatg ataaatatta tgagttaacc agagacatat ctaggagaat
+      421 gaatattgag atagaaatag taataataag aatagaccct gtaagcaaag aattacatat
+      481 aagttccaac aggtttaaag agctataccc agcattagtt gttgacataa acttcaacca
+      541 attttttgac ctgaaacaac tactttacga gaaatttggt gatgatgagg aattccttct
+      601 taaagtgtca catggtgact ttacattgac tgccccatgg tgcaaggagg gctgtcctga
+      661 attctggaag cacccaatat acaaagaatt caaaatgagc atgccagtcc ctgagaggcg
+      721 gctctttgaa gagtctgtga agtttaatgc ttacgaatca gaaaggtgga atactaacct
+      781 gataaaggta agagaatata caaaaaaaga ttactctgat ttcataacca aatctgcaaa
+      841 agatatattc cttgcaacag gcttttataa gcaaccaaat aaaaatgaaa taagtgaggg
+      901 atgggatttg atgatagaac gagtccatga acagagaaat gtaactaagt ccttgcatga
+      961 gcaaaaacca agtatccact tcatatgggg ccctcataat cctgggaata gcaacaattc
+     1021 gacctttaaa ctaattttgt tgtccaaatc tttgcaaagc atcaaaggct tgtctacata
+     1081 tactgaagca ttcaaatcac ttggaagaat gatggacata ggcgatagag caacagagta
+     1141 tgaatcacat tgtgagaatt taaaaagcaa ggcaagggcc tcttggaagc aagttatgaa
+     1201 taaaaaatta gaacccaaac agataaacac cgctctagtg ttatgggagc aacagtttat
+     1261 ggttaacaac gaaataatag ataaaaatga tagaatcaag ctacttaaga acttttgcgg
+     1321 aataggtaag cacaaacaat tcaaaaacaa aatgctagat gatattgata attctaaacc
+     1381 tacaatattg gattttgatg atgaaaatgt atatctagct agtctaacta tgatggaaca
+     1441 aacaaaaagg atactatcaa ggcctagtgg cctgaaaagt gataatttca tattaaatga
+     1501 gtttggttta agaattaagg actgcaataa agatacatat gagaacatgt atcagatatt
+     1561 tgaaacaagg tattggcaat gtatttcaga tttttctacc ttaatgaaaa atatattatc
+     1621 agtttctcaa tataataggc acaacacatt tagagtagca atgtgcgcta ataataatgt
+     1681 cttcgcaata gtattccctt ctgccgatat aaaaacaaga aaggcgacag tagtgtatag
+     1741 cattgtagta ttgcacaaag aggagaacaa tgtattgaac ccaggatgtc tgcatggcac
+     1801 cttcaagtgc atgaatggat atatctcaat ttcccgagct attagattag ataaggaaag
+     1861 atgccaacga atagtctcat ctcccggatt attcttaaca acctgcctgt tattcaaaca
+     1921 tgaaaaccct acattagtca tgaatgacgt aatgaatttc tctatatata ccagcttatc
+     1981 tataacaaag agtgttctgt cccttacaga acctgctagg tacatgataa tgaattcact
+     2041 tgccatctct agtaatatta aggcatacat tgctgaaaag ttctcaccat acacaaaaac
+     2101 attattcagt gtttatatga caaaactaat taagaatgct tgctttgatg cctatggtca
+     2161 aagagaaagg gttcaattaa gggatattta cttatctgat tacgatatta cacagaaagg
+     2221 aataaaagat aatagggaat tagtaagcat atggttccca ggaagtgtta cccttaaaga
+     2281 gtatctgaca caagtttatc taccatttta ttttaatgct aagggcctgc atgagaaaca
+     2341 tcatgtgatg gtggaccttg caaaaaccat attagaaata gaaagtgacc aaagggagaa
+     2401 tattactgaa atatggtcaa ccaattgcac caagcagaca gtcaatttga aaatcctaat
+     2461 tcactcattg tgcaagaatt tgttagctga cacgtctaga cacaatcatc ttaggaatag
+     2521 aatagaaaac aggaataatt tccggagatc catcactaca atatcaactt tcacaagttc
+     2581 aaaatcttgc ttaaaaatag gagattttag aaaagagaag gagctccaga atgctaaaca
+     2641 aaggaaactt ttagaaaacg aaagtcggaa aagaagacta gcaaacccta tctttgtaac
+     2701 agatgagcag gtcaacttgg aggttggaca ttgcaactac aatatgctca gagaagctat
+     2761 gcctaactat acagattata tatcaactaa ggtttttgac agattatatg aattattaga
+     2821 tacgaaagtt ctaagtgata agcctgtaat agagcagata atggatatga tggtgaatca
+     2881 taagaaattc tacttcactt tctttaacaa ggggcaaaag acctcaaagg atagggaaat
+     2941 atttgtagga gagtacgaag ccaaaatgtg tatgtatgct gttgagagaa ttgcaaaaga
+     3001 gaggtgcaag ttgaacccag acgaaatgat atctgaacca ggtgatggaa aacttaaggt
+     3061 acttgaacaa aagtcagagc aagaaattag attcctagta gaaactacaa ggcaaaagaa
+     3121 tagagatata gatgaagcaa taagcgcttt agcatcagaa aactttgagg ataatataga
+     3181 aaggatagaa aagttatcca gaggaaaatc aagaggatta aagatggaaa taaatgcaga
+     3241 catgtccaaa tggagcgccc aagatgtgtt ctacaaatac ttttggctga ttgcattaga
+     3301 cccaatattg tacccgcaag agaaagaaag gatcttgttc ttcatgtgca actatatgca
+     3361 gaaagaactt attttgcctg atgagctact atttaattta cttgatcaga agataacata
+     3421 ccaaaatgat ataatatcca ctatgacaaa tcaattgaac actaatacag tacctataaa
+     3481 aagaaattgg ctgcagggaa actttaatta cacatctagt tatgttcaca gctgtgctat
+     3541 gtctgtgtat aaagatattc taaaagaagc aataactctg ttagatggtt caatactggt
+     3601 taattcatta gtccattccg atgataacca aacgtctata acaatagtgc aggacaagac
+     3661 aaccaatgag atactaatag attttgcaat gagagagttt gaaaaatcat gcttaacctt
+     3721 tggatgtcaa gctaatatga agaaaacata tgtaactaat tgtataaaag aatttgtatc
+     3781 tttatttaat ctatatggtg aacccttttc aatatatggt cgtttcttac tgacctctgt
+     3841 aggagattgt gcctatatag ggccttacga ggatctcgcc agtaggatat cttctgcaca
+     3901 aacagcaata aagcatggct gcccaccaag cttagcatgg gtttccatag ctataagcca
+     3961 ctggatgact tatttgacct acaatatgct acccggccaa tctaatgacc ctattgatta
+     4021 ttttccagct gaaacccgaa gggaaatacc tatagaattg aatgggatct tagatgcacc
+     4081 attatctatg attagcactg ttggattaga ggctgggaac ttgaacttct taattaactt
+     4141 gttgaataaa tacacaccag ttatgatgaa gagagagtct gtagttaatc aaatagcaga
+     4201 ggtaagatca tggaaagttg aagatttgac agacaatgaa atattcagac ttaagatact
+     4261 aagattcttg gtcctagatg cagaaatgga tcctaatgat ataatggggg aaacaagtga
+     4321 catgagaggg agatcattgc tgacacctag gaaatttaca accgcaggta gtttaaggaa
+     4381 attatactca tttagcaagt atcaagatag attatcagct cctggaggga tggaagaatt
+     4441 gtttgcatat ctattagaga agcctgagtt gttagttact aaaggagagg attccaaaga
+     4501 ttatatggag tctgttatct ttcgatacaa ctccaagagg ttcaaggaaa gtctatcaat
+     4561 ccaaaaccct gctcagttat ttattgagca gatcttgttc tcacataaac cagttataga
+     4621 tttttccggg ataagagaca aatacataaa tctacatgat agtagagcta tagaaaaaga
+     4681 gccagatata ttgggaaaag taacgttcac agaggcttat aggatgctga tgaaggattt
+     4741 atcttcactc gcattaacaa atgaagatat acaagttata tattcatata ttatactcaa
+     4801 tgacccacta atgataacaa tagcaaacac ccatgttctg tcaatttatg gcagtcccca
+     4861 gaaaagaatg ggaatgtcat gctccactat gccagaattt agaaatttga aacttataca
+     4921 ccattctcca gcattagtat taagagcgta cagcaaaaac aatccagatg tccagggagc
+     4981 tgacccaacc gagatggcta gagacttagt gcatttgaaa gaatttgtag agaatacagg
+     5041 tctagaagaa aaaatgaaat taaggatagc ccaaaatgaa gcagaaaagg gccagagaga
+     5101 cattgtcttt gagttaaaag aaatgactag gttttatcaa gtatgttatg agtacgttaa
+     5161 gtccacagag cacaaaatca aagtcttcat ccttcctgca aaagcataca caacaactga
+     5221 tttttgtgct ctcatgcaag ggaatttaat aaaggataaa gagtggtaca ctgtacatta
+     5281 tttaaaacag atattatcag gtgggcacaa agctatcatg caacacaatg ccacgagtga
+     5341 acaaaatata gcctttgaat gtttcaagtt gatagtgcat tttgcagact cattcataga
+     5401 agcctcatct agatctgcat tcttgcaatt agtcatggag caattcagct ataaggatgt
+     5461 tagagttcat aaactatatg atattatcaa gaatgggcat aacaggacag acttcatccc
+     5521 attacttttc agaactgggg acctcaagca agcagaccta gacaagtacg atgctatgaa
+     5581 aagccatgaa agggtaacct ggaatgattg gcaaacatca cgacatcttg atatgggggt
+     5641 cataaacttg actataacag gttataacag atctatcact ataataggtg aggataacaa
+     5701 actaacttat gcagagctct gcattacaag aaaaacacca gagaatataa ccataagtgg
+     5761 taggaagcta ctaagtgcaa gacatggatt aaaatttgag aacatgacaa aaataccaac
+     5821 ctacccaggt aattattata tcactttcag gaagaaagac aggcaccaat atgtgtacca
+     5881 gatacattca cacgaatcaa taacaaggag gaatgaagag catatggcta taagaactag
+     5941 aatctttaat gaaataacac ctgtgtgtgt tgttaatgtg gccgaggttg atggagacca
+     6001 gaggatattg ataaggaagt tagatttctt aaataatgat gtgttcacat tatcgagaat
+     6061 taaagttggg ctagatgaat ttgcaactat aaagaaagca cactttagca aaatggtctc
+     6121 ttttgatgga cctcctataa aaacaggtct cttagacctc acagaactga tgaaatcaca
+     6181 ggatctacta aatctaaact acgacaatat taggaacagc aatttgatat cattctccaa
+     6241 gttgatttgt tgcgagggtt ctgaagacat agatgatgga ttagaattct tatctgacga
+     6301 ccccatgaac tttacggaag gagaatctat acattcaaca ccaatattta acatatatta
+     6361 ctctaaacgt ggcgaaagcc atatgactta cagaaatgca ataaagcaat tgatagatag
+     6421 agaaactgca acatttgagg aagcttttac tttcagcaca aatggatttg tatccccaga
+     6481 gaatttaggt tgtctggaag caatagtatc actaataaag atcctaagga ctaatgaatg
+     6541 gtcaacagtt attgacaggt gcatacatat ttgcttgata aagaatggaa tggatcacat
+     6601 gtaccattca tttgacatac ctaaatgctt tgttgataat cctatcaata gagaagtgaa
+     6661 ctgggtgatg tacagagaat ttatcaacaa cctaccagct actagaatac ctccttggaa
+     6721 tgtaatgatg gataatttca agaaaaaatg tttagcacta ataaattcca aattagaaac
+     6781 tcaacgagat ttctcggaat ttgtgcagat gatgaagaaa gatggtggga ggggcaactt
+     6841 agaatttgat tgagcttaaa agtagtaatt ttgttagggt agaaatctaa attccaaatc
+     6901 tacaaaattg aattagggtt aattagggtt agggcaaata acagcaattg tatagatttg
+     6961 tagataggag cacactact
+//
+

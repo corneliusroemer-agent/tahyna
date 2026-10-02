@@ -1,0 +1,4 @@
+##gff-version 3
+##sequence-region NC_055205.1 1 4489
+NC_055205.1	NC_055205.1	gene	62	4384	.	+	.	ID=gene:KM532_sMgp1;Name=KM532_sMgp1;gene=KM532_sMgp1;locus_tag=KM532_sMgp1
+NC_055205.1	NC_055205.1	CDS	62	4384	.	+	0	ID=CDS:KM532_sMgp1;Name=KM532_sMgp1;gene=KM532_sMgp1;locus_tag=KM532_sMgp1

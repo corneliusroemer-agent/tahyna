@@ -1,0 +1,6 @@
+##gff-version 3
+##sequence-region NC_055206.1 1 978
+NC_055206.1	NC_055206.1	gene	79	786	.	+	.	ID=gene:KM532_sSgp1;Name=KM532_sSgp1;gene=KM532_sSgp1;locus_tag=KM532_sSgp1
+NC_055206.1	NC_055206.1	CDS	79	786	.	+	0	ID=CDS:KM532_sSgp1;Name=KM532_sSgp1;gene=KM532_sSgp1;locus_tag=KM532_sSgp1
+NC_055206.1	NC_055206.1	gene	98	391	.	+	.	ID=gene:KM532_sSgp2;Name=KM532_sSgp2;gene=KM532_sSgp2;locus_tag=KM532_sSgp2
+NC_055206.1	NC_055206.1	CDS	98	391	.	+	0	ID=CDS:KM532_sSgp2;Name=KM532_sSgp2;gene=KM532_sSgp2;locus_tag=KM532_sSgp2
