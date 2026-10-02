@@ -1,0 +1,117 @@
+{
+  "title": "Tahyna virus (Orthobunyavirus tahynaense) phylogeny",
+  "maintainers": [
+    { "name": "Cornelius Roemer" }
+  ],
+  "colorings": [
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    },
+    {
+      "key": "division",
+      "title": "Division",
+      "type": "categorical"
+    },
+    {
+      "key": "location",
+      "title": "Location",
+      "type": "categorical"
+    },
+    {
+      "key": "host",
+      "title": "Host",
+      "type": "categorical"
+    },
+    {
+      "key": "year",
+      "title": "Collection year",
+      "type": "categorical"
+    },
+    {
+      "key": "is_lab_host",
+      "title": "Lab host",
+      "type": "categorical"
+    },
+    {
+      "key": "date_imputed",
+      "title": "Date imputed",
+      "type": "categorical"
+    },
+    {
+      "key": "date_source",
+      "title": "Date source",
+      "type": "categorical"
+    },
+    {
+      "key": "duplicate_isolate",
+      "title": "Duplicate isolate",
+      "type": "categorical"
+    },
+    {
+      "key": "segment_label_conflict",
+      "title": "Segment label conflict",
+      "type": "categorical"
+    },
+    {
+      "key": "completeness",
+      "title": "Completeness",
+      "type": "categorical"
+    },
+    {
+      "key": "segment",
+      "title": "Segment",
+      "type": "categorical"
+    },
+    {
+      "key": "assembly",
+      "title": "Assembly (isolate)",
+      "type": "categorical"
+    },
+    {
+      "key": "submitter_country",
+      "title": "Submitter country",
+      "type": "categorical"
+    }
+  ],
+  "filters": [
+    "country",
+    "region",
+    "division",
+    "host",
+    "year",
+    "is_lab_host",
+    "date_imputed",
+    "duplicate_isolate",
+    "segment_label_conflict",
+    "completeness",
+    "assembly"
+  ],
+  "display_defaults": {
+    "map_triplicate": false,
+    "color_by": "country",
+    "geo_resolution": "country",
+    "distance_measure": "div",
+    "layout": "rect",
+    "branch_label": "none"
+  },
+  "metadata_columns": [
+    "date_imputed",
+    "date_source",
+    "duplicate_isolate",
+    "segment_label_conflict",
+    "is_lab_host",
+    "completeness",
+    "assembly",
+    "host",
+    "submitter_country",
+    "accession",
+    "isolate"
+  ]
+}

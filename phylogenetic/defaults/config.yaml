@@ -10,12 +10,15 @@ segments:
   s:
     label: "S"
     min_length: 490    # NC_055206.1 = 978 nt
+    ref_length: 978
   m:
     label: "M"
     min_length: 2245   # NC_055205.1 = 4489 nt
+    ref_length: 4489
   l:
     label: "L"
     min_length: 3490   # NC_055207.1 = 6979 nt
+    ref_length: 6979
 
 # Per-segment nextclade custom reference packages (reference.fasta +
 # annotation.gff3 + pathogen.json; see references/ in the repo root).
@@ -24,10 +27,27 @@ references:
   m: "../references/m"
   l: "../references/l"
 
-# QC gate: PENDING REVIEW - the criterion is proposed in docs/qc-review.md and
-# wired into the workflow after that review. Treeless nextclade can compute:
-# coverage, totalMissing, totalSubstitutions (vs reference), frameshifts,
-# stop codons. Private mutations need a reference tree (later refinement).
+# QC gate (APPROVED by user 2026-10-02, exactly as proposed in
+# docs/qc-review.md): drop a record failing ANY hard criterion below. Only
+# treeless-computable metrics are used; private-mutation gating needs a
+# reference tree and is a deferred refinement pass.
+qc_gate:
+  min_coverage: 0.5
+  # per-segment missing-data maxima = pathogen.json missingData thresholds
+  missing_data_max:
+    s: 500
+    m: 2250
+    l: 3500
+  # divergence-outlier band, as a fraction of the reference length (treeless
+  # proxy for the private-mutations gate; observed maxima <= 17.3% of ref)
+  max_substitutions_frac: 0.25
+  zero_frameshifts: true
+  zero_stop_codons: true
+  # Records kept despite a failing criterion, so their annotations stay
+  # visible; each entry surfaces as qc_exception=true in the metadata and the
+  # gate report. Judge artifact-vs-real from branch mutations on the tree.
+  exceptions:
+    - "PJ01_OP727996"  # L build, 1 frameshift (Cai 2023; passaged 1x C6/36 + 2x BHK-21)
 
 # --- Locked tree settings (user decisions 2026-10-02) ---
 tree:
@@ -40,6 +60,18 @@ refine:
   date_inference: marginal
   root: best            # auto-best for v1; outgroup rooting deferred
   clock_filter_iqd: 10  # loosened from default 4 to keep historic/imputed tips
+  # Per-segment overrides for settings that cannot hold everywhere.
+  overrides:
+    s:
+      # S ships as a DIVERGENCE tree for v1: treetime's root-to-tip rate
+      # estimate is NEGATIVE on every rooting we tried (best / min_dev /
+      # skyline / rooting on each Asian tip) - the deep Asia-Europe split plus
+      # a temporally flat European lineage (1957-2021 strains nearly
+      # equidistant) give no usable clock. Matches the literature finding of
+      # no clear temporal clustering in TAHV S. Surfaced for review; a pinned
+      # clock or an external outgroup could revisit it later.
+      timetree: false
+      root: null
 ancestral:
   inference: joint
 traits:

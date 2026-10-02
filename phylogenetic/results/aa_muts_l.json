@@ -1,0 +1,475 @@
+{
+  "annotations": {
+    "KM532_sLgp1": {
+      "end": 6853,
+      "seqid": "../references/l/annotation.gff3",
+      "start": 62,
+      "strand": "+",
+      "type": "gene"
+    },
+    "nuc": {
+      "end": 6979,
+      "seqid": "../references/l/annotation.gff3",
+      "start": 1,
+      "strand": "+",
+      "type": "##sequence-region pragma"
+    }
+  },
+  "generated_by": {
+    "program": "augur",
+    "version": "34.0.0"
+  },
+  "nodes": {
+    "1014_KF361881": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "I128V",
+          "I421T"
+        ]
+      }
+    },
+    "181/57_KF361879": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "T743I",
+          "F1173L",
+          "V2163I"
+        ]
+      }
+    },
+    "181_KF361878": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "T1172A"
+        ]
+      }
+    },
+    "22595-6_HM036219": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "D487Y"
+        ]
+      }
+    },
+    "236_KF361880": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "N1325D"
+        ]
+      }
+    },
+    "29_KF361874": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "S252F",
+          "N495S"
+        ]
+      }
+    },
+    "4020_KF361882": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "N99T",
+          "E111D",
+          "M305I"
+        ]
+      }
+    },
+    "4034_KF361883": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "V630I",
+          "G994R",
+          "S1177F",
+          "F2190L",
+          "V2202M"
+        ]
+      }
+    },
+    "404118_ON156450": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "M627I",
+          "I1529M",
+          "V1674A",
+          "V1682I",
+          "I1874V",
+          "P1919Q",
+          "S2123L",
+          "D2192N"
+        ]
+      }
+    },
+    "4057_KF361884": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "V450M",
+          "V1573G"
+        ]
+      }
+    },
+    "76_KF361875": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "I1042L",
+          "I1204M",
+          "V1592I",
+          "N1811I"
+        ]
+      }
+    },
+    "89_KF361876": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "S868I",
+          "T1172A"
+        ]
+      }
+    },
+    "94_KF361877": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "H75Y",
+          "V1772A",
+          "V1976I"
+        ]
+      }
+    },
+    "Austria/OadD806/2019_MZ245728": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "S775N",
+          "K2227M",
+          "R2257K"
+        ]
+      }
+    },
+    "Austria/OadD823/2019_MZ245729": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "S141N",
+          "K345R",
+          "V630I"
+        ]
+      }
+    },
+    "NODE_0000000": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "C42S",
+          "I243V",
+          "K467R",
+          "K553R",
+          "V666I",
+          "I2191V"
+        ]
+      }
+    },
+    "NODE_0000001": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000002": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "I21V",
+          "T66A",
+          "D200E",
+          "I294V",
+          "M305I",
+          "K349R",
+          "D359E",
+          "S366N",
+          "N369S",
+          "*483L",
+          "T569N",
+          "V800I",
+          "S1134T",
+          "F1173L",
+          "K1327R",
+          "K1396R",
+          "L1555M",
+          "T1564A",
+          "R1666K",
+          "V1674A",
+          "L1792M",
+          "F1983L",
+          "S2123A",
+          "I2137V",
+          "A2183S",
+          "K2198E",
+          "D2200N",
+          "E2254D"
+        ]
+      }
+    },
+    "NODE_0000003": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000004": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "A15T",
+          "I84V",
+          "M103I",
+          "I129V",
+          "N159D",
+          "V288I",
+          "D359E",
+          "*483Q",
+          "V532I",
+          "R861K",
+          "K862R",
+          "K870R",
+          "K927R",
+          "D1037E",
+          "I1039V",
+          "I1118V",
+          "T1325N",
+          "N1359S",
+          "D1388E",
+          "A1462T",
+          "I1573V",
+          "V1791I",
+          "A1831T",
+          "A1906S",
+          "T1916A",
+          "F1983L",
+          "L2004I",
+          "T2124S",
+          "K2153R",
+          "R2156K",
+          "R2166K",
+          "I2216V"
+        ]
+      }
+    },
+    "NODE_0000005": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000006": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "A2232T"
+        ]
+      }
+    },
+    "NODE_0000007": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000008": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      },
+      "aa_sequences": {
+        "KM532_sLgp1": "MDHQEYQQFLARINAARDACIAKDIDVDLLMARHDYFGKELCKSLNIEYRNDVPFIDIILDIRPETDPLTVDAPHITPDNYLYIDNILYLIDYKVSVSNESSMITYDKYYELTRDISRRMNIEIEIVIIRIDPVSKELHISSNRFKELYPALVVDINFNQFFDLKQLLYEKFGDDEEFLLKVSHGDFTLTAPWCKEGCPDFWKHPIYKEFKMSMPVPERRLFEESVKFNAYESERWNTNLIKIREYTKKDYSDFITKSAKDIFLATGFYKQPNKNEISEGWDLMIERVHEQRNITKSLHEQKPSMHFIWGPHNPGNSNNSTFKLILLSKSLQSIKGLSTYTEAFKSLGKMMDIGDRATDYESHCESLKNKARASWKQVMNKKLEPKQINTALVLWEQQFMVNNEIIDKNDRIKLLKNFCGIGKHKQFKNKMLDDIDNSKPTILDFDDENVYLASLTMMEQTKRILSKPSGLKSDNFILNEFG*RIKDCNKDTYENMYQIFETRYWQCISDFSTLMKNILSVSQYNRHNTFRVAMCANNNVFAIVFPSADIKTKKATVVYSIVVLHKEETNVLNPGCLHGTFKCMNGYISISRAIRLDKERCQRIVSSPGLFLTTCLLFKHENPTLVMNDVMNFSIYTSLSITKSVLSLTEPARYMIMNSLAISSNVKAYIAEKFSPYTKTLFSVYMTKLIKNACFDAYGQRERVQLRDIYLSDYDITQKGIKDNRELVSIWFPGSVTLKEYLTQVYLPFYFNAKGLHEKHHVMVDLAKTILEIESDQRENITEIWSTNCTKQTVNLKILVHSLCKNLLADTSRHNHLRNRIENRNNFRRSITTISTFTSSKSCLKIGDFRKEKELQNAKQRKLLENESRKRRLANPIFVTDEQVNLEVGHCNYNMLREAMPNYTDYISTKVFDRLYELLDTKVLSDKPVIEQIMDMMVNHKKFYFTFFNKGQKTSKDREIFVGEYEAKMCMYAVERIAKERCKLNPDEMISEPGDGKLKVLEQKSEQEIRFLVETTRQKNRDIDEAISALASENFEDNIERIEKLSRGKSRGLKMEINADMSKWSAQDVFYKYFWLIALDPILYPQEKERILFFMCNYMQKELILPDELLFNLLDQKITYQNDIISTMTNQLNSNTVPIKRNWLQGNFNYTSSYVHSCAMSVYKDILKEAITFLDGSILVNSLVHSDDNQTSITIVQDKTTNEILIDFAMREFEKSCLTFGCQANMKKTYVTNCIKEFVSLFNLYGEPFSIYGRFLLTSVGDCAYIGPYEDLASRISSAQTAIKHGCPPSLAWVSIAISHWMTYLTYNMLPGQSNDPIDYFPAETRKEIPIELNGILDAPLSMISTVGLEAGNLNFLINLLNKYTPVMMKRESVVNQIAEVRSWKVEDLTDNEIFKLKILRFLVLDAEMDPNDIMGETSDMRGRSLLTPRKFTTAGSLRKLYSFSKYQDRLSAPGGMEELFAYLLEKPELLVTKGEDSKDYMESVIFRYNSKRFKESLSIQNPAQLFIEQILFSHKPVIDFSGIRDKYINLHDSRAIEKEPDILGKVTFTEAYRLLMKDLSSLTLTNEDIQVIYSYIILNDPLMITIANTHVLSIYGSPQKRMGMSCSTMPEFRNLKLIHHSPALVLRAYSKNNPDVQGADPTEMARDLVHLKEFVENTGLEEKMRLRIAQNEVEKGQRDIVFELKEMTRFYQVCYEYVKSTEHKIKVFILPAKAYTTTDFCALMQGNLIKDKEWYTVHYLKQILSGGHKAIMQHNATSEQNIAFECFKLIVHFADSFIEASSRSAFLQLVLEQFSYKDVRVHKLYDIIKNGHNRTDFIPLLFRTGDLKQADLDKYDAMKSHERVTWNDWQTSRHLDMGVINLTITGYNRSITIIGEDNKLTYAELCITRKTPENITISGRKLLSARHGLKFENMTKIPTYPGNYYITFRKKDRHQYVYQIHSHESITRRNEEHMAIRTRIFNEITPVCVVNVAEVDGDQRIFIRKLDFLNNDVFTLSRIKVGLDEFATIKKAHFSKMVSFDGPPIKTGLLDLTELMKSQDLLNLNYDNIRNSNLISFSKLICCEGSEDIDDGLEFLSDDPMNFTEGESIHSTPIFNIYYSKRGESHMTYRNAIKQLIDRETSTFEEAFTFSTNGFISPENLGCLEAIVSLIKILRTNEWSTVIDRCIHICLIKNGMDHMYHAFDIPKCFIDNPINRKVDWVMYREFINNLPATRIPPWNVMMDNFKKKCLALINSKLETQRDFSEFVQMMKKEGGRGNLEFD*"
+      }
+    },
+    "NODE_0000009": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000010": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "I1486V"
+        ]
+      }
+    },
+    "NODE_0000012": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000013": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "I2191V"
+        ]
+      }
+    },
+    "NODE_0000014": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000015": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000016": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "T256I",
+          "I690V"
+        ]
+      }
+    },
+    "NODE_0000017": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "Y451F"
+        ]
+      }
+    },
+    "NODE_0000018": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "NODE_0000019": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "D410N",
+          "S2123L",
+          "A2213T"
+        ]
+      }
+    },
+    "NODE_0000020": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "D491G",
+          "M1210I"
+        ]
+      }
+    },
+    "NODE_0000021": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "D261N",
+          "K1911R"
+        ]
+      }
+    },
+    "PJ01_OP727996": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "A15T",
+          "V53I",
+          "I59L",
+          "R63K",
+          "M103I",
+          "R119K",
+          "I122L",
+          "V134I",
+          "D174E",
+          "D253E",
+          "N369S",
+          "K370R",
+          "K376R",
+          "S473N",
+          "*483Q",
+          "E494D",
+          "Y497C",
+          "E501G",
+          "T569S",
+          "P623Q",
+          "S775N",
+          "I907M",
+          "D1022E",
+          "D1037E",
+          "R1041K",
+          "E1108D",
+          "I1171M",
+          "T1172V",
+          "V1196I",
+          "S1445T",
+          "K1479R",
+          "I1529V",
+          "A1670T",
+          "V1674M",
+          "V1791I",
+          "I1896V",
+          "P1919Q",
+          "Y1937H",
+          "T1948V",
+          "I1957V",
+          "F1983L",
+          "D2022E",
+          "E2068D",
+          "R2156K",
+          "R2166K",
+          "I2208V",
+          "A2213N",
+          "R2215K",
+          "R2257K",
+          "G2258N",
+          "*2264X"
+        ]
+      }
+    },
+    "Prototype_92_Bardos_HM036210": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "N2158D"
+        ]
+      }
+    },
+    "Prototype_92_Bardos_HM036213": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "Souche_D_C14019-29_HM036216": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "T66S",
+          "R703K",
+          "E1043D",
+          "T1119R",
+          "V1404I",
+          "A1504S",
+          "Q2116L",
+          "D2263N"
+        ]
+      }
+    },
+    "XJ0625_EU665255": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "XJ0625_NC_055207": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "XJ0708_HM243137": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "N628D",
+          "I1204V",
+          "A1674T",
+          "A2123T",
+          "R2215K",
+          "Q2249K"
+        ]
+      }
+    },
+    "XJ0710_HM243140": {
+      "aa_muts": {
+        "KM532_sLgp1": []
+      }
+    },
+    "prototype_Bardos_92_HM243136": {
+      "aa_muts": {
+        "KM532_sLgp1": [
+          "A533T"
+        ]
+      }
+    }
+  },
+  "reference": {
+    "KM532_sLgp1": "MDHQEYQQFLARINAARDACIAKDIDVDLLMARHDYFGKELCKSLNIEYRNDVPFIDIILDIRPETDPLTVDAPHITPDNYLYIDNILYLIDYKVSVSNESSMITYDKYYELTRDISRRMNIEIEIVIIRIDPVSKELHISSNRFKELYPALVVDINFNQFFDLKQLLYEKFGDDEEFLLKVSHGDFTLTAPWCKEGCPDFWKHPIYKEFKMSMPVPERRLFEESVKFNAYESERWNTNLIKIREYTKKDYSDFITKSAKDIFLATGFYKQPNKNEISEGWDLMIERVHEQRNITKSLHEQKPSMHFIWGPHNPGNSNNSTFKLILLSKSLQSIKGLSTYTEAFKSLGKMMDIGDRATDYESHCESLKNKARASWKQVMNKKLEPKQINTALVLWEQQFMVNNEIIDKNDRIKLLKNFCGIGKHKQFKNKMLDDIDNSKPTILDFDDENVYLASLTMMEQTKRILSKPSGLKSDNFILNEFG*RIKDCNKDTYENMYQIFETRYWQCISDFSTLMKNILSVSQYNRHNTFRVAMCANNNVFAIVFPSADIKTKKATVVYSIVVLHKEETNVLNPGCLHGTFKCMNGYISISRAIRLDKERCQRIVSSPGLFLTTCLLFKHENPTLVMNDVMNFSIYTSLSITKSVLSLTEPARYMIMNSLAISSNVKAYIAEKFSPYTKTLFSVYMTKLIKNACFDAYGQRERVQLRDIYLSDYDITQKGIKDNRELVSIWFPGSVTLKEYLTQVYLPFYFNAKGLHEKHHVMVDLAKTILEIESDQRENITEIWSTNCTKQTVNLKILVHSLCKNLLADTSRHNHLRNRIENRNNFRRSITTISTFTSSKSCLKIGDFRKEKELQNAKQRKLLENESRKRRLANPIFVTDEQVNLEVGHCNYNMLREAMPNYTDYISTKVFDRLYELLDTKVLSDKPVIEQIMDMMVNHKKFYFTFFNKGQKTSKDREIFVGEYEAKMCMYAVERIAKERCKLNPDEMISEPGDGKLKVLEQKSEQEIRFLVETTRQKNRDIDEAISALASENFEDNIERIEKLSRGKSRGLKMEINADMSKWSAQDVFYKYFWLIALDPILYPQEKERILFFMCNYMQKELILPDELLFNLLDQKITYQNDIISTMTNQLNSNTVPIKRNWLQGNFNYTSSYVHSCAMSVYKDILKEAITFLDGSILVNSLVHSDDNQTSITIVQDKTTNEILIDFAMREFEKSCLTFGCQANMKKTYVTNCIKEFVSLFNLYGEPFSIYGRFLLTSVGDCAYIGPYEDLASRISSAQTAIKHGCPPSLAWVSIAISHWMTYLTYNMLPGQSNDPIDYFPAETRKEIPIELNGILDAPLSMISTVGLEAGNLNFLINLLNKYTPVMMKRESVVNQIAEVRSWKVEDLTDNEIFKLKILRFLVLDAEMDPNDIMGETSDMRGRSLLTPRKFTTAGSLRKLYSFSKYQDRLSAPGGMEELFAYLLEKPELLVTKGEDSKDYMESVIFRYNSKRFKESLSIQNPAQLFIEQILFSHKPVIDFSGIRDKYINLHDSRAIEKEPDILGKVTFTEAYRLLMKDLSSLTLTNEDIQVIYSYIILNDPLMITIANTHVLSIYGSPQKRMGMSCSTMPEFRNLKLIHHSPALVLRAYSKNNPDVQGADPTEMARDLVHLKEFVENTGLEEKMRLRIAQNEVEKGQRDIVFELKEMTRFYQVCYEYVKSTEHKIKVFILPAKAYTTTDFCALMQGNLIKDKEWYTVHYLKQILSGGHKAIMQHNATSEQNIAFECFKLIVHFADSFIEASSRSAFLQLVLEQFSYKDVRVHKLYDIIKNGHNRTDFIPLLFRTGDLKQADLDKYDAMKSHERVTWNDWQTSRHLDMGVINLTITGYNRSITIIGEDNKLTYAELCITRKTPENITISGRKLLSARHGLKFENMTKIPTYPGNYYITFRKKDRHQYVYQIHSHESITRRNEEHMAIRTRIFNEITPVCVVNVAEVDGDQRIFIRKLDFLNNDVFTLSRIKVGLDEFATIKKAHFSKMVSFDGPPIKTGLLDLTELMKSQDLLNLNYDNIRNSNLISFSKLICCEGSEDIDDGLEFLSDDPMNFTEGESIHSTPIFNIYYSKRGESHMTYRNAIKQLIDRETSTFEEAFTFSTNGFISPENLGCLEAIVSLIKILRTNEWSTVIDRCIHICLIKNGMDHMYHAFDIPKCFIDNPINRKVDWVMYREFINNLPATRIPPWNVMMDNFKKKCLALINSKLETQRDFSEFVQMMKKEGGRGNLEFD*"
+  }
+}

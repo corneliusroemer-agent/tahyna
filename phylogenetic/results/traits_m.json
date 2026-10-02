@@ -1,0 +1,951 @@
+{
+  "models": {
+    "country": {
+      "rate": 68.80968958887644,
+      "alphabet": [
+        "",
+        "Austria",
+        "China",
+        "Czech Republic",
+        "Czechoslovakia",
+        "France",
+        "Italy",
+        "Slovakia",
+        "?"
+      ],
+      "equilibrium_probabilities": [
+        0.12950825358065432,
+        0.12758780855851992,
+        0.15899841096875603,
+        0.12015775228952491,
+        0.11637002358197236,
+        0.11273583471341478,
+        0.11567895759686257,
+        0.11896295871029516
+      ],
+      "transition_matrix": [
+        [
+          0.0,
+          0.9524409072229757,
+          1.0252532241689258,
+          1.460150868221418,
+          1.4487354862987378,
+          0.957337372146681,
+          0.9515839666752407,
+          0.9518782045660225
+        ],
+        [
+          0.9524409072229757,
+          0.0,
+          1.0292974587087926,
+          1.7747550372294054,
+          0.9523439367467046,
+          0.9578981419967593,
+          0.9516709061962104,
+          1.1932481235126318
+        ],
+        [
+          1.0252532241689258,
+          1.0292974587087926,
+          0.0,
+          1.4047607657906707,
+          1.0164964446279423,
+          1.1855545765181976,
+          1.0163532575177883,
+          1.0181538118811932
+        ],
+        [
+          1.460150868221418,
+          1.7747550372294054,
+          1.4047607657906707,
+          0.0,
+          1.4449149756970654,
+          1.7663819200000213,
+          1.434714669842122,
+          1.517116075359602
+        ],
+        [
+          1.4487354862987378,
+          0.9523439367467046,
+          1.0164964446279423,
+          1.4449149756970654,
+          0.0,
+          0.955929509198139,
+          0.9507747773411606,
+          0.9535047435758753
+        ],
+        [
+          0.957337372146681,
+          0.9578981419967593,
+          1.1855545765181976,
+          1.7663819200000213,
+          0.955929509198139,
+          0.0,
+          0.9560343738551279,
+          0.9564100923110038
+        ],
+        [
+          0.9515839666752407,
+          0.9516709061962104,
+          1.0163532575177883,
+          1.434714669842122,
+          0.9507747773411606,
+          0.9560343738551279,
+          0.0,
+          0.951169494483648
+        ],
+        [
+          0.9518782045660225,
+          1.1932481235126318,
+          1.0181538118811932,
+          1.517116075359602,
+          0.9535047435758753,
+          0.9564100923110038,
+          0.951169494483648,
+          0.0
+        ]
+      ]
+    },
+    "region": {
+      "rate": 11.167005580728937,
+      "alphabet": [
+        "",
+        "Asia",
+        "Europe",
+        "?"
+      ],
+      "equilibrium_probabilities": [
+        0.3375674019070755,
+        0.39420239081526526,
+        0.26823020727765934
+      ],
+      "transition_matrix": [
+        [
+          0.0,
+          1.0271302195980994,
+          2.059111477083787
+        ],
+        [
+          1.0271302195980994,
+          0.0,
+          1.6727927187864957
+        ],
+        [
+          2.059111477083787,
+          1.6727927187864957,
+          0.0
+        ]
+      ]
+    }
+  },
+  "nodes": {
+    "NODE_0000013": {
+      "country": "China",
+      "country_confidence": {
+        "China": 0.15925104252464287,
+        "": 0.12943975242181405,
+        "Austria": 0.12754518153852384,
+        "Czech Republic": 0.12015474932498259,
+        "Slovakia": 0.11890594518379415,
+        "Czechoslovakia": 0.11630541079688651,
+        "Italy": 0.11561262576480492,
+        "France": 0.11278529244455103
+      },
+      "country_entropy": 2.0734886712858356,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 0.6405937192935985,
+        "Europe": 0.21802650187313202,
+        "": 0.14137977883326933
+      },
+      "region_entropy": 0.893961358177169
+    },
+    "NODE_0000002": {
+      "country": "China",
+      "country_confidence": {
+        "China": 0.15979057845883046,
+        "": 0.12933966149789639,
+        "Austria": 0.12745285661098635,
+        "Czech Republic": 0.12012792297490071,
+        "Slovakia": 0.1188110962568617,
+        "Czechoslovakia": 0.11621164168813712,
+        "Italy": 0.11551838820407777,
+        "France": 0.11274785430830936
+      },
+      "country_entropy": 2.0733384908448023,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 0.6963778550289983,
+        "Europe": 0.18089295402787064,
+        "": 0.12272919094313124
+      },
+      "region_entropy": 0.8187513124569237
+    },
+    "PJ01_OP727995": {
+      "country": "China",
+      "country_confidence": {
+        "China": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000001": {
+      "country": "China",
+      "country_confidence": {
+        "China": 0.6376012580471593,
+        "Czech Republic": 0.06242019213086791,
+        "France": 0.0528371891995775,
+        "": 0.052725708933475834,
+        "Austria": 0.05248861398910346,
+        "Slovakia": 0.04821051881840675,
+        "Czechoslovakia": 0.04701397870822981,
+        "Italy": 0.04670254017317941
+      },
+      "country_entropy": 1.3583220751747382,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 0.984023385944312,
+        "Europe": 0.010590386243614497,
+        "": 0.005386227812073497
+      },
+      "region_entropy": 0.0921485222015475
+    },
+    "XJ0710_HM243141": {
+      "country": "China",
+      "country_confidence": {
+        "China": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000000": {
+      "country": "China",
+      "country_confidence": {
+        "China": 0.9994191951263081
+      },
+      "country_entropy": 0.0060196427366160776,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 0.9999879720567147
+      },
+      "region_entropy": 0.0001550176677562279
+    },
+    "XJ0625_EU622819": {
+      "country": "China",
+      "country_confidence": {
+        "China": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "XJ0625_NC_055205": {
+      "country": "China",
+      "country_confidence": {
+        "China": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000003": {
+      "country": "China",
+      "country_confidence": {
+        "China": 0.1592092941457475,
+        "": 0.1294340552937243,
+        "Austria": 0.12755152352333587,
+        "Czech Republic": 0.12016411344999656,
+        "Slovakia": 0.11890494696947584,
+        "Czechoslovakia": 0.11630010954970907,
+        "Italy": 0.11560680524287932,
+        "France": 0.11282915182513167
+      },
+      "country_entropy": 2.0735028311748316,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 0.6173715803515678,
+        "Europe": 0.23707600480750335,
+        "": 0.14555241484092876
+      },
+      "region_entropy": 0.9195010945989986
+    },
+    "XJ0708_HM243138": {
+      "country": "China",
+      "country_confidence": {
+        "China": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Asia",
+      "region_confidence": {
+        "Asia": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000004": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.5859880979573665,
+        "France": 0.2550706308156334,
+        "China": 0.03470392011067868,
+        "Austria": 0.029950126273689405,
+        "": 0.025351755934960345,
+        "Slovakia": 0.02412831505015539,
+        "Czechoslovakia": 0.022543640599870265,
+        "Italy": 0.02226351325764595
+      },
+      "country_entropy": 1.2366029435554708,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9962707033082362,
+        "Asia": 0.00192268944027206,
+        "": 0.001806607251491795
+      },
+      "region_entropy": 0.02715797402657017
+    },
+    "Souche_D_C14019-29_HM036215": {
+      "country": "France",
+      "country_confidence": {
+        "France": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000005": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9716712322406417,
+        "France": 0.015284169199331482,
+        "Austria": 0.0028235384314529537,
+        "China": 0.0026380375553971703,
+        "": 0.0020326979335447805,
+        "Slovakia": 0.0019983408908918936,
+        "Czechoslovakia": 0.0017923838863761153,
+        "Italy": 0.001759599862363945
+      },
+      "country_entropy": 0.17157924746776126,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999017409455084
+      },
+      "region_entropy": 0.001072511334695145
+    },
+    "4060_GQ386840": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000006": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999999814202502
+      },
+      "country_entropy": 3.758807934280335e-07,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999949054
+      },
+      "region_entropy": 1.3783053307014085e-10
+    },
+    "4030_GQ386836": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000016": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999478033571219
+      },
+      "country_entropy": 0.000666740100193683,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999986264636221
+      },
+      "region_entropy": 2.0830170188378807e-05
+    },
+    "94_GQ386828": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "83_GQ386825": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000017": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9998900001168178
+      },
+      "country_entropy": 0.0013231474770535267,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999971637811008
+      },
+      "region_entropy": 4.0956042055228365e-05
+    },
+    "106_GQ386830": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "4020_GQ386835": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000007": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9998839789529878
+      },
+      "country_entropy": 0.001321989609276469,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999991517494531
+      },
+      "region_entropy": 1.3272153442123907e-05
+    },
+    "NODE_0000008": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9948620010828272,
+        "Austria": 0.004182219999816599
+      },
+      "country_entropy": 0.03637718577852355,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999965210028746
+      },
+      "region_entropy": 4.952651472268829e-05
+    },
+    "Austria/OadD823/2019_MZ245727": {
+      "country": "Austria",
+      "country_confidence": {
+        "Austria": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000009": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9996342497680105
+      },
+      "country_entropy": 0.003685270687062858,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999981380486349
+      },
+      "region_entropy": 2.7669159471804247e-05
+    },
+    "5060_GQ386841": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "4057_GQ386839": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000010": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9998105811938814
+      },
+      "country_entropy": 0.0020811193413117286,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999991429079733
+      },
+      "region_entropy": 1.3400912907984386e-05
+    },
+    "NODE_0000011": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999753243038586
+      },
+      "country_entropy": 0.00033381380507455956,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999993697888883
+      },
+      "region_entropy": 1.0048127549221445e-05
+    },
+    "76_GQ386824": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "4019_GQ386834": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000012": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9933331883956319,
+        "Italy": 0.0049121770439778745
+      },
+      "country_entropy": 0.047010876862062685,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999948865580952
+      },
+      "region_entropy": 7.082724896788166e-05
+    },
+    "4034_GQ386838": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "404118_ON156451": {
+      "country": "Italy",
+      "country_confidence": {
+        "Italy": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000018": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999151679783181
+      },
+      "country_entropy": 0.0010401775811312592,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999984171014427
+      },
+      "region_entropy": 2.378054113700099e-05
+    },
+    "29_GQ386823": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000019": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9994811995489381
+      },
+      "country_entropy": 0.005074859229483991,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999994892180281
+      },
+      "region_entropy": 8.250201223935081e-06
+    },
+    "NODE_0000020": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999337153354982
+      },
+      "country_entropy": 0.0008291337606306271,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999987585524285
+      },
+      "region_entropy": 1.8949993340136797e-05
+    },
+    "105_GQ386829": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000021": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999460362094713
+      },
+      "country_entropy": 0.0006863319081406951,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999981296769758
+      },
+      "region_entropy": 2.7574531323093748e-05
+    },
+    "1014_GQ386833": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000022": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9997351297946927
+      },
+      "country_entropy": 0.002646961629362169,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.999950932199785
+      },
+      "region_entropy": 0.0005385098113349755
+    },
+    "NODE_0000023": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.983159888030413,
+        "": 0.015851638287947663
+      },
+      "country_entropy": 0.09099088825024561,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9924052230514454,
+        "": 0.007572002496602231
+      },
+      "region_entropy": 0.04478566179078628
+    },
+    "181-57_AF229129": {
+      "country": "",
+      "country_confidence": {
+        "": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13,
+      "region": "",
+      "region_confidence": {
+        "": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "181_GQ386831": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000024": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9999395671103579
+      },
+      "country_entropy": 0.0007616338859300351,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999978289324942
+      },
+      "region_entropy": 3.168651721402494e-05
+    },
+    "90_GQ386827": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "89_GQ386826": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000025": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9664795106868824,
+        "Czechoslovakia": 0.02318987942921737,
+        "Slovakia": 0.006048983959969154,
+        "Austria": 0.0022224822232227745,
+        "": 0.0010759647951788165
+      },
+      "country_entropy": 0.17994291215548988,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999987743647588
+      },
+      "region_entropy": 1.854154430089825e-05
+    },
+    "NODE_0000026": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.9641568317858189,
+        "Slovakia": 0.018806558850629373,
+        "Czechoslovakia": 0.00903408645546746,
+        "Austria": 0.006086703040345875
+      },
+      "country_entropy": 0.19806050692411326,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999990343752422
+      },
+      "region_entropy": 1.4982114469771618e-05
+    },
+    "4033_GQ386837": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "NODE_0000027": {
+      "country": "Czech Republic",
+      "country_confidence": {
+        "Czech Republic": 0.5341703353879084,
+        "Slovakia": 0.34907595207034964,
+        "Austria": 0.09718484602200426,
+        "Czechoslovakia": 0.006469557268578322,
+        "China": 0.004059917807082385,
+        "France": 0.0032167164484509765,
+        "": 0.003179532750430907,
+        "Italy": 0.0026431422451951383
+      },
+      "country_entropy": 1.0362922174051006,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999971244999142
+      },
+      "region_entropy": 4.1483695886479634e-05
+    },
+    "236_GQ386832": {
+      "country": "Slovakia",
+      "country_confidence": {
+        "Slovakia": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "Austria/OadD806/2019_MZ245726": {
+      "country": "Austria",
+      "country_confidence": {
+        "Austria": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000028": {
+      "country": "Czechoslovakia",
+      "country_confidence": {
+        "Czechoslovakia": 0.9543227848406052,
+        "": 0.026802403664603385,
+        "Czech Republic": 0.018220971486818557
+      },
+      "country_entropy": 0.22043630917539073,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9998812304224914
+      },
+      "region_entropy": 0.0011942761626469983
+    },
+    "Bardos_92_AF123485": {
+      "country": "",
+      "country_confidence": {
+        "": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13,
+      "region": "",
+      "region_confidence": {
+        "": 0.9999999999999999
+      },
+      "region_entropy": -9.99866855976916e-13
+    },
+    "22595-6_HM036218": {
+      "country": "Czechoslovakia",
+      "country_confidence": {
+        "Czechoslovakia": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "NODE_0000030": {
+      "country": "Czechoslovakia",
+      "country_confidence": {
+        "Czechoslovakia": 0.9994480611836002
+      },
+      "country_entropy": 0.005173649098035518,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 0.9999987771938563
+      },
+      "region_entropy": 1.840136507268944e-05
+    },
+    "Prototype_92_Bardos_HM036209": {
+      "country": "Czechoslovakia",
+      "country_confidence": {
+        "Czechoslovakia": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    },
+    "Prototype_92_Bardos_HM036212": {
+      "country": "Czechoslovakia",
+      "country_confidence": {
+        "Czechoslovakia": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12,
+      "region": "Europe",
+      "region_confidence": {
+        "Europe": 1.0
+      },
+      "region_entropy": -1.000088900581841e-12
+    }
+  },
+  "generated_by": {
+    "program": "augur",
+    "version": "34.0.0"
+  }
+}

@@ -3,12 +3,12 @@ Phylogenetic Snakefile for Tahyna virus (TAHV).
 
 One time-resolved build per genome segment (S, M, L): filter the curated ingest
 output to the segment + a per-segment length floor, align and QC with nextclade
-(treeless, custom reference), QC-gate, then the standard augur chain
-(tree -> refine -> ancestral -> translate -> traits -> export).
-
-CHECKPOINT (2026-10-02): the DAG below intentionally stops after the nextclade
-align+QC stage. The QC gate and tree-building rules are added after the QC
-criterion is reviewed (docs/qc-review.md).
+(treeless, custom reference), apply the approved QC gate (coverage / missing
+data / divergence band / frameshifts / stops, with a config exceptions list),
+then the standard augur chain: tree (iqtree, augur defaults = fixed GTR) ->
+refine (unpinned timetree, root best, coalescent opt, iqd 10, no
+stochastic-resolve) -> ancestral (joint) -> translate (GFF3) -> traits ->
+export v2 (generous colorings, root sequence inline).
 
 Run (from this directory):
     snakemake -s Snakefile -j4 --dry-run
@@ -33,8 +33,7 @@ def seg_label(wc) -> str:
 
 rule all:
     input:
-        expand("results/aligned_{segment}.fasta", segment=SEGMENTS),
-        expand("results/nextclade_{segment}.tsv", segment=SEGMENTS),
+        expand("auspice/tahyna_{segment}.json", segment=SEGMENTS),
 
 
 # --- Inputs from ingest ------------------------------------------------------
@@ -118,4 +117,225 @@ rule nextclade:
             --output-fasta {output.fasta:q} \
             --output-tsv {output.tsv:q} \
             {input.sequences:q}
+        """
+
+
+# --- QC gate (approved 2026-10-02, docs/qc-review.md) -------------------------
+rule filter_qc:
+    input:
+        metadata="results/filtered_{segment}_metadata.tsv",
+        nextclade="results/nextclade_{segment}.tsv",
+        script="bin/apply_qc_gate.py",
+    output:
+        metadata="results/qc_pass_{segment}_metadata.tsv",
+        report="results/dropped_{segment}_qc.tsv",
+    params:
+        min_coverage=config["qc_gate"]["min_coverage"],
+        missing_data_max=lambda wc: config["qc_gate"]["missing_data_max"][wc.segment],
+        max_subs=lambda wc: round(
+            config["qc_gate"]["max_substitutions_frac"] * config["segments"][wc.segment]["ref_length"]
+        ),
+        zero_frameshifts=config["qc_gate"]["zero_frameshifts"],
+        zero_stop_codons=config["qc_gate"]["zero_stop_codons"],
+        exceptions=" ".join(config["qc_gate"].get("exceptions", [])),
+    log:
+        "logs/filter_qc_{segment}.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        python3 {input.script:q} \
+            --metadata {input.metadata:q} \
+            --nextclade {input.nextclade:q} \
+            --min-coverage {params.min_coverage} \
+            --missing-data-max {params.missing_data_max} \
+            --max-subs {params.max_subs} \
+            --exceptions {params.exceptions} \
+            --output {output.metadata:q} \
+            --report {output.report:q}
+        """
+
+
+rule subset_alignment:
+    input:
+        metadata="results/qc_pass_{segment}_metadata.tsv",
+        sequences="results/aligned_{segment}.fasta",
+    output:
+        "results/aligned_qc_{segment}.fasta",
+    log:
+        "logs/subset_alignment_{segment}.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur filter \
+            --metadata {input.metadata:q} \
+            --sequences {input.sequences:q} \
+            --output-sequences {output:q}
+        """
+
+
+# --- Tree chain ----------------------------------------------------------------
+rule tree:
+    input:
+        "results/aligned_qc_{segment}.fasta",
+    output:
+        "results/tree_raw_{segment}.nwk",
+    params:
+        nthreads=config["tree"]["nthreads"],
+    log:
+        "logs/tree_{segment}.log",
+    benchmark:
+        "benchmarks/tree_{segment}.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur tree \
+            --method iqtree \
+            --alignment {input:q} \
+            --output {output:q} \
+            --nthreads {params.nthreads}
+        """
+
+
+def refine_flags(wc) -> str:
+    """refine flag string for one build: locked defaults + per-segment overrides.
+
+    The S build overrides timetree/root (negative rate estimate on every
+    rooting; see config.yaml `refine.overrides` and docs/qc-review.md), so its
+    refine runs divergence-only.
+    """
+    override = config["refine"].get("overrides", {}).get(wc.segment, {})
+    if not override.get("timetree", True):
+        return ""
+    root = override.get("root", config["refine"]["root"]) or config["refine"]["root"]
+    return (
+        "--timetree --date-confidence "
+        f"--coalescent {config['refine']['coalescent']} "
+        f"--date-inference {config['refine']['date_inference']} "
+        f"--root {root} "
+    )
+
+
+rule refine:
+    input:
+        tree="results/tree_raw_{segment}.nwk",
+        alignment="results/aligned_qc_{segment}.fasta",
+        metadata="results/qc_pass_{segment}_metadata.tsv",
+    output:
+        tree="results/tree_{segment}.nwk",
+        node_data="results/refine_{segment}.json",
+    params:
+        flags=refine_flags,
+        clock_filter_iqd=config["refine"]["clock_filter_iqd"],
+    log:
+        "logs/refine_{segment}.log",
+    benchmark:
+        "benchmarks/refine_{segment}.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur refine \
+            --tree {input.tree:q} \
+            --alignment {input.alignment:q} \
+            --metadata {input.metadata:q} \
+            --output-tree {output.tree:q} \
+            --output-node-data {output.node_data:q} \
+            {params.flags} \
+            --clock-filter-iqd {params.clock_filter_iqd}
+        """
+
+
+rule ancestral:
+    input:
+        tree="results/tree_{segment}.nwk",
+        alignment="results/aligned_qc_{segment}.fasta",
+    output:
+        "results/nt_muts_{segment}.json",
+    params:
+        inference=config["ancestral"]["inference"],
+    log:
+        "logs/ancestral_{segment}.log",
+    benchmark:
+        "benchmarks/ancestral_{segment}.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur ancestral \
+            --tree {input.tree:q} \
+            --alignment {input.alignment:q} \
+            --inference {params.inference} \
+            --output-node-data {output:q}
+        """
+
+
+# aa annotation, isolated behind this one rule: swapping to a nextclade-based
+# translation later means changing only here.
+rule translate:
+    input:
+        tree="results/tree_{segment}.nwk",
+        ancestral="results/nt_muts_{segment}.json",
+        reference=lambda wc: os.path.join(config["references"][wc.segment], "annotation.gff3"),
+    output:
+        "results/aa_muts_{segment}.json",
+    log:
+        "logs/translate_{segment}.log",
+    benchmark:
+        "benchmarks/translate_{segment}.txt",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur translate \
+            --tree {input.tree:q} \
+            --ancestral-sequences {input.ancestral:q} \
+            --reference-sequence {input.reference:q} \
+            --output-node-data {output:q}
+        """
+
+
+rule traits:
+    input:
+        tree="results/tree_{segment}.nwk",
+        metadata="results/qc_pass_{segment}_metadata.tsv",
+    output:
+        "results/traits_{segment}.json",
+    params:
+        columns=" ".join(config["traits"]["columns"]),
+    log:
+        "logs/traits_{segment}.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur traits \
+            --tree {input.tree:q} \
+            --metadata {input.metadata:q} \
+            --columns {params.columns} \
+            --confidence \
+            --output-node-data {output:q}
+        """
+
+
+rule export:
+    input:
+        tree="results/tree_{segment}.nwk",
+        node_data=[
+            "results/refine_{segment}.json",
+            "results/nt_muts_{segment}.json",
+            "results/aa_muts_{segment}.json",
+            "results/traits_{segment}.json",
+        ],
+        metadata="results/qc_pass_{segment}_metadata.tsv",
+        auspice_config="defaults/auspice_config.json",
+    output:
+        "auspice/tahyna_{segment}.json",
+    log:
+        "logs/export_{segment}.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        augur export v2 \
+            --tree {input.tree:q} \
+            --node-data {input.node_data} \
+            --metadata {input.metadata:q} \
+            --auspice-config {input.auspice_config:q} \
+            --include-root-sequence-inline \
+            --output {output:q}
         """

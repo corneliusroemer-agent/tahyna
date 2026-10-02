@@ -12,6 +12,12 @@ writes results/metadata.tsv with segment columns final:
   ncl_cov_s/m/l   nextclade coverage against each segment reference
                   (0 when nextclade excluded the sequence from that run)
   ncl_subs        totalSubstitutions on the assigned segment
+  segment_label_conflict  true when the nextclade coverage argmax disagrees
+                  with the NCBI segment label (flag only, never overridden)
+  duplicate_isolate       true when an isolate has >= 2 records for the same
+                  segment (e.g. the two Bardos-92 clones HM036208-213, or
+                  XJ0625's GenBank + RefSeq trios) - its tips are not
+                  independent isolates
   assembly        isolate grouping for tanglegram-style views: the pure
                   isolate name (`isolate` column) when >= 2 records of that
                   isolate carry >= 2 distinct non-empty segments; empty
@@ -65,7 +71,7 @@ def main() -> None:
     for col in (NCL_COV_COLS[s] for s in args.segments):
         if col not in fieldnames:
             fieldnames.append(col)
-    for col in ("segment_source", "ncl_subs", "assembly"):
+    for col in ("segment_source", "ncl_subs", "segment_label_conflict", "duplicate_isolate", "assembly"):
         if col not in fieldnames:
             fieldnames.append(col)
 
@@ -78,6 +84,12 @@ def main() -> None:
         if label:
             rec["segment_source"] = "ncbi"
             best = label
+            # flag-only: does the coverage argmax disagree with the NCBI label?
+            # (only meaningful where nextclade aligned the record at all)
+            scores = {s: ncl[s].get(seq_id, {}).get("coverage", 0.0) for s in args.segments}
+            argmax_seg = max(scores, key=scores.get).upper()
+            best_cov = max(scores.values())
+            rec["segment_label_conflict"] = "true" if best_cov > 0 and argmax_seg != best else ""
         else:
             scores = {s: ncl[s].get(seq_id, {}).get("coverage", 0.0) for s in args.segments}
             best_seg = max(scores, key=scores.get)
@@ -90,6 +102,20 @@ def main() -> None:
         rec["segment"] = best
         rec["ncl_subs"] = str(ncl[best.lower()].get(seq_id, {}).get("subs", "")) if best else ""
         assigned.append(rec)
+
+    # duplicate_isolate: an isolate with >=2 records for the same segment has
+    # more than one genome sequenced (clones, GenBank+RefSeq) - its tips are
+    # not independent isolates. Flag every record of such an isolate.
+    per_isolate_segment = {}
+    for rec in assigned:
+        isolate = (rec.get("isolate") or "").strip()
+        if isolate and rec["segment"]:
+            per_isolate_segment.setdefault(isolate, {}).setdefault(rec["segment"], 0)
+            per_isolate_segment[isolate][rec["segment"]] += 1
+    for rec in assigned:
+        isolate = (rec.get("isolate") or "").strip()
+        seg_counts = per_isolate_segment.get(isolate, {})
+        rec["duplicate_isolate"] = "true" if any(n >= 2 for n in seg_counts.values()) else ""
 
     # assembly: pure isolate name, >=2 records, >=2 distinct non-empty segments
     by_isolate = {}

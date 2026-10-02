@@ -1,0 +1,734 @@
+{
+  "annotations": {
+    "KM532_sMgp1": {
+      "end": 4384,
+      "seqid": "../references/m/annotation.gff3",
+      "start": 62,
+      "strand": "+",
+      "type": "gene"
+    },
+    "nuc": {
+      "end": 4489,
+      "seqid": "../references/m/annotation.gff3",
+      "start": 1,
+      "strand": "+",
+      "type": "##sequence-region pragma"
+    }
+  },
+  "generated_by": {
+    "program": "augur",
+    "version": "34.0.0"
+  },
+  "nodes": {
+    "1014_GQ386833": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "Q426K",
+          "K663R",
+          "A674V",
+          "F706S",
+          "Y808F",
+          "D881G",
+          "F1205I"
+        ]
+      }
+    },
+    "105_GQ386829": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "106_GQ386830": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "F717S",
+          "G1031D"
+        ]
+      }
+    },
+    "181-57_AF229129": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "I470L",
+          "N497S",
+          "D636N",
+          "I833T",
+          "F835L",
+          "V1184A",
+          "I1272V",
+          "L1282S",
+          "V1295I",
+          "D1365V"
+        ]
+      }
+    },
+    "181_GQ386831": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "22595-6_HM036218": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "W583L",
+          "K823E"
+        ]
+      }
+    },
+    "236_GQ386832": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "V367I",
+          "V755I",
+          "F829L",
+          "G1228S",
+          "T1425A"
+        ]
+      }
+    },
+    "29_GQ386823": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "N511D",
+          "V1048M",
+          "A1339V",
+          "R1376K"
+        ]
+      }
+    },
+    "4019_GQ386834": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "Q601R",
+          "F715S"
+        ]
+      }
+    },
+    "4020_GQ386835": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "P682S",
+          "T722P"
+        ]
+      }
+    },
+    "4030_GQ386836": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "H398N",
+          "V671I",
+          "T1093I",
+          "I1272V",
+          "P1293S"
+        ]
+      }
+    },
+    "4033_GQ386837": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "R388G",
+          "N497S"
+        ]
+      }
+    },
+    "4034_GQ386838": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "I228T",
+          "V468I",
+          "Y565C",
+          "D611N",
+          "A792T",
+          "S913N"
+        ]
+      }
+    },
+    "404118_ON156451": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "I215T",
+          "M362I",
+          "T435A",
+          "T515A",
+          "W618R",
+          "E710D",
+          "E813G",
+          "T895A",
+          "V1232I",
+          "V1267I",
+          "T1299A",
+          "M1341L",
+          "I1412V"
+        ]
+      }
+    },
+    "4057_GQ386839": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "V161G",
+          "K1002R",
+          "I1272V",
+          "L1282S"
+        ]
+      }
+    },
+    "4060_GQ386840": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "V317I",
+          "L434Q",
+          "I833T",
+          "M1406I"
+        ]
+      }
+    },
+    "5060_GQ386841": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "P720S",
+          "N915S",
+          "M960I"
+        ]
+      }
+    },
+    "76_GQ386824": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "E428G"
+        ]
+      }
+    },
+    "83_GQ386825": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "D699G",
+          "M711V"
+        ]
+      }
+    },
+    "89_GQ386826": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "E718G",
+          "G1051S",
+          "V1260A",
+          "D1365G"
+        ]
+      }
+    },
+    "90_GQ386827": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "S85A",
+          "N739D",
+          "D867N",
+          "V1300A"
+        ]
+      }
+    },
+    "94_GQ386828": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "G432A",
+          "I694V",
+          "I1272V",
+          "L1282S",
+          "V1295I"
+        ]
+      }
+    },
+    "Austria/OadD806/2019_MZ245726": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "K504M",
+          "T1283I",
+          "A1335V"
+        ]
+      }
+    },
+    "Austria/OadD823/2019_MZ245727": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "E536D",
+          "P720S",
+          "V1156I"
+        ]
+      }
+    },
+    "Bardos_92_AF123485": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "A485V",
+          "I975L"
+        ]
+      }
+    },
+    "NODE_0000000": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "A12T",
+          "I313V",
+          "T581K",
+          "K749Q",
+          "V755I",
+          "N857H",
+          "E1366V",
+          "I1410V"
+        ]
+      }
+    },
+    "NODE_0000001": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "S85A",
+          "I168V",
+          "F217L",
+          "I228L",
+          "N349S",
+          "N355Q",
+          "I373V",
+          "T485I",
+          "D486N",
+          "N622S",
+          "S633L",
+          "I658V",
+          "K666N",
+          "I671V",
+          "T701S",
+          "K718N",
+          "V719S",
+          "E731D",
+          "S778T",
+          "R781K",
+          "Q786R",
+          "S800A",
+          "R823K",
+          "D927N",
+          "S1018A",
+          "I1264V",
+          "N1321A",
+          "P1329Q",
+          "I1402L",
+          "S1404T",
+          "I1408V",
+          "I1411V"
+        ]
+      }
+    },
+    "NODE_0000002": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "V457I",
+          "A485T",
+          "V525I",
+          "A674T",
+          "T738N",
+          "V740I",
+          "A855T",
+          "T1093A",
+          "A1140S"
+        ]
+      }
+    },
+    "NODE_0000003": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "N349S",
+          "K718E",
+          "D828E"
+        ]
+      }
+    },
+    "NODE_0000004": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "F217L",
+          "V239I",
+          "I354V",
+          "I362M",
+          "V363I",
+          "I366A",
+          "I373L",
+          "I377L",
+          "I381L",
+          "V452T",
+          "L460I",
+          "V464I",
+          "Q472H",
+          "E474D",
+          "P509S",
+          "S511N",
+          "R533K",
+          "N549R",
+          "S573T",
+          "T629S",
+          "F646L",
+          "R663K",
+          "E669D",
+          "I671V",
+          "N672T",
+          "D679G",
+          "N699D",
+          "T704N",
+          "V716I",
+          "S730L",
+          "A733S",
+          "E784D",
+          "L816I",
+          "R823K",
+          "Q902R",
+          "E918D",
+          "S1018A",
+          "E1090D",
+          "L1092I",
+          "I1264V",
+          "T1295V",
+          "S1327T",
+          "N1334S",
+          "L1380F",
+          "I1406M",
+          "I1411V"
+        ]
+      }
+    },
+    "NODE_0000005": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "K56R",
+          "N636D",
+          "A855T",
+          "N867D"
+        ]
+      }
+    },
+    "NODE_0000006": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000007": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000008": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "M362I",
+          "E668G",
+          "R858K"
+        ]
+      }
+    },
+    "NODE_0000009": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000010": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "T810A"
+        ]
+      }
+    },
+    "NODE_0000011": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "G1009S",
+          "L1055I"
+        ]
+      }
+    },
+    "NODE_0000012": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "T1217I"
+        ]
+      }
+    },
+    "NODE_0000013": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      },
+      "aa_sequences": {
+        "KM532_sMgp1": "MMFVLFFIALSAASPVYQRCFQDGAIVKQNPSKQAVTEVCLKDDVSMIKTEARYFKNATGTYANNVAIRKWLVSDWHDCRPKKVSGGHINVIEVGDDLTLHTEAYVCNADCTIGVDKETAQVRLQTDTTNHFEIAGTTVKSGWFKSTTYITLDQTCEHLKVSCGPKSIQFHACFNQHMSCVRFLHRTILPGSIASSICQNVEIIILTVLTLLIFILFSILSKTYICYILMPIFIPLAYVYGVIYNKSCKKCKLCGLVYHPFTECGTHCVCGARYETSDRMKLHRASGLCPGYKSLRAARVMCKSKGPASILSIITAVLILTFVTPINAMVAGDTQETFKLEDLPDDMLNMAMKINMYYIMCIVNYIVTWSFIICALIIALIFKKYQHRFLNFYAMYCHECDMYHDRSGLKYNGDFTNKCRQCTCGQYEDAAGLLTHRKTYNCLVQYKSKWLVNFLIVYILLMLVKDSVLIVQAEGTDFEKCSGEADITWNCTGPFLNLGNCEKKQKKEPYSNIATQLKGLDAISVLDIPMISRIPEDIAGALRFIEEQNSYHVQLTAEYAMLTRYCDYYTQFSDNSGYSQTTWRVYLRSHDFEACILYPNQHFCRCVKHGDKCSSSNWDFANEMKNYYTGKQSKFNKDLNLALMSFHHAFRGTSSFYIAKLLREKKNEELINYAEKIKDKYPGNALLKAIIDYIKYMKNLTEMTNFKHDEMWDDFVFKVPPTKSPSVRRSESAYDFKTNVNSNPSHICKNIKTVVCLSPKSGVSYDSIIACGEPSQPSIYRKPESQVFQSNADQTHFCLSDTHCLENYETVGEEILDAIKKSRCWETDFTEYIQFKQSDGVRSCRMKDSGECTVATNRWPIILCDNNKFYYSELQKDYDKDQDIGHFCLSPRCNTIRHPINQKHISNCTWQVSHNNIEKIEVHELEDLEQYKKAITQKLQTSLTLFKYSKTKNLPHIKPMYKYITIEGTETAEGIESAYIESEIPALAGTSIGFKITSKSGKHLLDVIGYVKSASYSSVYTKLYTTGPTIGVNTKHDELCTGPCPVNVPHGTGWLTFAKERTSSWGCEEFGCLAISDGCVFGSCQDIIKEELTVYRKETEETTDVELCLTFADKTYCTNLNAITPIITDQFEVQFKTVEAYSLPRIIAVRNHEIMVGQINDIGVYSKGCGNVQKVNNTNYGNGVPKFDYLCHLASRKEVIVRKCFDNDYQACKFLQTPASYRLEEEGGSVTVIDYKKILGTIKMKAILGDVKYKTFADNVDLTIEGVCTGCINCFENIHCELTIHSTVEASCPVTSSCTVFHDRILITPNEHKYAIKVICNEKPGPSLPFKICNAKTDAAMTLADAKPILELAPVDQTTYIKEKDERCKTWMCRVRDEGLQVIFEPFKNLFGSYIGIFYTFIISLIAIFIIIYIVLPICFKLRDTLRQHEDAYKREMKIR*"
+      }
+    },
+    "NODE_0000016": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "A594V"
+        ]
+      }
+    },
+    "NODE_0000017": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "D699G"
+        ]
+      }
+    },
+    "NODE_0000018": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000019": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000020": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000021": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "D699G",
+          "S913N"
+        ]
+      }
+    },
+    "NODE_0000022": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "V457G"
+        ]
+      }
+    },
+    "NODE_0000023": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "E428G",
+          "Q601R"
+        ]
+      }
+    },
+    "NODE_0000024": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "I1123V"
+        ]
+      }
+    },
+    "NODE_0000025": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000026": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "NODE_0000027": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "I528M"
+        ]
+      }
+    },
+    "NODE_0000028": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "E593K",
+          "K698E",
+          "V727I"
+        ]
+      }
+    },
+    "NODE_0000030": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "G413E",
+          "P529S",
+          "Y627F",
+          "H708Y"
+        ]
+      }
+    },
+    "PJ01_OP727995": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "K56R",
+          "A58S",
+          "F217L",
+          "I228V",
+          "T337A",
+          "K339R",
+          "R437K",
+          "D466H",
+          "T488I",
+          "R533K",
+          "N549D",
+          "N600K",
+          "T629S",
+          "N636D",
+          "R663K",
+          "N667K",
+          "E668D",
+          "T674I",
+          "E675D",
+          "D679S",
+          "N699S",
+          "V716I",
+          "K718R",
+          "V719A",
+          "V755I",
+          "S775N",
+          "I779V",
+          "E784G",
+          "S785V",
+          "F788Y",
+          "V811I",
+          "G812S",
+          "L816I",
+          "V841I",
+          "N866D",
+          "I884V",
+          "H886Y",
+          "K950R",
+          "K952R",
+          "V1048M",
+          "G1051S",
+          "K1174R",
+          "N1321S",
+          "D1345E",
+          "L1350I"
+        ]
+      }
+    },
+    "Prototype_92_Bardos_HM036209": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "D346N",
+          "K593E"
+        ]
+      }
+    },
+    "Prototype_92_Bardos_HM036212": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "F338I",
+          "M350T",
+          "F620S",
+          "K631N"
+        ]
+      }
+    },
+    "Souche_D_C14019-29_HM036215": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "K465E",
+          "Q601R",
+          "D713E",
+          "K876E",
+          "T1327I",
+          "L1422I"
+        ]
+      }
+    },
+    "XJ0625_EU622819": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "XJ0625_NC_055205": {
+      "aa_muts": {
+        "KM532_sMgp1": []
+      }
+    },
+    "XJ0708_HM243138": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "M2I",
+          "F3L",
+          "F6V",
+          "I8V",
+          "N30S",
+          "V84I",
+          "T112I",
+          "F217L",
+          "V330I",
+          "D333E",
+          "I354L",
+          "I359L",
+          "V468I",
+          "E479D",
+          "D486G",
+          "T488I",
+          "P509S",
+          "S511N",
+          "D521N",
+          "E547D",
+          "D591N",
+          "P599S",
+          "T629S",
+          "F646L",
+          "A674V",
+          "K676E",
+          "D679K",
+          "I690V",
+          "T704A",
+          "N705S",
+          "D714E",
+          "F717Y",
+          "V719S",
+          "K723R",
+          "V727A",
+          "A733E",
+          "N743K",
+          "S745T",
+          "I747V",
+          "S775G",
+          "I779V",
+          "S785Q",
+          "S800L",
+          "E809T",
+          "G812N",
+          "E813D",
+          "S838G",
+          "T853A",
+          "T856A",
+          "D927N",
+          "K1022R",
+          "V1032I",
+          "K1035R",
+          "G1051N",
+          "M1155L",
+          "I1162L",
+          "N1177K",
+          "S1229T",
+          "V1294I",
+          "T1295I",
+          "P1326S",
+          "P1329S",
+          "K1331R",
+          "I1332V",
+          "A1335T",
+          "A1344T",
+          "T1359A",
+          "I1403L"
+        ]
+      }
+    },
+    "XJ0710_HM243141": {
+      "aa_muts": {
+        "KM532_sMgp1": [
+          "T476I",
+          "E623K",
+          "E668D",
+          "D679N",
+          "N699S",
+          "T1102A"
+        ]
+      }
+    }
+  },
+  "reference": {
+    "KM532_sMgp1": "MMFVLFFIALSAASPVYQRCFQDGAIVKQNPSKQAVTEVCLKDDVSMIKTEARYFKNATGTYANNVAIRKWLVSDWHDCRPKKVSGGHINVIEVGDDLTLHTEAYVCNADCTIGVDKETAQVRLQTDTTNHFEIAGTTVKSGWFKSTTYITLDQTCEHLKVSCGPKSIQFHACFNQHMSCVRFLHRTILPGSIASSICQNVEIIILTVLTLLIFILFSILSKTYICYILMPIFIPLAYVYGVIYNKSCKKCKLCGLVYHPFTECGTHCVCGARYETSDRMKLHRASGLCPGYKSLRAARVMCKSKGPASILSIITAVLILTFVTPINAMVAGDTQETFKLEDLPDDMLNMAMKINMYYIMCIVNYIVTWSFIICALIIALIFKKYQHRFLNFYAMYCHECDMYHDRSGLKYNGDFTNKCRQCTCGQYEDAAGLLTHRKTYNCLVQYKSKWLVNFLIVYILLMLVKDSVLIVQAEGTDFEKCSGEADITWNCTGPFLNLGNCEKKQKKEPYSNIATQLKGLDAISVLDIPMISRIPEDIAGALRFIEEQNSYHVQLTAEYAMLTRYCDYYTQFSDNSGYSQTTWRVYLRSHDFEACILYPNQHFCRCVKHGDKCSSSNWDFANEMKNYYTGKQSKFNKDLNLALMSFHHAFRGTSSFYIAKLLREKKNEELINYAEKIKDKYPGNALLKAIIDYIKYMKNLTEMTNFKHDEMWDDFVFKVPPTKSPSVRRSESAYDFKTNVNSNPSHICKNIKTVVCLSPKSGVSYDSIIACGEPSQPSIYRKPESQVFQSNADQTHFCLSDTHCLENYETVGEEILDAIKKSRCWETDFTEYIQFKQSDGVRSCRMKDSGECTVATNRWPIILCDNNKFYYSELQKDYDKDQDIGHFCLSPRCNTIRHPINQKHISNCTWQVSHNNIEKIEVHELEDLEQYKKAITQKLQTSLTLFKYSKTKNLPHIKPMYKYITIEGTETAEGIESAYIESEIPALAGTSIGFKITSKSGKHLLDVIGYVKSASYSSVYTKLYTTGPTIGVNTKHDELCTGPCPVNVPHGTGWLTFAKERTSSWGCEEFGCLAISDGCVFGSCQDIIKEELTVYRKETEETTDVELCLTFADKTYCTNLNAITPIITDQFEVQFKTVEAYSLPRIIAVRNHEIMVGQINDIGVYSKGCGNVQKVNNTNYGNGVPKFDYLCHLASRKEVIVRKCFDNDYQACKFLQTPASYRLEEEGGSVTVIDYKKILGTIKMKAILGDVKYKTFADNVDLTIEGVCTGCINCFENIHCELTIHSTVEASCPVTSSCTVFHDRILITPNEHKYAIKVICNEKPGPSLPFKICNAKTDAAMTLADAKPILELAPVDQTTYIKEKDERCKTWMCRVRDEGLQVIFEPFKNLFGSYIGIFYTFIISLIAIFIIIYIVLPICFKLRDTLRQHEDAYKREMKIR*"
+  }
+}

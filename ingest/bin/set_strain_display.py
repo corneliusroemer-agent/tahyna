@@ -51,6 +51,9 @@ def main() -> None:
     for rec in records:
         for field in args.init_empty_field:
             rec[field] = ""
+        # discrete collection year for auspice categorical coloring; "" when
+        # undated at this point (imputed dates are applied later in the pipe)
+        rec["year"] = (rec.get("date") or "")[:4].isdigit() and (rec.get("date") or "")[:4] or ""
 
     from collections import Counter
 
