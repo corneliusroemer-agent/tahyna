@@ -148,19 +148,19 @@
     "name": "NODE_0000000",
     "node_attrs": {
       "div": 0,
-      "country": {
-        "value": "China",
-        "confidence": {
-          "China": 1.0
-        },
-        "entropy": 0.000201
-      },
       "region": {
         "value": "Asia",
         "confidence": {
           "Asia": 1.0
         },
         "entropy": 1.3e-05
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 1.0
+        },
+        "entropy": 0.000201
       }
     },
     "branch_attrs": {
@@ -200,12 +200,8 @@
           "year": {
             "value": "2006"
           },
-          "country": {
-            "value": "China",
-            "confidence": {
-              "China": 1.0
-            },
-            "entropy": -1e-12
+          "segment": {
+            "value": "S"
           },
           "region": {
             "value": "Asia",
@@ -214,8 +210,12 @@
             },
             "entropy": -1e-12
           },
-          "segment": {
-            "value": "S"
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
           }
         },
         "branch_attrs": {
@@ -255,12 +255,8 @@
           "year": {
             "value": "2006"
           },
-          "country": {
-            "value": "China",
-            "confidence": {
-              "China": 1.0
-            },
-            "entropy": -1e-12
+          "segment": {
+            "value": "S"
           },
           "region": {
             "value": "Asia",
@@ -269,8 +265,12 @@
             },
             "entropy": -1e-12
           },
-          "segment": {
-            "value": "S"
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
           }
         },
         "branch_attrs": {
@@ -281,19 +281,19 @@
         "name": "NODE_0000001",
         "node_attrs": {
           "div": 0.00411842,
-          "country": {
-            "value": "China",
-            "confidence": {
-              "China": 1.0
-            },
-            "entropy": 0.00373
-          },
           "region": {
             "value": "Asia",
             "confidence": {
               "Asia": 1.0
             },
             "entropy": 0.000137
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": 0.00373
           }
         },
         "branch_attrs": {
@@ -337,12 +337,8 @@
               "year": {
                 "value": "2007"
               },
-              "country": {
-                "value": "China",
-                "confidence": {
-                  "China": 1.0
-                },
-                "entropy": -1e-12
+              "segment": {
+                "value": "S"
               },
               "region": {
                 "value": "Asia",
@@ -351,8 +347,12 @@
                 },
                 "entropy": -1e-12
               },
-              "segment": {
-                "value": "S"
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
               }
             },
             "branch_attrs": {
@@ -369,6 +369,13 @@
             "name": "NODE_0000002",
             "node_attrs": {
               "div": 0.00714207,
+              "region": {
+                "value": "Asia",
+                "confidence": {
+                  "Asia": 1.0
+                },
+                "entropy": 0.00139
+              },
               "country": {
                 "value": "China",
                 "confidence": {
@@ -376,13 +383,6 @@
                   "Czech Republic": 0.00166
                 },
                 "entropy": 0.0434
-              },
-              "region": {
-                "value": "Asia",
-                "confidence": {
-                  "Asia": 1.0
-                },
-                "entropy": 0.00139
               }
             },
             "branch_attrs": {
@@ -431,12 +431,8 @@
                   "year": {
                     "value": "2007"
                   },
-                  "country": {
-                    "value": "China",
-                    "confidence": {
-                      "China": 1.0
-                    },
-                    "entropy": -1e-12
+                  "segment": {
+                    "value": "S"
                   },
                   "region": {
                     "value": "Asia",
@@ -445,8 +441,12 @@
                     },
                     "entropy": -1e-12
                   },
-                  "segment": {
-                    "value": "S"
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
                   }
                 },
                 "branch_attrs": {
@@ -472,6 +472,15 @@
                 "name": "NODE_0000003",
                 "node_attrs": {
                   "div": 0.0309189,
+                  "region": {
+                    "value": "Asia",
+                    "confidence": {
+                      "Asia": 0.991,
+                      "Europe": 0.008,
+                      "": 0.00128
+                    },
+                    "entropy": 0.0564
+                  },
                   "country": {
                     "value": "China",
                     "confidence": {
@@ -485,15 +494,6 @@
                       "": 0.038
                     },
                     "entropy": 1.229
-                  },
-                  "region": {
-                    "value": "Asia",
-                    "confidence": {
-                      "Asia": 0.991,
-                      "Europe": 0.008,
-                      "": 0.00128
-                    },
-                    "entropy": 0.0564
                   }
                 },
                 "branch_attrs": {
@@ -536,19 +536,19 @@
                     "name": "NODE_0000004",
                     "node_attrs": {
                       "div": 0.0860749,
-                      "country": {
-                        "value": "China",
-                        "confidence": {
-                          "China": 0.999
-                        },
-                        "entropy": 0.00608
-                      },
                       "region": {
                         "value": "Asia",
                         "confidence": {
                           "Asia": 1.0
                         },
                         "entropy": 0.000272
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.999
+                        },
+                        "entropy": 0.00608
                       }
                     },
                     "branch_attrs": {
@@ -633,12 +633,8 @@
                           "year": {
                             "value": "2009"
                           },
-                          "country": {
-                            "value": "China",
-                            "confidence": {
-                              "China": 1.0
-                            },
-                            "entropy": -1e-12
+                          "segment": {
+                            "value": "S"
                           },
                           "region": {
                             "value": "Asia",
@@ -647,8 +643,12 @@
                             },
                             "entropy": -1e-12
                           },
-                          "segment": {
-                            "value": "S"
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
                           }
                         },
                         "branch_attrs": {
@@ -669,19 +669,19 @@
                         "name": "NODE_0000005",
                         "node_attrs": {
                           "div": 0.0860759,
-                          "country": {
-                            "value": "China",
-                            "confidence": {
-                              "China": 1.0
-                            },
-                            "entropy": 0.000404
-                          },
                           "region": {
                             "value": "Asia",
                             "confidence": {
                               "Asia": 1.0
                             },
                             "entropy": 1.73e-05
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": 0.000404
                           }
                         },
                         "branch_attrs": {
@@ -712,12 +712,8 @@
                               "year": {
                                 "value": "2009"
                               },
-                              "country": {
-                                "value": "China",
-                                "confidence": {
-                                  "China": 1.0
-                                },
-                                "entropy": -1e-12
+                              "segment": {
+                                "value": "S"
                               },
                               "region": {
                                 "value": "Asia",
@@ -726,8 +722,12 @@
                                 },
                                 "entropy": -1e-12
                               },
-                              "segment": {
-                                "value": "S"
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
                               }
                             },
                             "branch_attrs": {
@@ -772,12 +772,8 @@
                               "year": {
                                 "value": "2007"
                               },
-                              "country": {
-                                "value": "China",
-                                "confidence": {
-                                  "China": 1.0
-                                },
-                                "entropy": -1e-12
+                              "segment": {
+                                "value": "S"
                               },
                               "region": {
                                 "value": "Asia",
@@ -786,8 +782,12 @@
                                 },
                                 "entropy": -1e-12
                               },
-                              "segment": {
-                                "value": "S"
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
                               }
                             },
                             "branch_attrs": {
@@ -802,6 +802,15 @@
                     "name": "NODE_0000006",
                     "node_attrs": {
                       "div": 0.0395029,
+                      "region": {
+                        "value": "Asia",
+                        "confidence": {
+                          "Asia": 0.985,
+                          "Europe": 0.0137,
+                          "": 0.00152
+                        },
+                        "entropy": 0.0839
+                      },
                       "country": {
                         "value": "China",
                         "confidence": {
@@ -815,15 +824,6 @@
                           "": 0.0386
                         },
                         "entropy": 1.278
-                      },
-                      "region": {
-                        "value": "Asia",
-                        "confidence": {
-                          "Asia": 0.985,
-                          "Europe": 0.0137,
-                          "": 0.00152
-                        },
-                        "entropy": 0.0839
                       }
                     },
                     "branch_attrs": {
@@ -866,12 +866,8 @@
                           "year": {
                             "value": "2016"
                           },
-                          "country": {
-                            "value": "China",
-                            "confidence": {
-                              "China": 1.0
-                            },
-                            "entropy": -1e-12
+                          "segment": {
+                            "value": "S"
                           },
                           "region": {
                             "value": "Asia",
@@ -880,8 +876,12 @@
                             },
                             "entropy": -1e-12
                           },
-                          "segment": {
-                            "value": "S"
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
                           }
                         },
                         "branch_attrs": {
@@ -939,6 +939,15 @@
                         "name": "NODE_0000007",
                         "node_attrs": {
                           "div": 0.0660747,
+                          "region": {
+                            "value": "Asia",
+                            "confidence": {
+                              "Asia": 0.888,
+                              "Europe": 0.108,
+                              "": 0.00351
+                            },
+                            "entropy": 0.366
+                          },
                           "country": {
                             "value": "China",
                             "confidence": {
@@ -952,15 +961,6 @@
                               "": 0.0201
                             },
                             "entropy": 1.191
-                          },
-                          "region": {
-                            "value": "Asia",
-                            "confidence": {
-                              "Asia": 0.888,
-                              "Europe": 0.108,
-                              "": 0.00351
-                            },
-                            "entropy": 0.366
                           }
                         },
                         "branch_attrs": {
@@ -1007,19 +1007,19 @@
                             "name": "NODE_0000008",
                             "node_attrs": {
                               "div": 0.0772712,
-                              "country": {
-                                "value": "China",
-                                "confidence": {
-                                  "China": 1.0
-                                },
-                                "entropy": 0.00397
-                              },
                               "region": {
                                 "value": "Asia",
                                 "confidence": {
                                   "Asia": 1.0
                                 },
                                 "entropy": 0.000632
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": 0.00397
                               }
                             },
                             "branch_attrs": {
@@ -1077,12 +1077,8 @@
                                   "year": {
                                     "value": "2008"
                                   },
-                                  "country": {
-                                    "value": "China",
-                                    "confidence": {
-                                      "China": 1.0
-                                    },
-                                    "entropy": -1e-12
+                                  "segment": {
+                                    "value": "S"
                                   },
                                   "region": {
                                     "value": "Asia",
@@ -1091,8 +1087,12 @@
                                     },
                                     "entropy": -1e-12
                                   },
-                                  "segment": {
-                                    "value": "S"
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
                                   }
                                 },
                                 "branch_attrs": {
@@ -1126,12 +1126,8 @@
                                   "year": {
                                     "value": "2008"
                                   },
-                                  "country": {
-                                    "value": "China",
-                                    "confidence": {
-                                      "China": 1.0
-                                    },
-                                    "entropy": -1e-12
+                                  "segment": {
+                                    "value": "S"
                                   },
                                   "region": {
                                     "value": "Asia",
@@ -1140,8 +1136,12 @@
                                     },
                                     "entropy": -1e-12
                                   },
-                                  "segment": {
-                                    "value": "S"
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
                                   }
                                 },
                                 "branch_attrs": {
@@ -1154,19 +1154,19 @@
                             "name": "NODE_0000009",
                             "node_attrs": {
                               "div": 0.0811328,
-                              "country": {
-                                "value": "Czech Republic",
-                                "confidence": {
-                                  "Czech Republic": 0.999
-                                },
-                                "entropy": 0.00919
-                              },
                               "region": {
                                 "value": "Europe",
                                 "confidence": {
                                   "Europe": 1.0
                                 },
                                 "entropy": 0.00293
+                              },
+                              "country": {
+                                "value": "Czech Republic",
+                                "confidence": {
+                                  "Czech Republic": 0.999
+                                },
+                                "entropy": 0.00919
                               }
                             },
                             "branch_attrs": {
@@ -1202,19 +1202,19 @@
                                 "name": "NODE_0000010",
                                 "node_attrs": {
                                   "div": 0.0811338,
-                                  "country": {
-                                    "value": "Czech Republic",
-                                    "confidence": {
-                                      "Czech Republic": 1.0
-                                    },
-                                    "entropy": 0.000235
-                                  },
                                   "region": {
                                     "value": "Europe",
                                     "confidence": {
                                       "Europe": 1.0
                                     },
                                     "entropy": 2.64e-05
+                                  },
+                                  "country": {
+                                    "value": "Czech Republic",
+                                    "confidence": {
+                                      "Czech Republic": 1.0
+                                    },
+                                    "entropy": 0.000235
                                   }
                                 },
                                 "branch_attrs": {
@@ -1248,12 +1248,8 @@
                                       "year": {
                                         "value": "1963"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
-                                        "confidence": {
-                                          "Czech Republic": 1.0
-                                        },
-                                        "entropy": -1e-12
+                                      "segment": {
+                                        "value": "S"
                                       },
                                       "region": {
                                         "value": "Europe",
@@ -1262,8 +1258,12 @@
                                         },
                                         "entropy": -1e-12
                                       },
-                                      "segment": {
-                                        "value": "S"
+                                      "country": {
+                                        "value": "Czech Republic",
+                                        "confidence": {
+                                          "Czech Republic": 1.0
+                                        },
+                                        "entropy": -1e-12
                                       }
                                     },
                                     "branch_attrs": {
@@ -1297,12 +1297,8 @@
                                       "year": {
                                         "value": "1966"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
-                                        "confidence": {
-                                          "Czech Republic": 1.0
-                                        },
-                                        "entropy": -1e-12
+                                      "segment": {
+                                        "value": "S"
                                       },
                                       "region": {
                                         "value": "Europe",
@@ -1311,8 +1307,12 @@
                                         },
                                         "entropy": -1e-12
                                       },
-                                      "segment": {
-                                        "value": "S"
+                                      "country": {
+                                        "value": "Czech Republic",
+                                        "confidence": {
+                                          "Czech Republic": 1.0
+                                        },
+                                        "entropy": -1e-12
                                       }
                                     },
                                     "branch_attrs": {
@@ -1325,19 +1325,19 @@
                                 "name": "NODE_0000011",
                                 "node_attrs": {
                                   "div": 0.0821567,
-                                  "country": {
-                                    "value": "Czech Republic",
-                                    "confidence": {
-                                      "Czech Republic": 1.0
-                                    },
-                                    "entropy": 0.00208
-                                  },
                                   "region": {
                                     "value": "Europe",
                                     "confidence": {
                                       "Europe": 1.0
                                     },
                                     "entropy": 2.65e-05
+                                  },
+                                  "country": {
+                                    "value": "Czech Republic",
+                                    "confidence": {
+                                      "Czech Republic": 1.0
+                                    },
+                                    "entropy": 0.00208
                                   }
                                 },
                                 "branch_attrs": {
@@ -1352,19 +1352,19 @@
                                     "name": "NODE_0000012",
                                     "node_attrs": {
                                       "div": 0.0821577,
-                                      "country": {
-                                        "value": "Czech Republic",
-                                        "confidence": {
-                                          "Czech Republic": 1.0
-                                        },
-                                        "entropy": 0.000387
-                                      },
                                       "region": {
                                         "value": "Europe",
                                         "confidence": {
                                           "Europe": 1.0
                                         },
                                         "entropy": 1.28e-05
+                                      },
+                                      "country": {
+                                        "value": "Czech Republic",
+                                        "confidence": {
+                                          "Czech Republic": 1.0
+                                        },
+                                        "entropy": 0.000387
                                       }
                                     },
                                     "branch_attrs": {
@@ -1398,12 +1398,8 @@
                                           "year": {
                                             "value": "1963"
                                           },
-                                          "country": {
-                                            "value": "Czech Republic",
-                                            "confidence": {
-                                              "Czech Republic": 1.0
-                                            },
-                                            "entropy": -1e-12
+                                          "segment": {
+                                            "value": "S"
                                           },
                                           "region": {
                                             "value": "Europe",
@@ -1412,8 +1408,12 @@
                                             },
                                             "entropy": -1e-12
                                           },
-                                          "segment": {
-                                            "value": "S"
+                                          "country": {
+                                            "value": "Czech Republic",
+                                            "confidence": {
+                                              "Czech Republic": 1.0
+                                            },
+                                            "entropy": -1e-12
                                           }
                                         },
                                         "branch_attrs": {
@@ -1453,12 +1453,8 @@
                                           "year": {
                                             "value": "1966"
                                           },
-                                          "country": {
-                                            "value": "Czech Republic",
-                                            "confidence": {
-                                              "Czech Republic": 1.0
-                                            },
-                                            "entropy": -1e-12
+                                          "segment": {
+                                            "value": "S"
                                           },
                                           "region": {
                                             "value": "Europe",
@@ -1467,8 +1463,12 @@
                                             },
                                             "entropy": -1e-12
                                           },
-                                          "segment": {
-                                            "value": "S"
+                                          "country": {
+                                            "value": "Czech Republic",
+                                            "confidence": {
+                                              "Czech Republic": 1.0
+                                            },
+                                            "entropy": -1e-12
                                           }
                                         },
                                         "branch_attrs": {
@@ -1485,6 +1485,13 @@
                                     "name": "NODE_0000013",
                                     "node_attrs": {
                                       "div": 0.0821577,
+                                      "region": {
+                                        "value": "Europe",
+                                        "confidence": {
+                                          "Europe": 1.0
+                                        },
+                                        "entropy": 4.37e-06
+                                      },
                                       "country": {
                                         "value": "Czech Republic",
                                         "confidence": {
@@ -1492,13 +1499,6 @@
                                           "Slovakia": 0.00944
                                         },
                                         "entropy": 0.0577
-                                      },
-                                      "region": {
-                                        "value": "Europe",
-                                        "confidence": {
-                                          "Europe": 1.0
-                                        },
-                                        "entropy": 4.37e-06
                                       }
                                     },
                                     "branch_attrs": {
@@ -1532,12 +1532,8 @@
                                           "year": {
                                             "value": "1958"
                                           },
-                                          "country": {
-                                            "value": "Slovakia",
-                                            "confidence": {
-                                              "Slovakia": 1.0
-                                            },
-                                            "entropy": -1e-12
+                                          "segment": {
+                                            "value": "S"
                                           },
                                           "region": {
                                             "value": "Europe",
@@ -1546,8 +1542,12 @@
                                             },
                                             "entropy": -1e-12
                                           },
-                                          "segment": {
-                                            "value": "S"
+                                          "country": {
+                                            "value": "Slovakia",
+                                            "confidence": {
+                                              "Slovakia": 1.0
+                                            },
+                                            "entropy": -1e-12
                                           }
                                         },
                                         "branch_attrs": {
@@ -1558,19 +1558,19 @@
                                         "name": "NODE_0000014",
                                         "node_attrs": {
                                           "div": 0.0821587,
-                                          "country": {
-                                            "value": "Czech Republic",
-                                            "confidence": {
-                                              "Czech Republic": 1.0
-                                            },
-                                            "entropy": 0.00112
-                                          },
                                           "region": {
                                             "value": "Europe",
                                             "confidence": {
                                               "Europe": 1.0
                                             },
                                             "entropy": 4.26e-06
+                                          },
+                                          "country": {
+                                            "value": "Czech Republic",
+                                            "confidence": {
+                                              "Czech Republic": 1.0
+                                            },
+                                            "entropy": 0.00112
                                           }
                                         },
                                         "branch_attrs": {
@@ -1581,19 +1581,19 @@
                                             "name": "NODE_0000015",
                                             "node_attrs": {
                                               "div": 0.0821597,
-                                              "country": {
-                                                "value": "Czech Republic",
-                                                "confidence": {
-                                                  "Czech Republic": 1.0
-                                                },
-                                                "entropy": 0.000117
-                                              },
                                               "region": {
                                                 "value": "Europe",
                                                 "confidence": {
                                                   "Europe": 1.0
                                                 },
                                                 "entropy": 4.27e-06
+                                              },
+                                              "country": {
+                                                "value": "Czech Republic",
+                                                "confidence": {
+                                                  "Czech Republic": 1.0
+                                                },
+                                                "entropy": 0.000117
                                               }
                                             },
                                             "branch_attrs": {
@@ -1604,19 +1604,19 @@
                                                 "name": "NODE_0000016",
                                                 "node_attrs": {
                                                   "div": 0.0821607,
-                                                  "country": {
-                                                    "value": "Czech Republic",
-                                                    "confidence": {
-                                                      "Czech Republic": 1.0
-                                                    },
-                                                    "entropy": 0.000108
-                                                  },
                                                   "region": {
                                                     "value": "Europe",
                                                     "confidence": {
                                                       "Europe": 1.0
                                                     },
                                                     "entropy": 4.44e-06
+                                                  },
+                                                  "country": {
+                                                    "value": "Czech Republic",
+                                                    "confidence": {
+                                                      "Czech Republic": 1.0
+                                                    },
+                                                    "entropy": 0.000108
                                                   }
                                                 },
                                                 "branch_attrs": {
@@ -1650,12 +1650,8 @@
                                                       "year": {
                                                         "value": "1966"
                                                       },
-                                                      "country": {
-                                                        "value": "Czech Republic",
-                                                        "confidence": {
-                                                          "Czech Republic": 1.0
-                                                        },
-                                                        "entropy": -1e-12
+                                                      "segment": {
+                                                        "value": "S"
                                                       },
                                                       "region": {
                                                         "value": "Europe",
@@ -1664,8 +1660,12 @@
                                                         },
                                                         "entropy": -1e-12
                                                       },
-                                                      "segment": {
-                                                        "value": "S"
+                                                      "country": {
+                                                        "value": "Czech Republic",
+                                                        "confidence": {
+                                                          "Czech Republic": 1.0
+                                                        },
+                                                        "entropy": -1e-12
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -1680,19 +1680,19 @@
                                                     "name": "NODE_0000017",
                                                     "node_attrs": {
                                                       "div": 0.0831846,
-                                                      "country": {
-                                                        "value": "Czech Republic",
-                                                        "confidence": {
-                                                          "Czech Republic": 1.0
-                                                        },
-                                                        "entropy": 0.000104
-                                                      },
                                                       "region": {
                                                         "value": "Europe",
                                                         "confidence": {
                                                           "Europe": 1.0
                                                         },
                                                         "entropy": 4.32e-06
+                                                      },
+                                                      "country": {
+                                                        "value": "Czech Republic",
+                                                        "confidence": {
+                                                          "Czech Republic": 1.0
+                                                        },
+                                                        "entropy": 0.000104
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -1730,12 +1730,8 @@
                                                           "year": {
                                                             "value": "1963"
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -1744,8 +1740,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -1779,12 +1779,8 @@
                                                           "year": {
                                                             "value": "1963"
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -1793,8 +1789,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -1809,19 +1809,19 @@
                                                 "name": "NODE_0000018",
                                                 "node_attrs": {
                                                   "div": 0.0821607,
-                                                  "country": {
-                                                    "value": "Czech Republic",
-                                                    "confidence": {
-                                                      "Czech Republic": 1.0
-                                                    },
-                                                    "entropy": 0.000113
-                                                  },
                                                   "region": {
                                                     "value": "Europe",
                                                     "confidence": {
                                                       "Europe": 1.0
                                                     },
                                                     "entropy": 4.53e-06
+                                                  },
+                                                  "country": {
+                                                    "value": "Czech Republic",
+                                                    "confidence": {
+                                                      "Czech Republic": 1.0
+                                                    },
+                                                    "entropy": 0.000113
                                                   }
                                                 },
                                                 "branch_attrs": {
@@ -1832,19 +1832,19 @@
                                                     "name": "NODE_0000019",
                                                     "node_attrs": {
                                                       "div": 0.0831861,
-                                                      "country": {
-                                                        "value": "Czech Republic",
-                                                        "confidence": {
-                                                          "Czech Republic": 1.0
-                                                        },
-                                                        "entropy": 0.000318
-                                                      },
                                                       "region": {
                                                         "value": "Europe",
                                                         "confidence": {
                                                           "Europe": 1.0
                                                         },
                                                         "entropy": 1.28e-05
+                                                      },
+                                                      "country": {
+                                                        "value": "Czech Republic",
+                                                        "confidence": {
+                                                          "Czech Republic": 1.0
+                                                        },
+                                                        "entropy": 0.000318
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -1882,12 +1882,8 @@
                                                           "year": {
                                                             "value": "1963"
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -1896,8 +1892,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -1935,12 +1935,8 @@
                                                           "year": {
                                                             "value": "1966"
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -1949,8 +1945,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -1969,19 +1969,19 @@
                                                     "name": "NODE_0000020",
                                                     "node_attrs": {
                                                       "div": 0.0831846,
-                                                      "country": {
-                                                        "value": "Czech Republic",
-                                                        "confidence": {
-                                                          "Czech Republic": 1.0
-                                                        },
-                                                        "entropy": 0.000208
-                                                      },
                                                       "region": {
                                                         "value": "Europe",
                                                         "confidence": {
                                                           "Europe": 1.0
                                                         },
                                                         "entropy": 8.51e-06
+                                                      },
+                                                      "country": {
+                                                        "value": "Czech Republic",
+                                                        "confidence": {
+                                                          "Czech Republic": 1.0
+                                                        },
+                                                        "entropy": 0.000208
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -2019,12 +2019,8 @@
                                                             "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                                             "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -2033,8 +2029,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -2079,12 +2079,8 @@
                                                           "year": {
                                                             "value": "1962"
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -2093,8 +2089,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -2111,19 +2111,19 @@
                                             "name": "NODE_0000021",
                                             "node_attrs": {
                                               "div": 0.0821597,
-                                              "country": {
-                                                "value": "Czech Republic",
-                                                "confidence": {
-                                                  "Czech Republic": 1.0
-                                                },
-                                                "entropy": 0.000125
-                                              },
                                               "region": {
                                                 "value": "Europe",
                                                 "confidence": {
                                                   "Europe": 1.0
                                                 },
                                                 "entropy": 4.26e-06
+                                              },
+                                              "country": {
+                                                "value": "Czech Republic",
+                                                "confidence": {
+                                                  "Czech Republic": 1.0
+                                                },
+                                                "entropy": 0.000125
                                               }
                                             },
                                             "branch_attrs": {
@@ -2134,19 +2134,19 @@
                                                 "name": "NODE_0000022",
                                                 "node_attrs": {
                                                   "div": 0.0821607,
-                                                  "country": {
-                                                    "value": "Czech Republic",
-                                                    "confidence": {
-                                                      "Czech Republic": 1.0
-                                                    },
-                                                    "entropy": 0.000103
-                                                  },
                                                   "region": {
                                                     "value": "Europe",
                                                     "confidence": {
                                                       "Europe": 1.0
                                                     },
                                                     "entropy": 4.24e-06
+                                                  },
+                                                  "country": {
+                                                    "value": "Czech Republic",
+                                                    "confidence": {
+                                                      "Czech Republic": 1.0
+                                                    },
+                                                    "entropy": 0.000103
                                                   }
                                                 },
                                                 "branch_attrs": {
@@ -2180,12 +2180,8 @@
                                                       "year": {
                                                         "value": "1963"
                                                       },
-                                                      "country": {
-                                                        "value": "Czech Republic",
-                                                        "confidence": {
-                                                          "Czech Republic": 1.0
-                                                        },
-                                                        "entropy": -1e-12
+                                                      "segment": {
+                                                        "value": "S"
                                                       },
                                                       "region": {
                                                         "value": "Europe",
@@ -2194,8 +2190,12 @@
                                                         },
                                                         "entropy": -1e-12
                                                       },
-                                                      "segment": {
-                                                        "value": "S"
+                                                      "country": {
+                                                        "value": "Czech Republic",
+                                                        "confidence": {
+                                                          "Czech Republic": 1.0
+                                                        },
+                                                        "entropy": -1e-12
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -2206,19 +2206,19 @@
                                                     "name": "NODE_0000023",
                                                     "node_attrs": {
                                                       "div": 0.0821607,
-                                                      "country": {
-                                                        "value": "Czech Republic",
-                                                        "confidence": {
-                                                          "Czech Republic": 1.0
-                                                        },
-                                                        "entropy": 0.000103
-                                                      },
                                                       "region": {
                                                         "value": "Europe",
                                                         "confidence": {
                                                           "Europe": 1.0
                                                         },
                                                         "entropy": 4.24e-06
+                                                      },
+                                                      "country": {
+                                                        "value": "Czech Republic",
+                                                        "confidence": {
+                                                          "Czech Republic": 1.0
+                                                        },
+                                                        "entropy": 0.000103
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -2252,12 +2252,8 @@
                                                           "year": {
                                                             "value": "1963"
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -2266,8 +2262,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -2278,19 +2278,19 @@
                                                         "name": "NODE_0000024",
                                                         "node_attrs": {
                                                           "div": 0.0821607,
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": 0.000102
-                                                          },
                                                           "region": {
                                                             "value": "Europe",
                                                             "confidence": {
                                                               "Europe": 1.0
                                                             },
                                                             "entropy": 4.22e-06
+                                                          },
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": 0.000102
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -2324,12 +2324,8 @@
                                                               "year": {
                                                                 "value": "1963"
                                                               },
-                                                              "country": {
-                                                                "value": "Czech Republic",
-                                                                "confidence": {
-                                                                  "Czech Republic": 1.0
-                                                                },
-                                                                "entropy": -1e-12
+                                                              "segment": {
+                                                                "value": "S"
                                                               },
                                                               "region": {
                                                                 "value": "Europe",
@@ -2338,8 +2334,12 @@
                                                                 },
                                                                 "entropy": -1e-12
                                                               },
-                                                              "segment": {
-                                                                "value": "S"
+                                                              "country": {
+                                                                "value": "Czech Republic",
+                                                                "confidence": {
+                                                                  "Czech Republic": 1.0
+                                                                },
+                                                                "entropy": -1e-12
                                                               }
                                                             },
                                                             "branch_attrs": {
@@ -2373,12 +2373,8 @@
                                                               "year": {
                                                                 "value": "1966"
                                                               },
-                                                              "country": {
-                                                                "value": "Czech Republic",
-                                                                "confidence": {
-                                                                  "Czech Republic": 1.0
-                                                                },
-                                                                "entropy": -1e-12
+                                                              "segment": {
+                                                                "value": "S"
                                                               },
                                                               "region": {
                                                                 "value": "Europe",
@@ -2387,8 +2383,12 @@
                                                                 },
                                                                 "entropy": -1e-12
                                                               },
-                                                              "segment": {
-                                                                "value": "S"
+                                                              "country": {
+                                                                "value": "Czech Republic",
+                                                                "confidence": {
+                                                                  "Czech Republic": 1.0
+                                                                },
+                                                                "entropy": -1e-12
                                                               }
                                                             },
                                                             "branch_attrs": {
@@ -2405,19 +2405,19 @@
                                                 "name": "NODE_0000025",
                                                 "node_attrs": {
                                                   "div": 0.0821607,
-                                                  "country": {
-                                                    "value": "Czech Republic",
-                                                    "confidence": {
-                                                      "Czech Republic": 1.0
-                                                    },
-                                                    "entropy": 0.000586
-                                                  },
                                                   "region": {
                                                     "value": "Europe",
                                                     "confidence": {
                                                       "Europe": 1.0
                                                     },
                                                     "entropy": 4.38e-06
+                                                  },
+                                                  "country": {
+                                                    "value": "Czech Republic",
+                                                    "confidence": {
+                                                      "Czech Republic": 1.0
+                                                    },
+                                                    "entropy": 0.000586
                                                   }
                                                 },
                                                 "branch_attrs": {
@@ -2451,12 +2451,8 @@
                                                       "year": {
                                                         "value": "1966"
                                                       },
-                                                      "country": {
-                                                        "value": "Czech Republic",
-                                                        "confidence": {
-                                                          "Czech Republic": 1.0
-                                                        },
-                                                        "entropy": -1e-12
+                                                      "segment": {
+                                                        "value": "S"
                                                       },
                                                       "region": {
                                                         "value": "Europe",
@@ -2465,8 +2461,12 @@
                                                         },
                                                         "entropy": -1e-12
                                                       },
-                                                      "segment": {
-                                                        "value": "S"
+                                                      "country": {
+                                                        "value": "Czech Republic",
+                                                        "confidence": {
+                                                          "Czech Republic": 1.0
+                                                        },
+                                                        "entropy": -1e-12
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -2481,6 +2481,13 @@
                                                     "name": "NODE_0000026",
                                                     "node_attrs": {
                                                       "div": 0.0821617,
+                                                      "region": {
+                                                        "value": "Europe",
+                                                        "confidence": {
+                                                          "Europe": 1.0
+                                                        },
+                                                        "entropy": 1.25e-05
+                                                      },
                                                       "country": {
                                                         "value": "Czech Republic",
                                                         "confidence": {
@@ -2488,13 +2495,6 @@
                                                           "Austria": 0.00297
                                                         },
                                                         "entropy": 0.0215
-                                                      },
-                                                      "region": {
-                                                        "value": "Europe",
-                                                        "confidence": {
-                                                          "Europe": 1.0
-                                                        },
-                                                        "entropy": 1.25e-05
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -2528,12 +2528,8 @@
                                                           "year": {
                                                             "value": "1968"
                                                           },
-                                                          "country": {
-                                                            "value": "Czech Republic",
-                                                            "confidence": {
-                                                              "Czech Republic": 1.0
-                                                            },
-                                                            "entropy": -1e-12
+                                                          "segment": {
+                                                            "value": "S"
                                                           },
                                                           "region": {
                                                             "value": "Europe",
@@ -2542,8 +2538,12 @@
                                                             },
                                                             "entropy": -1e-12
                                                           },
-                                                          "segment": {
-                                                            "value": "S"
+                                                          "country": {
+                                                            "value": "Czech Republic",
+                                                            "confidence": {
+                                                              "Czech Republic": 1.0
+                                                            },
+                                                            "entropy": -1e-12
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -2560,6 +2560,13 @@
                                                         "name": "NODE_0000027",
                                                         "node_attrs": {
                                                           "div": 0.0831856,
+                                                          "region": {
+                                                            "value": "Europe",
+                                                            "confidence": {
+                                                              "Europe": 1.0
+                                                            },
+                                                            "entropy": 4.47e-06
+                                                          },
                                                           "country": {
                                                             "value": "Czech Republic",
                                                             "confidence": {
@@ -2567,13 +2574,6 @@
                                                               "Austria": 0.07
                                                             },
                                                             "entropy": 0.269
-                                                          },
-                                                          "region": {
-                                                            "value": "Europe",
-                                                            "confidence": {
-                                                              "Europe": 1.0
-                                                            },
-                                                            "entropy": 4.47e-06
                                                           }
                                                         },
                                                         "branch_attrs": {
@@ -2588,6 +2588,13 @@
                                                             "name": "NODE_0000028",
                                                             "node_attrs": {
                                                               "div": 0.0831866,
+                                                              "region": {
+                                                                "value": "Europe",
+                                                                "confidence": {
+                                                                  "Europe": 1.0
+                                                                },
+                                                                "entropy": 1.72e-05
+                                                              },
                                                               "country": {
                                                                 "value": "Austria",
                                                                 "confidence": {
@@ -2600,13 +2607,6 @@
                                                                   "Slovakia": 0.00142
                                                                 },
                                                                 "entropy": 0.93
-                                                              },
-                                                              "region": {
-                                                                "value": "Europe",
-                                                                "confidence": {
-                                                                  "Europe": 1.0
-                                                                },
-                                                                "entropy": 1.72e-05
                                                               }
                                                             },
                                                             "branch_attrs": {
@@ -2637,12 +2637,8 @@
                                                                   "year": {
                                                                     "value": "1968"
                                                                   },
-                                                                  "country": {
-                                                                    "value": "France",
-                                                                    "confidence": {
-                                                                      "France": 1.0
-                                                                    },
-                                                                    "entropy": -1e-12
+                                                                  "segment": {
+                                                                    "value": "S"
                                                                   },
                                                                   "region": {
                                                                     "value": "Europe",
@@ -2651,8 +2647,12 @@
                                                                     },
                                                                     "entropy": -1e-12
                                                                   },
-                                                                  "segment": {
-                                                                    "value": "S"
+                                                                  "country": {
+                                                                    "value": "France",
+                                                                    "confidence": {
+                                                                      "France": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
                                                                   }
                                                                 },
                                                                 "branch_attrs": {
@@ -2696,18 +2696,14 @@
                                                                     "author": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N.",
                                                                     "value": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N."
                                                                   },
-                                                                  "division": {
-                                                                    "value": "Lower Austria"
-                                                                  },
                                                                   "year": {
                                                                     "value": "2019"
                                                                   },
-                                                                  "country": {
-                                                                    "value": "Austria",
-                                                                    "confidence": {
-                                                                      "Austria": 1.0
-                                                                    },
-                                                                    "entropy": -1e-12
+                                                                  "location": {
+                                                                    "value": "Rohrau"
+                                                                  },
+                                                                  "segment": {
+                                                                    "value": "S"
                                                                   },
                                                                   "region": {
                                                                     "value": "Europe",
@@ -2716,11 +2712,15 @@
                                                                     },
                                                                     "entropy": -1e-12
                                                                   },
-                                                                  "location": {
-                                                                    "value": "Rohrau"
+                                                                  "division": {
+                                                                    "value": "Lower Austria"
                                                                   },
-                                                                  "segment": {
-                                                                    "value": "S"
+                                                                  "country": {
+                                                                    "value": "Austria",
+                                                                    "confidence": {
+                                                                      "Austria": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
                                                                   }
                                                                 },
                                                                 "branch_attrs": {
@@ -2737,6 +2737,13 @@
                                                             "name": "NODE_0000029",
                                                             "node_attrs": {
                                                               "div": 0.0831866,
+                                                              "region": {
+                                                                "value": "Europe",
+                                                                "confidence": {
+                                                                  "Europe": 1.0
+                                                                },
+                                                                "entropy": 4.52e-06
+                                                              },
                                                               "country": {
                                                                 "value": "Czech Republic",
                                                                 "confidence": {
@@ -2745,13 +2752,6 @@
                                                                   "Italy": 0.00221
                                                                 },
                                                                 "entropy": 0.263
-                                                              },
-                                                              "region": {
-                                                                "value": "Europe",
-                                                                "confidence": {
-                                                                  "Europe": 1.0
-                                                                },
-                                                                "entropy": 4.52e-06
                                                               }
                                                             },
                                                             "branch_attrs": {
@@ -2762,6 +2762,13 @@
                                                                 "name": "NODE_0000030",
                                                                 "node_attrs": {
                                                                   "div": 0.0831876,
+                                                                  "region": {
+                                                                    "value": "Europe",
+                                                                    "confidence": {
+                                                                      "Europe": 1.0
+                                                                    },
+                                                                    "entropy": 4.94e-05
+                                                                  },
                                                                   "country": {
                                                                     "value": "Czech Republic",
                                                                     "confidence": {
@@ -2775,13 +2782,6 @@
                                                                       "": 0.00145
                                                                     },
                                                                     "entropy": 0.907
-                                                                  },
-                                                                  "region": {
-                                                                    "value": "Europe",
-                                                                    "confidence": {
-                                                                      "Europe": 1.0
-                                                                    },
-                                                                    "entropy": 4.94e-05
                                                                   }
                                                                 },
                                                                 "branch_attrs": {
@@ -2812,18 +2812,14 @@
                                                                         "author": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N.",
                                                                         "value": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N."
                                                                       },
-                                                                      "division": {
-                                                                        "value": "Lower Austria"
-                                                                      },
                                                                       "year": {
                                                                         "value": "2019"
                                                                       },
-                                                                      "country": {
-                                                                        "value": "Austria",
-                                                                        "confidence": {
-                                                                          "Austria": 1.0
-                                                                        },
-                                                                        "entropy": -1e-12
+                                                                      "location": {
+                                                                        "value": "Rohrau"
+                                                                      },
+                                                                      "segment": {
+                                                                        "value": "S"
                                                                       },
                                                                       "region": {
                                                                         "value": "Europe",
@@ -2832,11 +2828,15 @@
                                                                         },
                                                                         "entropy": -1e-12
                                                                       },
-                                                                      "location": {
-                                                                        "value": "Rohrau"
+                                                                      "division": {
+                                                                        "value": "Lower Austria"
                                                                       },
-                                                                      "segment": {
-                                                                        "value": "S"
+                                                                      "country": {
+                                                                        "value": "Austria",
+                                                                        "confidence": {
+                                                                          "Austria": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
                                                                       }
                                                                     },
                                                                     "branch_attrs": {
@@ -2874,12 +2874,8 @@
                                                                       "year": {
                                                                         "value": "2021"
                                                                       },
-                                                                      "country": {
-                                                                        "value": "Italy",
-                                                                        "confidence": {
-                                                                          "Italy": 1.0
-                                                                        },
-                                                                        "entropy": -1e-12
+                                                                      "segment": {
+                                                                        "value": "S"
                                                                       },
                                                                       "region": {
                                                                         "value": "Europe",
@@ -2888,8 +2884,12 @@
                                                                         },
                                                                         "entropy": -1e-12
                                                                       },
-                                                                      "segment": {
-                                                                        "value": "S"
+                                                                      "country": {
+                                                                        "value": "Italy",
+                                                                        "confidence": {
+                                                                          "Italy": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
                                                                       }
                                                                     },
                                                                     "branch_attrs": {
@@ -2908,6 +2908,13 @@
                                                                 "name": "NODE_0000031",
                                                                 "node_attrs": {
                                                                   "div": 0.0831876,
+                                                                  "region": {
+                                                                    "value": "Europe",
+                                                                    "confidence": {
+                                                                      "Europe": 1.0
+                                                                    },
+                                                                    "entropy": 4.28e-06
+                                                                  },
                                                                   "country": {
                                                                     "value": "Czech Republic",
                                                                     "confidence": {
@@ -2915,13 +2922,6 @@
                                                                       "Austria": 0.00285
                                                                     },
                                                                     "entropy": 0.028
-                                                                  },
-                                                                  "region": {
-                                                                    "value": "Europe",
-                                                                    "confidence": {
-                                                                      "Europe": 1.0
-                                                                    },
-                                                                    "entropy": 4.28e-06
                                                                   }
                                                                 },
                                                                 "branch_attrs": {
@@ -2955,12 +2955,8 @@
                                                                       "year": {
                                                                         "value": "1966"
                                                                       },
-                                                                      "country": {
-                                                                        "value": "Czech Republic",
-                                                                        "confidence": {
-                                                                          "Czech Republic": 1.0
-                                                                        },
-                                                                        "entropy": -1e-12
+                                                                      "segment": {
+                                                                        "value": "S"
                                                                       },
                                                                       "region": {
                                                                         "value": "Europe",
@@ -2969,8 +2965,12 @@
                                                                         },
                                                                         "entropy": -1e-12
                                                                       },
-                                                                      "segment": {
-                                                                        "value": "S"
+                                                                      "country": {
+                                                                        "value": "Czech Republic",
+                                                                        "confidence": {
+                                                                          "Czech Republic": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
                                                                       }
                                                                     },
                                                                     "branch_attrs": {
@@ -2985,6 +2985,13 @@
                                                                     "name": "NODE_0000032",
                                                                     "node_attrs": {
                                                                       "div": 0.0831886,
+                                                                      "region": {
+                                                                        "value": "Europe",
+                                                                        "confidence": {
+                                                                          "Europe": 1.0
+                                                                        },
+                                                                        "entropy": 1.2e-05
+                                                                      },
                                                                       "country": {
                                                                         "value": "Czech Republic",
                                                                         "confidence": {
@@ -2993,13 +3000,6 @@
                                                                           "Austria": 0.00149
                                                                         },
                                                                         "entropy": 0.116
-                                                                      },
-                                                                      "region": {
-                                                                        "value": "Europe",
-                                                                        "confidence": {
-                                                                          "Europe": 1.0
-                                                                        },
-                                                                        "entropy": 1.2e-05
                                                                       }
                                                                     },
                                                                     "branch_attrs": {
@@ -3033,12 +3033,8 @@
                                                                           "year": {
                                                                             "value": "1964"
                                                                           },
-                                                                          "country": {
-                                                                            "value": "Czech Republic",
-                                                                            "confidence": {
-                                                                              "Czech Republic": 1.0
-                                                                            },
-                                                                            "entropy": -1e-12
+                                                                          "segment": {
+                                                                            "value": "S"
                                                                           },
                                                                           "region": {
                                                                             "value": "Europe",
@@ -3047,8 +3043,12 @@
                                                                             },
                                                                             "entropy": -1e-12
                                                                           },
-                                                                          "segment": {
-                                                                            "value": "S"
+                                                                          "country": {
+                                                                            "value": "Czech Republic",
+                                                                            "confidence": {
+                                                                              "Czech Republic": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
                                                                           }
                                                                         },
                                                                         "branch_attrs": {
@@ -3064,6 +3064,13 @@
                                                                         "name": "NODE_0000033",
                                                                         "node_attrs": {
                                                                           "div": 0.0842125,
+                                                                          "region": {
+                                                                            "value": "Europe",
+                                                                            "confidence": {
+                                                                              "Europe": 1.0
+                                                                            },
+                                                                            "entropy": 0.000286
+                                                                          },
                                                                           "country": {
                                                                             "value": "Czechoslovakia",
                                                                             "confidence": {
@@ -3072,13 +3079,6 @@
                                                                               "": 0.0057
                                                                             },
                                                                             "entropy": 0.134
-                                                                          },
-                                                                          "region": {
-                                                                            "value": "Europe",
-                                                                            "confidence": {
-                                                                              "Europe": 1.0
-                                                                            },
-                                                                            "entropy": 0.000286
                                                                           }
                                                                         },
                                                                         "branch_attrs": {
@@ -3093,19 +3093,19 @@
                                                                             "name": "NODE_0000034",
                                                                             "node_attrs": {
                                                                               "div": 0.0852378,
-                                                                              "country": {
-                                                                                "value": "Czechoslovakia",
-                                                                                "confidence": {
-                                                                                  "Czechoslovakia": 1.0
-                                                                                },
-                                                                                "entropy": 0.00222
-                                                                              },
                                                                               "region": {
                                                                                 "value": "Europe",
                                                                                 "confidence": {
                                                                                   "Europe": 1.0
                                                                                 },
                                                                                 "entropy": 6.11e-06
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "Czechoslovakia",
+                                                                                "confidence": {
+                                                                                  "Czechoslovakia": 1.0
+                                                                                },
+                                                                                "entropy": 0.00222
                                                                               }
                                                                             },
                                                                             "branch_attrs": {
@@ -3152,12 +3152,8 @@
                                                                                   "year": {
                                                                                     "value": "1958"
                                                                                   },
-                                                                                  "country": {
-                                                                                    "value": "Czechoslovakia",
-                                                                                    "confidence": {
-                                                                                      "Czechoslovakia": 1.0
-                                                                                    },
-                                                                                    "entropy": -1e-12
+                                                                                  "segment": {
+                                                                                    "value": "S"
                                                                                   },
                                                                                   "region": {
                                                                                     "value": "Europe",
@@ -3166,8 +3162,12 @@
                                                                                     },
                                                                                     "entropy": -1e-12
                                                                                   },
-                                                                                  "segment": {
-                                                                                    "value": "S"
+                                                                                  "country": {
+                                                                                    "value": "Czechoslovakia",
+                                                                                    "confidence": {
+                                                                                      "Czechoslovakia": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
                                                                                   }
                                                                                 },
                                                                                 "branch_attrs": {
@@ -3204,12 +3204,8 @@
                                                                                   "year": {
                                                                                     "value": "1958"
                                                                                   },
-                                                                                  "country": {
-                                                                                    "value": "Czechoslovakia",
-                                                                                    "confidence": {
-                                                                                      "Czechoslovakia": 1.0
-                                                                                    },
-                                                                                    "entropy": -1e-12
+                                                                                  "segment": {
+                                                                                    "value": "S"
                                                                                   },
                                                                                   "region": {
                                                                                     "value": "Europe",
@@ -3218,8 +3214,12 @@
                                                                                     },
                                                                                     "entropy": -1e-12
                                                                                   },
-                                                                                  "segment": {
-                                                                                    "value": "S"
+                                                                                  "country": {
+                                                                                    "value": "Czechoslovakia",
+                                                                                    "confidence": {
+                                                                                      "Czechoslovakia": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
                                                                                   }
                                                                                 },
                                                                                 "branch_attrs": {
@@ -3232,6 +3232,14 @@
                                                                             "name": "NODE_0000035",
                                                                             "node_attrs": {
                                                                               "div": 0.0842135,
+                                                                              "region": {
+                                                                                "value": "Europe",
+                                                                                "confidence": {
+                                                                                  "Europe": 0.995,
+                                                                                  "": 0.0047
+                                                                                },
+                                                                                "entropy": 0.0301
+                                                                              },
                                                                               "country": {
                                                                                 "value": "Czechoslovakia",
                                                                                 "confidence": {
@@ -3240,14 +3248,6 @@
                                                                                   "Czech Republic": 0.00529
                                                                                 },
                                                                                 "entropy": 0.132
-                                                                              },
-                                                                              "region": {
-                                                                                "value": "Europe",
-                                                                                "confidence": {
-                                                                                  "Europe": 0.995,
-                                                                                  "": 0.0047
-                                                                                },
-                                                                                "entropy": 0.0301
                                                                               }
                                                                             },
                                                                             "branch_attrs": {
@@ -3278,12 +3278,8 @@
                                                                                   "year": {
                                                                                     "value": "1984"
                                                                                   },
-                                                                                  "country": {
-                                                                                    "value": "Czechoslovakia",
-                                                                                    "confidence": {
-                                                                                      "Czechoslovakia": 1.0
-                                                                                    },
-                                                                                    "entropy": -1e-12
+                                                                                  "segment": {
+                                                                                    "value": "S"
                                                                                   },
                                                                                   "region": {
                                                                                     "value": "Europe",
@@ -3292,8 +3288,12 @@
                                                                                     },
                                                                                     "entropy": -1e-12
                                                                                   },
-                                                                                  "segment": {
-                                                                                    "value": "S"
+                                                                                  "country": {
+                                                                                    "value": "Czechoslovakia",
+                                                                                    "confidence": {
+                                                                                      "Czechoslovakia": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
                                                                                   }
                                                                                 },
                                                                                 "branch_attrs": {

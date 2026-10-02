@@ -33,7 +33,10 @@ def seg_label(wc) -> str:
 
 rule all:
     input:
-        expand("auspice/tahyna_{segment}.json", segment=SEGMENTS),
+        # repo-root auspice/ is the canonical location: nextstrain.org/community
+        # serves <repo>/auspice/<name>.json at
+        # nextstrain.org/community/<owner>/<repo>/<name>
+        expand("../auspice/tahyna_{segment}.json", segment=SEGMENTS),
 
 
 # --- Inputs from ingest ------------------------------------------------------
@@ -325,7 +328,7 @@ rule export:
         metadata="results/qc_pass_{segment}_metadata.tsv",
         auspice_config="defaults/auspice_config.json",
     output:
-        "auspice/tahyna_{segment}.json",
+        "../auspice/tahyna_{segment}.json",
     log:
         "logs/export_{segment}.log",
     shell:

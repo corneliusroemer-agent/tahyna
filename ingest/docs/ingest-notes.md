@@ -35,6 +35,14 @@ captured 2026-10-02); `--config live_fetch=true` refetches from NCBI.
   Europe 93 / Asia 22 / empty 6; division+location only 8 records have them
   (Austria 6, Inner Mongolia 2) — NCBI geo strings are mostly bare country.
 - `is_lab_host=true`: 15 records, kept.
+- `duplicate_isolate=true`: 12 records (2 isolates with more than one genome
+  sequenced: Prototype '92' Bardos clones HM036208-213, XJ0625 GenBank+RefSeq
+  trios) — their tips are not independent isolates.
+- `segment_label_conflict`: 0 records — nextclade's coverage argmax never
+  disagrees with an NCBI segment label in this dataset (the flag is wired and
+  will fire if that changes with refetches).
+- `year`: collection year as a discrete column (from `date`; imputed years
+  included, `date_imputed` says which) for auspice categorical coloring.
 - `abbr_authors` filled 121/121.
 - Assemblies (exact `isolate` string, ≥2 records with ≥2 distinct segments):
   30 assemblies covering 86 records, incl. XJ0625 (6 records: GenBank + RefSeq

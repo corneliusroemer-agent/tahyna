@@ -1,10 +1,20 @@
 # QC review — tahyna phylogenetic builds (CHECKPOINT)
 
+> **VERDICT (user, 2026-10-02, applied):** the gate is approved exactly as
+> proposed below and is wired in (`phylogenetic/bin/apply_qc_gate.py`,
+> `phylogenetic/defaults/config.yaml` `qc_gate:`). PJ01_OP727996's L is kept
+> via the config `exceptions` list (flags `qc_exception=true`; its frameshift
+> stays visible in the tree annotations so artifact-vs-real can be judged from
+> branch mutations). One deviation surfaced during tree building: **the S
+> build ships as a divergence tree** — treetime's root-to-tip rate estimate is
+> negative on every rooting tried (best / min_dev / skyline / rooting on each
+> Asian tip; evidence in the "S timetree" section at the bottom). M and L
+> timetrees built unpinned as locked.
+
 The workflow is built and run through the nextclade align+QC stage
 (`phylogenetic/Snakefile`: copy ingest outputs → `augur filter` per segment →
 `nextclade run` with the custom reference/GFF/pathogen.json). Everything below
-is observed on the real filtered sets (S n=39, M n=33, L n=24). Tree building
-is intentionally NOT built yet; this document is the review gate.
+is observed on the real filtered sets (S n=39, M n=33, L n=24).
 
 ## 1. Proposed QC gating criterion (treeless-computable only)
 
@@ -145,3 +155,26 @@ alignments), recorded here as the matched precedent. No `--tree-builder-args`.
 - traits: `--columns country region --confidence`. export v2 per segment with
   `--include-root-sequence-inline`, default colors.
 - imputed dates: single timetree run per segment (no sensitivity pair).
+
+## 6. S timetree — why the S build is a divergence tree (post-review finding)
+
+With the locked unpinned refine, S fails: treetime raises
+`calc_rate_susceptibility: rate estimate is negative` for `--root best`,
+`--root min_dev`, `--coalescent skyline`, and rooting directly on each Asian
+tip (XJ0625_EU622820, XJ0710_HM243142). Tip-name mangling was ruled out (all
+39 newick tip names match the metadata exactly). The cause is in the data:
+
+- midpoint-rooted root-to-tip regression slope on the S ML tree:
+  **−1.2e-4 subs/site/yr** (negative);
+- the S tree has a deep Asia-Europe split (Europe-Asia mean patristic
+  distance 3.1x the within-Europe mean), and the European lineage is
+  temporally flat: strains from 1957, 1958, 1963, 1966, 1984, 2019 and 2021
+  all sit ~0.050-0.059 from the root — 64 years with almost no divergence
+  accumulation in N;
+- this matches the literature finding already recorded for TAHV: "no clear
+  temporal clustering despite samples from 1958-2019".
+
+M and L carry usable clocks on the same settings (see 05-build.md for the
+numbers), so the override is per-segment (`refine.overrides.s.timetree:
+false`). Revisit options for S later: external outgroup rooting, a pinned
+clock at a literature rate, or more S sampling.

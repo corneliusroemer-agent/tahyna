@@ -153,15 +153,6 @@
           760.351
         ]
       },
-      "region": {
-        "value": "Asia",
-        "confidence": {
-          "Asia": 0.628,
-          "Europe": 0.287,
-          "": 0.0849
-        },
-        "entropy": 0.859
-      },
       "country": {
         "value": "China",
         "confidence": {
@@ -173,6 +164,15 @@
           "Italy": 0.15
         },
         "entropy": 1.783
+      },
+      "region": {
+        "value": "Asia",
+        "confidence": {
+          "Asia": 0.628,
+          "Europe": 0.287,
+          "": 0.0849
+        },
+        "entropy": 0.859
       }
     },
     "branch_attrs": {
@@ -190,15 +190,6 @@
               769.663
             ]
           },
-          "region": {
-            "value": "Asia",
-            "confidence": {
-              "Asia": 0.636,
-              "Europe": 0.28,
-              "": 0.0833
-            },
-            "entropy": 0.851
-          },
           "country": {
             "value": "China",
             "confidence": {
@@ -210,6 +201,15 @@
               "Italy": 0.15
             },
             "entropy": 1.783
+          },
+          "region": {
+            "value": "Asia",
+            "confidence": {
+              "Asia": 0.636,
+              "Europe": 0.28,
+              "": 0.0833
+            },
+            "entropy": 0.851
           }
         },
         "branch_attrs": {
@@ -249,8 +249,12 @@
                 "author": "Cai,T.,Liu,R.,Jiang,T.Y.,Jia,N.,Jian,Y.X.,Cheng,L.X.,Song,L.F.,Guo,X.X.,Zhao,Y.T.",
                 "value": "Cai,T.,Liu,R.,Jiang,T.Y.,Jia,N.,Jian,Y.X.,Cheng,L.X.,Song,L.F.,Guo,X.X.,Zhao,Y.T."
               },
-              "year": {
-                "value": "2016"
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
               },
               "segment": {
                 "value": "L"
@@ -262,12 +266,8 @@
                 },
                 "entropy": -1e-12
               },
-              "country": {
-                "value": "China",
-                "confidence": {
-                  "China": 1.0
-                },
-                "entropy": -1e-12
+              "year": {
+                "value": "2016"
               }
             },
             "branch_attrs": {
@@ -1015,15 +1015,6 @@
                   1807.793
                 ]
               },
-              "region": {
-                "value": "Asia",
-                "confidence": {
-                  "Asia": 0.994,
-                  "Europe": 0.00455,
-                  "": 0.00122
-                },
-                "entropy": 0.0385
-              },
               "country": {
                 "value": "China",
                 "confidence": {
@@ -1035,6 +1026,15 @@
                   "Italy": 0.0176
                 },
                 "entropy": 0.523
+              },
+              "region": {
+                "value": "Asia",
+                "confidence": {
+                  "Asia": 0.994,
+                  "Europe": 0.00455,
+                  "": 0.00122
+                },
+                "entropy": 0.0385
               }
             },
             "branch_attrs": {
@@ -1687,8 +1687,12 @@
                     "author": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D.",
                     "value": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D."
                   },
-                  "year": {
-                    "value": "2007"
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
                   },
                   "segment": {
                     "value": "L"
@@ -1700,12 +1704,8 @@
                     },
                     "entropy": -1e-12
                   },
-                  "country": {
-                    "value": "China",
-                    "confidence": {
-                      "China": 1.0
-                    },
-                    "entropy": -1e-12
+                  "year": {
+                    "value": "2007"
                   }
                 },
                 "branch_attrs": {
@@ -1798,13 +1798,6 @@
                       1884.291
                     ]
                   },
-                  "region": {
-                    "value": "Asia",
-                    "confidence": {
-                      "Asia": 0.999
-                    },
-                    "entropy": 0.00581
-                  },
                   "country": {
                     "value": "China",
                     "confidence": {
@@ -1816,6 +1809,13 @@
                       "Italy": 0.00439
                     },
                     "entropy": 0.181
+                  },
+                  "region": {
+                    "value": "Asia",
+                    "confidence": {
+                      "Asia": 0.999
+                    },
+                    "entropy": 0.00581
                   }
                 },
                 "branch_attrs": {
@@ -1921,8 +1921,12 @@
                         "author": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D.",
                         "value": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D."
                       },
-                      "year": {
-                        "value": "2007"
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
                       },
                       "segment": {
                         "value": "L"
@@ -1934,12 +1938,8 @@
                         },
                         "entropy": -1e-12
                       },
-                      "country": {
-                        "value": "China",
-                        "confidence": {
-                          "China": 1.0
-                        },
-                        "entropy": -1e-12
+                      "year": {
+                        "value": "2007"
                       }
                     },
                     "branch_attrs": {
@@ -2052,19 +2052,19 @@
                           2006.923
                         ]
                       },
-                      "region": {
-                        "value": "Asia",
-                        "confidence": {
-                          "Asia": 1.0
-                        },
-                        "entropy": 4.54e-05
-                      },
                       "country": {
                         "value": "China",
                         "confidence": {
                           "China": 1.0
                         },
                         "entropy": 0.0015
+                      },
+                      "region": {
+                        "value": "Asia",
+                        "confidence": {
+                          "Asia": 1.0
+                        },
+                        "entropy": 4.54e-05
                       }
                     },
                     "branch_attrs": {
@@ -2220,8 +2220,12 @@
                             "author": "Lu,Z.,Fu,S.,Liang,G.",
                             "value": "Lu,Z.,Fu,S.,Liang,G."
                           },
-                          "year": {
-                            "value": "2006"
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
                           },
                           "segment": {
                             "value": "L"
@@ -2233,12 +2237,8 @@
                             },
                             "entropy": -1e-12
                           },
-                          "country": {
-                            "value": "China",
-                            "confidence": {
-                              "China": 1.0
-                            },
-                            "entropy": -1e-12
+                          "year": {
+                            "value": "2006"
                           }
                         },
                         "branch_attrs": {
@@ -2284,8 +2284,12 @@
                             "author": "Lu,Z.,Fu,S.,Liang,G.",
                             "value": "Lu,Z.,Fu,S.,Liang,G."
                           },
-                          "year": {
-                            "value": "2006"
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
                           },
                           "segment": {
                             "value": "L"
@@ -2297,12 +2301,8 @@
                             },
                             "entropy": -1e-12
                           },
-                          "country": {
-                            "value": "China",
-                            "confidence": {
-                              "China": 1.0
-                            },
-                            "entropy": -1e-12
+                          "year": {
+                            "value": "2006"
                           }
                         },
                         "branch_attrs": {
@@ -2328,14 +2328,6 @@
               1878.379
             ]
           },
-          "region": {
-            "value": "Europe",
-            "confidence": {
-              "Europe": 0.998,
-              "Asia": 0.00171
-            },
-            "entropy": 0.0174
-          },
           "country": {
             "value": "Czechoslovakia",
             "confidence": {
@@ -2347,6 +2339,14 @@
               "Italy": 0.021
             },
             "entropy": 1.086
+          },
+          "region": {
+            "value": "Europe",
+            "confidence": {
+              "Europe": 0.998,
+              "Asia": 0.00171
+            },
+            "entropy": 0.0174
           }
         },
         "branch_attrs": {
@@ -3070,8 +3070,12 @@
                 "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                 "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
               },
-              "year": {
-                "value": "1968"
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
               },
               "segment": {
                 "value": "L"
@@ -3083,12 +3087,8 @@
                 },
                 "entropy": -1e-12
               },
-              "country": {
-                "value": "France",
-                "confidence": {
-                  "France": 1.0
-                },
-                "entropy": -1e-12
+              "year": {
+                "value": "1968"
               }
             },
             "branch_attrs": {
@@ -3181,19 +3181,19 @@
                   1928.186
                 ]
               },
-              "region": {
-                "value": "Europe",
-                "confidence": {
-                  "Europe": 1.0
-                },
-                "entropy": 3.28e-07
-              },
               "country": {
                 "value": "Czechoslovakia",
                 "confidence": {
                   "Czechoslovakia": 1.0
                 },
                 "entropy": 0.000833
+              },
+              "region": {
+                "value": "Europe",
+                "confidence": {
+                  "Europe": 1.0
+                },
+                "entropy": 3.28e-07
               }
             },
             "branch_attrs": {
@@ -3248,13 +3248,6 @@
                       1943.96
                     ]
                   },
-                  "region": {
-                    "value": "Europe",
-                    "confidence": {
-                      "Europe": 1.0
-                    },
-                    "entropy": 1.89e-05
-                  },
                   "country": {
                     "value": "Czechoslovakia",
                     "confidence": {
@@ -3262,6 +3255,13 @@
                       "Italy": 0.00251
                     },
                     "entropy": 0.0238
+                  },
+                  "region": {
+                    "value": "Europe",
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "entropy": 1.89e-05
                   }
                 },
                 "branch_attrs": {
@@ -3315,8 +3315,12 @@
                         "author": "Calzolari,M.,Lelli,D.,Chiapponi,C.",
                         "value": "Calzolari,M.,Lelli,D.,Chiapponi,C."
                       },
-                      "year": {
-                        "value": "2021"
+                      "country": {
+                        "value": "Italy",
+                        "confidence": {
+                          "Italy": 1.0
+                        },
+                        "entropy": -1e-12
                       },
                       "segment": {
                         "value": "L"
@@ -3328,12 +3332,8 @@
                         },
                         "entropy": -1e-12
                       },
-                      "country": {
-                        "value": "Italy",
-                        "confidence": {
-                          "Italy": 1.0
-                        },
-                        "entropy": -1e-12
+                      "year": {
+                        "value": "2021"
                       }
                     },
                     "branch_attrs": {
@@ -3415,19 +3415,19 @@
                           1944.917
                         ]
                       },
-                      "region": {
-                        "value": "Europe",
-                        "confidence": {
-                          "Europe": 1.0
-                        },
-                        "entropy": 9.97e-06
-                      },
                       "country": {
                         "value": "Czechoslovakia",
                         "confidence": {
                           "Czechoslovakia": 1.0
                         },
                         "entropy": 0.00161
+                      },
+                      "region": {
+                        "value": "Europe",
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "entropy": 9.97e-06
                       }
                     },
                     "branch_attrs": {
@@ -3471,8 +3471,12 @@
                             "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                             "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                           },
-                          "year": {
-                            "value": "1963"
+                          "country": {
+                            "value": "Czechoslovakia",
+                            "confidence": {
+                              "Czechoslovakia": 1.0
+                            },
+                            "entropy": -1e-12
                           },
                           "segment": {
                             "value": "L"
@@ -3484,12 +3488,8 @@
                             },
                             "entropy": -1e-12
                           },
-                          "country": {
-                            "value": "Czechoslovakia",
-                            "confidence": {
-                              "Czechoslovakia": 1.0
-                            },
-                            "entropy": -1e-12
+                          "year": {
+                            "value": "1963"
                           }
                         },
                         "branch_attrs": {
@@ -3553,8 +3553,12 @@
                             "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                             "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                           },
-                          "year": {
-                            "value": "1966"
+                          "country": {
+                            "value": "Czechoslovakia",
+                            "confidence": {
+                              "Czechoslovakia": 1.0
+                            },
+                            "entropy": -1e-12
                           },
                           "segment": {
                             "value": "L"
@@ -3566,12 +3570,8 @@
                             },
                             "entropy": -1e-12
                           },
-                          "country": {
-                            "value": "Czechoslovakia",
-                            "confidence": {
-                              "Czechoslovakia": 1.0
-                            },
-                            "entropy": -1e-12
+                          "year": {
+                            "value": "1966"
                           }
                         },
                         "branch_attrs": {
@@ -3618,19 +3618,19 @@
                       1930.831
                     ]
                   },
-                  "region": {
-                    "value": "Europe",
-                    "confidence": {
-                      "Europe": 1.0
-                    },
-                    "entropy": 1.03e-05
-                  },
                   "country": {
                     "value": "Czechoslovakia",
                     "confidence": {
                       "Czechoslovakia": 1.0
                     },
                     "entropy": 0.00054
+                  },
+                  "region": {
+                    "value": "Europe",
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "entropy": 1.03e-05
                   }
                 },
                 "branch_attrs": {
@@ -3674,8 +3674,12 @@
                         "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                         "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                       },
-                      "year": {
-                        "value": "1963"
+                      "country": {
+                        "value": "Czechoslovakia",
+                        "confidence": {
+                          "Czechoslovakia": 1.0
+                        },
+                        "entropy": -1e-12
                       },
                       "segment": {
                         "value": "L"
@@ -3687,12 +3691,8 @@
                         },
                         "entropy": -1e-12
                       },
-                      "country": {
-                        "value": "Czechoslovakia",
-                        "confidence": {
-                          "Czechoslovakia": 1.0
-                        },
-                        "entropy": -1e-12
+                      "year": {
+                        "value": "1963"
                       }
                     },
                     "branch_attrs": {
@@ -3749,19 +3749,19 @@
                           1931.912
                         ]
                       },
-                      "region": {
-                        "value": "Europe",
-                        "confidence": {
-                          "Europe": 1.0
-                        },
-                        "entropy": 1.48e-07
-                      },
                       "country": {
                         "value": "Czechoslovakia",
                         "confidence": {
                           "Czechoslovakia": 1.0
                         },
                         "entropy": 0.000182
+                      },
+                      "region": {
+                        "value": "Europe",
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "entropy": 1.48e-07
                       }
                     },
                     "branch_attrs": {
@@ -3811,8 +3811,12 @@
                             "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                             "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                           },
-                          "year": {
-                            "value": "1963"
+                          "country": {
+                            "value": "Czechoslovakia",
+                            "confidence": {
+                              "Czechoslovakia": 1.0
+                            },
+                            "entropy": -1e-12
                           },
                           "segment": {
                             "value": "L"
@@ -3824,12 +3828,8 @@
                             },
                             "entropy": -1e-12
                           },
-                          "country": {
-                            "value": "Czechoslovakia",
-                            "confidence": {
-                              "Czechoslovakia": 1.0
-                            },
-                            "entropy": -1e-12
+                          "year": {
+                            "value": "1963"
                           }
                         },
                         "branch_attrs": {
@@ -3896,8 +3896,12 @@
                             "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                             "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                           },
-                          "year": {
-                            "value": "1966"
+                          "country": {
+                            "value": "Czechoslovakia",
+                            "confidence": {
+                              "Czechoslovakia": 1.0
+                            },
+                            "entropy": -1e-12
                           },
                           "segment": {
                             "value": "L"
@@ -3909,12 +3913,8 @@
                             },
                             "entropy": -1e-12
                           },
-                          "country": {
-                            "value": "Czechoslovakia",
-                            "confidence": {
-                              "Czechoslovakia": 1.0
-                            },
-                            "entropy": -1e-12
+                          "year": {
+                            "value": "1966"
                           }
                         },
                         "branch_attrs": {
@@ -3961,13 +3961,6 @@
                               1948.942
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 2.75e-05
-                          },
                           "country": {
                             "value": "Czechoslovakia",
                             "confidence": {
@@ -3975,6 +3968,13 @@
                               "Austria": 0.00629
                             },
                             "entropy": 0.0447
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 2.75e-05
                           }
                         },
                         "branch_attrs": {
@@ -4025,14 +4025,12 @@
                                 "author": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N.",
                                 "value": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N."
                               },
-                              "location": {
-                                "value": "Rohrau"
-                              },
-                              "year": {
-                                "value": "2019"
-                              },
-                              "division": {
-                                "value": "Lower Austria"
+                              "country": {
+                                "value": "Austria",
+                                "confidence": {
+                                  "Austria": 1.0
+                                },
+                                "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "L"
@@ -4044,12 +4042,14 @@
                                 },
                                 "entropy": -1e-12
                               },
-                              "country": {
-                                "value": "Austria",
-                                "confidence": {
-                                  "Austria": 1.0
-                                },
-                                "entropy": -1e-12
+                              "year": {
+                                "value": "2019"
+                              },
+                              "location": {
+                                "value": "Rohrau"
+                              },
+                              "division": {
+                                "value": "Lower Austria"
                               }
                             },
                             "branch_attrs": {
@@ -4134,8 +4134,12 @@
                                 "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                                 "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                               },
-                              "year": {
-                                "value": "1966"
+                              "country": {
+                                "value": "Czechoslovakia",
+                                "confidence": {
+                                  "Czechoslovakia": 1.0
+                                },
+                                "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "L"
@@ -4147,12 +4151,8 @@
                                 },
                                 "entropy": -1e-12
                               },
-                              "country": {
-                                "value": "Czechoslovakia",
-                                "confidence": {
-                                  "Czechoslovakia": 1.0
-                                },
-                                "entropy": -1e-12
+                              "year": {
+                                "value": "1966"
                               }
                             },
                             "branch_attrs": {
@@ -4200,19 +4200,19 @@
                       1936.031
                     ]
                   },
-                  "region": {
-                    "value": "Europe",
-                    "confidence": {
-                      "Europe": 1.0
-                    },
-                    "entropy": 4.11e-06
-                  },
                   "country": {
                     "value": "Czechoslovakia",
                     "confidence": {
                       "Czechoslovakia": 1.0
                     },
                     "entropy": 0.000239
+                  },
+                  "region": {
+                    "value": "Europe",
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "entropy": 4.11e-06
                   }
                 },
                 "branch_attrs": {
@@ -4244,19 +4244,19 @@
                           1938.455
                         ]
                       },
-                      "region": {
-                        "value": "Europe",
-                        "confidence": {
-                          "Europe": 1.0
-                        },
-                        "entropy": 8.46e-06
-                      },
                       "country": {
                         "value": "Czechoslovakia",
                         "confidence": {
                           "Czechoslovakia": 1.0
                         },
                         "entropy": 0.000418
+                      },
+                      "region": {
+                        "value": "Europe",
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "entropy": 8.46e-06
                       }
                     },
                     "branch_attrs": {
@@ -4300,8 +4300,12 @@
                             "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                             "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                           },
-                          "year": {
-                            "value": "1964"
+                          "country": {
+                            "value": "Czechoslovakia",
+                            "confidence": {
+                              "Czechoslovakia": 1.0
+                            },
+                            "entropy": -1e-12
                           },
                           "segment": {
                             "value": "L"
@@ -4313,12 +4317,8 @@
                             },
                             "entropy": -1e-12
                           },
-                          "country": {
-                            "value": "Czechoslovakia",
-                            "confidence": {
-                              "Czechoslovakia": 1.0
-                            },
-                            "entropy": -1e-12
+                          "year": {
+                            "value": "1964"
                           }
                         },
                         "branch_attrs": {
@@ -4356,19 +4356,19 @@
                               1942.475
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 7.34e-06
-                          },
                           "country": {
                             "value": "Czechoslovakia",
                             "confidence": {
                               "Czechoslovakia": 1.0
                             },
                             "entropy": 0.00036
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 7.34e-06
                           }
                         },
                         "branch_attrs": {
@@ -4414,8 +4414,12 @@
                                 "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                                 "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                               },
-                              "year": {
-                                "value": "1963"
+                              "country": {
+                                "value": "Czechoslovakia",
+                                "confidence": {
+                                  "Czechoslovakia": 1.0
+                                },
+                                "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "L"
@@ -4427,12 +4431,8 @@
                                 },
                                 "entropy": -1e-12
                               },
-                              "country": {
-                                "value": "Czechoslovakia",
-                                "confidence": {
-                                  "Czechoslovakia": 1.0
-                                },
-                                "entropy": -1e-12
+                              "year": {
+                                "value": "1963"
                               }
                             },
                             "branch_attrs": {
@@ -4472,19 +4472,19 @@
                                   1957.106
                                 ]
                               },
-                              "region": {
-                                "value": "Europe",
-                                "confidence": {
-                                  "Europe": 1.0
-                                },
-                                "entropy": 4.51e-06
-                              },
                               "country": {
                                 "value": "Czechoslovakia",
                                 "confidence": {
                                   "Czechoslovakia": 1.0
                                 },
                                 "entropy": 0.000217
+                              },
+                              "region": {
+                                "value": "Europe",
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "entropy": 4.51e-06
                               }
                             },
                             "branch_attrs": {
@@ -4544,8 +4544,12 @@
                                     "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                                     "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                                   },
-                                  "year": {
-                                    "value": "1962"
+                                  "country": {
+                                    "value": "Czechoslovakia",
+                                    "confidence": {
+                                      "Czechoslovakia": 1.0
+                                    },
+                                    "entropy": -1e-12
                                   },
                                   "segment": {
                                     "value": "L"
@@ -4557,12 +4561,8 @@
                                     },
                                     "entropy": -1e-12
                                   },
-                                  "country": {
-                                    "value": "Czechoslovakia",
-                                    "confidence": {
-                                      "Czechoslovakia": 1.0
-                                    },
-                                    "entropy": -1e-12
+                                  "year": {
+                                    "value": "1962"
                                   }
                                 },
                                 "branch_attrs": {
@@ -4622,8 +4622,12 @@
                                     "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                                     "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                                   },
-                                  "year": {
-                                    "value": "1962"
+                                  "country": {
+                                    "value": "Czechoslovakia",
+                                    "confidence": {
+                                      "Czechoslovakia": 1.0
+                                    },
+                                    "entropy": -1e-12
                                   },
                                   "segment": {
                                     "value": "L"
@@ -4635,12 +4639,8 @@
                                     },
                                     "entropy": -1e-12
                                   },
-                                  "country": {
-                                    "value": "Czechoslovakia",
-                                    "confidence": {
-                                      "Czechoslovakia": 1.0
-                                    },
-                                    "entropy": -1e-12
+                                  "year": {
+                                    "value": "1962"
                                   }
                                 },
                                 "branch_attrs": {
@@ -4675,19 +4675,19 @@
                           1937.965
                         ]
                       },
-                      "region": {
-                        "value": "Europe",
-                        "confidence": {
-                          "Europe": 1.0
-                        },
-                        "entropy": 6.8e-06
-                      },
                       "country": {
                         "value": "Czechoslovakia",
                         "confidence": {
                           "Czechoslovakia": 1.0
                         },
                         "entropy": 0.00145
+                      },
+                      "region": {
+                        "value": "Europe",
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "entropy": 6.8e-06
                       }
                     },
                     "branch_attrs": {
@@ -4716,13 +4716,6 @@
                               1947.547
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 2.05e-05
-                          },
                           "country": {
                             "value": "Czechoslovakia",
                             "confidence": {
@@ -4730,6 +4723,13 @@
                               "Austria": 0.00478
                             },
                             "entropy": 0.0353
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 2.05e-05
                           }
                         },
                         "branch_attrs": {
@@ -4777,14 +4777,12 @@
                                 "author": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N.",
                                 "value": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N."
                               },
-                              "location": {
-                                "value": "Rohrau"
-                              },
-                              "year": {
-                                "value": "2019"
-                              },
-                              "division": {
-                                "value": "Lower Austria"
+                              "country": {
+                                "value": "Austria",
+                                "confidence": {
+                                  "Austria": 1.0
+                                },
+                                "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "L"
@@ -4796,12 +4794,14 @@
                                 },
                                 "entropy": -1e-12
                               },
-                              "country": {
-                                "value": "Austria",
-                                "confidence": {
-                                  "Austria": 1.0
-                                },
-                                "entropy": -1e-12
+                              "year": {
+                                "value": "2019"
+                              },
+                              "location": {
+                                "value": "Rohrau"
+                              },
+                              "division": {
+                                "value": "Lower Austria"
                               }
                             },
                             "branch_attrs": {
@@ -4875,8 +4875,12 @@
                                 "author": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D.",
                                 "value": "Kilian,P.,Valdes,J.J.,Lecina-Casas,D.,Chrudimsky,T.,Ruzek,D."
                               },
-                              "year": {
-                                "value": "1958"
+                              "country": {
+                                "value": "Czechoslovakia",
+                                "confidence": {
+                                  "Czechoslovakia": 1.0
+                                },
+                                "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "L"
@@ -4888,12 +4892,8 @@
                                 },
                                 "entropy": -1e-12
                               },
-                              "country": {
-                                "value": "Czechoslovakia",
-                                "confidence": {
-                                  "Czechoslovakia": 1.0
-                                },
-                                "entropy": -1e-12
+                              "year": {
+                                "value": "1958"
                               }
                             },
                             "branch_attrs": {
@@ -4934,19 +4934,19 @@
                               1953.119
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 0.000371
-                          },
                           "country": {
                             "value": "Czechoslovakia",
                             "confidence": {
                               "Czechoslovakia": 1.0
                             },
                             "entropy": 0.00335
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 0.000371
                           }
                         },
                         "branch_attrs": {
@@ -4989,19 +4989,19 @@
                                   1956.418
                                 ]
                               },
-                              "region": {
-                                "value": "Europe",
-                                "confidence": {
-                                  "Europe": 1.0
-                                },
-                                "entropy": 6.21e-06
-                              },
                               "country": {
                                 "value": "Czechoslovakia",
                                 "confidence": {
                                   "Czechoslovakia": 1.0
                                 },
                                 "entropy": 0.00025
+                              },
+                              "region": {
+                                "value": "Europe",
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "entropy": 6.21e-06
                               }
                             },
                             "branch_attrs": {
@@ -5058,8 +5058,12 @@
                                     "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                                     "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
                                   },
-                                  "year": {
-                                    "value": "1958"
+                                  "country": {
+                                    "value": "Czechoslovakia",
+                                    "confidence": {
+                                      "Czechoslovakia": 1.0
+                                    },
+                                    "entropy": -1e-12
                                   },
                                   "segment": {
                                     "value": "L"
@@ -5071,12 +5075,8 @@
                                     },
                                     "entropy": -1e-12
                                   },
-                                  "country": {
-                                    "value": "Czechoslovakia",
-                                    "confidence": {
-                                      "Czechoslovakia": 1.0
-                                    },
-                                    "entropy": -1e-12
+                                  "year": {
+                                    "value": "1958"
                                   }
                                 },
                                 "branch_attrs": {
@@ -5133,8 +5133,12 @@
                                     "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                                     "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
                                   },
-                                  "year": {
-                                    "value": "1958"
+                                  "country": {
+                                    "value": "Czechoslovakia",
+                                    "confidence": {
+                                      "Czechoslovakia": 1.0
+                                    },
+                                    "entropy": -1e-12
                                   },
                                   "segment": {
                                     "value": "L"
@@ -5146,12 +5150,8 @@
                                     },
                                     "entropy": -1e-12
                                   },
-                                  "country": {
-                                    "value": "Czechoslovakia",
-                                    "confidence": {
-                                      "Czechoslovakia": 1.0
-                                    },
-                                    "entropy": -1e-12
+                                  "year": {
+                                    "value": "1958"
                                   }
                                 },
                                 "branch_attrs": {
@@ -5175,14 +5175,6 @@
                                   1958.421
                                 ]
                               },
-                              "region": {
-                                "value": "Europe",
-                                "confidence": {
-                                  "Europe": 0.994,
-                                  "": 0.00626
-                                },
-                                "entropy": 0.0384
-                              },
                               "country": {
                                 "value": "Czechoslovakia",
                                 "confidence": {
@@ -5190,6 +5182,14 @@
                                   "": 0.0191
                                 },
                                 "entropy": 0.103
+                              },
+                              "region": {
+                                "value": "Europe",
+                                "confidence": {
+                                  "Europe": 0.994,
+                                  "": 0.00626
+                                },
+                                "entropy": 0.0384
                               }
                             },
                             "branch_attrs": {
@@ -5291,8 +5291,12 @@
                                     "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                                     "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
                                   },
-                                  "year": {
-                                    "value": "1984"
+                                  "country": {
+                                    "value": "Czechoslovakia",
+                                    "confidence": {
+                                      "Czechoslovakia": 1.0
+                                    },
+                                    "entropy": -1e-12
                                   },
                                   "segment": {
                                     "value": "L"
@@ -5304,12 +5308,8 @@
                                     },
                                     "entropy": -1e-12
                                   },
-                                  "country": {
-                                    "value": "Czechoslovakia",
-                                    "confidence": {
-                                      "Czechoslovakia": 1.0
-                                    },
-                                    "entropy": -1e-12
+                                  "year": {
+                                    "value": "1984"
                                   }
                                 },
                                 "branch_attrs": {

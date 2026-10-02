@@ -153,15 +153,6 @@
           1033.531
         ]
       },
-      "region": {
-        "value": "Asia",
-        "confidence": {
-          "Asia": 0.641,
-          "Europe": 0.218,
-          "": 0.141
-        },
-        "entropy": 0.894
-      },
       "country": {
         "value": "China",
         "confidence": {
@@ -175,6 +166,15 @@
           "France": 0.113
         },
         "entropy": 2.073
+      },
+      "region": {
+        "value": "Asia",
+        "confidence": {
+          "Asia": 0.641,
+          "Europe": 0.218,
+          "": 0.141
+        },
+        "entropy": 0.894
       }
     },
     "branch_attrs": {
@@ -192,15 +192,6 @@
               1176.059
             ]
           },
-          "region": {
-            "value": "Asia",
-            "confidence": {
-              "Asia": 0.696,
-              "Europe": 0.181,
-              "": 0.123
-            },
-            "entropy": 0.819
-          },
           "country": {
             "value": "China",
             "confidence": {
@@ -214,6 +205,15 @@
               "France": 0.113
             },
             "entropy": 2.073
+          },
+          "region": {
+            "value": "Asia",
+            "confidence": {
+              "Asia": 0.696,
+              "Europe": 0.181,
+              "": 0.123
+            },
+            "entropy": 0.819
           }
         },
         "branch_attrs": {
@@ -357,16 +357,6 @@
                 "author": "Cai,T.,Liu,R.,Jiang,T.Y.,Jia,N.,Jian,Y.X.,Cheng,L.X.,Song,L.F.,Guo,X.X.,Zhao,Y.T.",
                 "value": "Cai,T.,Liu,R.,Jiang,T.Y.,Jia,N.,Jian,Y.X.,Cheng,L.X.,Song,L.F.,Guo,X.X.,Zhao,Y.T."
               },
-              "region": {
-                "value": "Asia",
-                "confidence": {
-                  "Asia": 1.0
-                },
-                "entropy": -1e-12
-              },
-              "segment": {
-                "value": "M"
-              },
               "country": {
                 "value": "China",
                 "confidence": {
@@ -376,6 +366,16 @@
               },
               "year": {
                 "value": "2016"
+              },
+              "segment": {
+                "value": "M"
+              },
+              "region": {
+                "value": "Asia",
+                "confidence": {
+                  "Asia": 1.0
+                },
+                "entropy": -1e-12
               }
             },
             "branch_attrs": {
@@ -870,15 +870,6 @@
                   1887.049
                 ]
               },
-              "region": {
-                "value": "Asia",
-                "confidence": {
-                  "Asia": 0.984,
-                  "Europe": 0.0106,
-                  "": 0.00539
-                },
-                "entropy": 0.0921
-              },
               "country": {
                 "value": "China",
                 "confidence": {
@@ -892,6 +883,15 @@
                   "Italy": 0.0467
                 },
                 "entropy": 1.358
+              },
+              "region": {
+                "value": "Asia",
+                "confidence": {
+                  "Asia": 0.984,
+                  "Europe": 0.0106,
+                  "": 0.00539
+                },
+                "entropy": 0.0921
               }
             },
             "branch_attrs": {
@@ -1320,16 +1320,6 @@
                     "author": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D.",
                     "value": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D."
                   },
-                  "region": {
-                    "value": "Asia",
-                    "confidence": {
-                      "Asia": 1.0
-                    },
-                    "entropy": -1e-12
-                  },
-                  "segment": {
-                    "value": "M"
-                  },
                   "country": {
                     "value": "China",
                     "confidence": {
@@ -1339,6 +1329,16 @@
                   },
                   "year": {
                     "value": "2007"
+                  },
+                  "segment": {
+                    "value": "M"
+                  },
+                  "region": {
+                    "value": "Asia",
+                    "confidence": {
+                      "Asia": 1.0
+                    },
+                    "entropy": -1e-12
                   }
                 },
                 "branch_attrs": {
@@ -1455,19 +1455,19 @@
                       2006.929
                     ]
                   },
-                  "region": {
-                    "value": "Asia",
-                    "confidence": {
-                      "Asia": 1.0
-                    },
-                    "entropy": 0.000155
-                  },
                   "country": {
                     "value": "China",
                     "confidence": {
                       "China": 0.999
                     },
                     "entropy": 0.00602
+                  },
+                  "region": {
+                    "value": "Asia",
+                    "confidence": {
+                      "Asia": 1.0
+                    },
+                    "entropy": 0.000155
                   }
                 },
                 "branch_attrs": {
@@ -1609,16 +1609,6 @@
                         "author": "Lu,Z.,Lu,X.J.,Fu,S.H.,Zhang,S.,Li,Z.X.,Yao,X.H.,Feng,Y.P.,Lambert,A.J.,Ni da,X.,Wang,F.T.,Tong,S.X.,Nasci,R.S.,Feng,Y.,Dong,Q.,Zhai,Y.G.,Gao,X.Y.,Wang,H.Y.,Tang,Q.,Liang,G.D.,Fu,S.,Liang,G.",
                         "value": "Lu,Z.,Lu,X.J.,Fu,S.H.,Zhang,S.,Li,Z.X.,Yao,X.H.,Feng,Y.P.,Lambert,A.J.,Ni da,X.,Wang,F.T.,Tong,S.X.,Nasci,R.S.,Feng,Y.,Dong,Q.,Zhai,Y.G.,Gao,X.Y.,Wang,H.Y.,Tang,Q.,Liang,G.D.,Fu,S.,Liang,G."
                       },
-                      "region": {
-                        "value": "Asia",
-                        "confidence": {
-                          "Asia": 1.0
-                        },
-                        "entropy": -1e-12
-                      },
-                      "segment": {
-                        "value": "M"
-                      },
                       "country": {
                         "value": "China",
                         "confidence": {
@@ -1628,6 +1618,16 @@
                       },
                       "year": {
                         "value": "2006"
+                      },
+                      "segment": {
+                        "value": "M"
+                      },
+                      "region": {
+                        "value": "Asia",
+                        "confidence": {
+                          "Asia": 1.0
+                        },
+                        "entropy": -1e-12
                       }
                     },
                     "branch_attrs": {
@@ -1673,16 +1673,6 @@
                         "author": "Lu,Z.,Lu,X.J.,Fu,S.H.,Zhang,S.,Li,Z.X.,Yao,X.H.,Feng,Y.P.,Lambert,A.J.,Ni da,X.,Wang,F.T.,Tong,S.X.,Nasci,R.S.,Feng,Y.,Dong,Q.,Zhai,Y.G.,Gao,X.Y.,Wang,H.Y.,Tang,Q.,Liang,G.D.,Fu,S.,Liang,G.",
                         "value": "Lu,Z.,Lu,X.J.,Fu,S.H.,Zhang,S.,Li,Z.X.,Yao,X.H.,Feng,Y.P.,Lambert,A.J.,Ni da,X.,Wang,F.T.,Tong,S.X.,Nasci,R.S.,Feng,Y.,Dong,Q.,Zhai,Y.G.,Gao,X.Y.,Wang,H.Y.,Tang,Q.,Liang,G.D.,Fu,S.,Liang,G."
                       },
-                      "region": {
-                        "value": "Asia",
-                        "confidence": {
-                          "Asia": 1.0
-                        },
-                        "entropy": -1e-12
-                      },
-                      "segment": {
-                        "value": "M"
-                      },
                       "country": {
                         "value": "China",
                         "confidence": {
@@ -1692,6 +1682,16 @@
                       },
                       "year": {
                         "value": "2006"
+                      },
+                      "segment": {
+                        "value": "M"
+                      },
+                      "region": {
+                        "value": "Asia",
+                        "confidence": {
+                          "Asia": 1.0
+                        },
+                        "entropy": -1e-12
                       }
                     },
                     "branch_attrs": {
@@ -1715,15 +1715,6 @@
               1110.595
             ]
           },
-          "region": {
-            "value": "Asia",
-            "confidence": {
-              "Asia": 0.617,
-              "Europe": 0.237,
-              "": 0.146
-            },
-            "entropy": 0.92
-          },
           "country": {
             "value": "China",
             "confidence": {
@@ -1737,6 +1728,15 @@
               "France": 0.113
             },
             "entropy": 2.074
+          },
+          "region": {
+            "value": "Asia",
+            "confidence": {
+              "Asia": 0.617,
+              "Europe": 0.237,
+              "": 0.146
+            },
+            "entropy": 0.92
           }
         },
         "branch_attrs": {
@@ -1821,16 +1821,6 @@
                 "author": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D.",
                 "value": "Lu,Z.,Fu,S.H.,Wang,F.T.,Nasci,R.S.,Tang,Q.,Liang,G.D."
               },
-              "region": {
-                "value": "Asia",
-                "confidence": {
-                  "Asia": 1.0
-                },
-                "entropy": -1e-12
-              },
-              "segment": {
-                "value": "M"
-              },
               "country": {
                 "value": "China",
                 "confidence": {
@@ -1840,6 +1830,16 @@
               },
               "year": {
                 "value": "2007"
+              },
+              "segment": {
+                "value": "M"
+              },
+              "region": {
+                "value": "Asia",
+                "confidence": {
+                  "Asia": 1.0
+                },
+                "entropy": -1e-12
               }
             },
             "branch_attrs": {
@@ -2411,15 +2411,6 @@
                   1893.712
                 ]
               },
-              "region": {
-                "value": "Europe",
-                "confidence": {
-                  "Europe": 0.996,
-                  "Asia": 0.00192,
-                  "": 0.00181
-                },
-                "entropy": 0.0272
-              },
               "country": {
                 "value": "Czech Republic",
                 "confidence": {
@@ -2433,6 +2424,15 @@
                   "Italy": 0.0223
                 },
                 "entropy": 1.237
+              },
+              "region": {
+                "value": "Europe",
+                "confidence": {
+                  "Europe": 0.996,
+                  "Asia": 0.00192,
+                  "": 0.00181
+                },
+                "entropy": 0.0272
               }
             },
             "branch_attrs": {
@@ -2956,16 +2956,6 @@
                     "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                     "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
                   },
-                  "region": {
-                    "value": "Europe",
-                    "confidence": {
-                      "Europe": 1.0
-                    },
-                    "entropy": -1e-12
-                  },
-                  "segment": {
-                    "value": "M"
-                  },
                   "country": {
                     "value": "France",
                     "confidence": {
@@ -2975,6 +2965,16 @@
                   },
                   "year": {
                     "value": "1968"
+                  },
+                  "segment": {
+                    "value": "M"
+                  },
+                  "region": {
+                    "value": "Europe",
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "entropy": -1e-12
                   }
                 },
                 "branch_attrs": {
@@ -3040,13 +3040,6 @@
                       1921.516
                     ]
                   },
-                  "region": {
-                    "value": "Europe",
-                    "confidence": {
-                      "Europe": 1.0
-                    },
-                    "entropy": 0.00107
-                  },
                   "country": {
                     "value": "Czech Republic",
                     "confidence": {
@@ -3060,6 +3053,13 @@
                       "Italy": 0.00176
                     },
                     "entropy": 0.172
+                  },
+                  "region": {
+                    "value": "Europe",
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "entropy": 0.00107
                   }
                 },
                 "branch_attrs": {
@@ -3133,20 +3133,20 @@
                         "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                         "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                       },
-                      "region": {
-                        "value": "Europe",
+                      "country": {
+                        "value": "Czech Republic",
                         "confidence": {
-                          "Europe": 1.0
+                          "Czech Republic": 1.0
                         },
                         "entropy": -1e-12
                       },
                       "segment": {
                         "value": "M"
                       },
-                      "country": {
-                        "value": "Czech Republic",
+                      "region": {
+                        "value": "Europe",
                         "confidence": {
-                          "Czech Republic": 1.0
+                          "Europe": 1.0
                         },
                         "entropy": -1e-12
                       }
@@ -3208,19 +3208,19 @@
                           1938.137
                         ]
                       },
-                      "region": {
-                        "value": "Europe",
-                        "confidence": {
-                          "Europe": 1.0
-                        },
-                        "entropy": 1.38e-10
-                      },
                       "country": {
                         "value": "Czech Republic",
                         "confidence": {
                           "Czech Republic": 1.0
                         },
                         "entropy": 3.76e-07
+                      },
+                      "region": {
+                        "value": "Europe",
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "entropy": 1.38e-10
                       }
                     },
                     "branch_attrs": {
@@ -3282,20 +3282,20 @@
                             "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                             "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                           },
-                          "region": {
-                            "value": "Europe",
+                          "country": {
+                            "value": "Czech Republic",
                             "confidence": {
-                              "Europe": 1.0
+                              "Czech Republic": 1.0
                             },
                             "entropy": -1e-12
                           },
                           "segment": {
                             "value": "M"
                           },
-                          "country": {
-                            "value": "Czech Republic",
+                          "region": {
+                            "value": "Europe",
                             "confidence": {
-                              "Czech Republic": 1.0
+                              "Europe": 1.0
                             },
                             "entropy": -1e-12
                           }
@@ -3345,19 +3345,19 @@
                               1959.845
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 2.08e-05
-                          },
                           "country": {
                             "value": "Czech Republic",
                             "confidence": {
                               "Czech Republic": 1.0
                             },
                             "entropy": 0.000667
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 2.08e-05
                           }
                         },
                         "branch_attrs": {
@@ -3424,20 +3424,20 @@
                                 "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                 "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                               },
-                              "region": {
-                                "value": "Europe",
+                              "country": {
+                                "value": "Czech Republic",
                                 "confidence": {
-                                  "Europe": 1.0
+                                  "Czech Republic": 1.0
                                 },
                                 "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "M"
                               },
-                              "country": {
-                                "value": "Czech Republic",
+                              "region": {
+                                "value": "Europe",
                                 "confidence": {
-                                  "Czech Republic": 1.0
+                                  "Europe": 1.0
                                 },
                                 "entropy": -1e-12
                               }
@@ -3503,20 +3503,20 @@
                                 "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                 "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                               },
-                              "region": {
-                                "value": "Europe",
+                              "country": {
+                                "value": "Czech Republic",
                                 "confidence": {
-                                  "Europe": 1.0
+                                  "Czech Republic": 1.0
                                 },
                                 "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "M"
                               },
-                              "country": {
-                                "value": "Czech Republic",
+                              "region": {
+                                "value": "Europe",
                                 "confidence": {
-                                  "Czech Republic": 1.0
+                                  "Europe": 1.0
                                 },
                                 "entropy": -1e-12
                               }
@@ -3550,19 +3550,19 @@
                               1951.459
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 4.1e-05
-                          },
                           "country": {
                             "value": "Czech Republic",
                             "confidence": {
                               "Czech Republic": 1.0
                             },
                             "entropy": 0.00132
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 4.1e-05
                           }
                         },
                         "branch_attrs": {
@@ -3625,20 +3625,20 @@
                                 "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                 "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                               },
-                              "region": {
-                                "value": "Europe",
+                              "country": {
+                                "value": "Czech Republic",
                                 "confidence": {
-                                  "Europe": 1.0
+                                  "Czech Republic": 1.0
                                 },
                                 "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "M"
                               },
-                              "country": {
-                                "value": "Czech Republic",
+                              "region": {
+                                "value": "Europe",
                                 "confidence": {
-                                  "Czech Republic": 1.0
+                                  "Europe": 1.0
                                 },
                                 "entropy": -1e-12
                               }
@@ -3706,20 +3706,20 @@
                                 "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                 "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                               },
-                              "region": {
-                                "value": "Europe",
+                              "country": {
+                                "value": "Czech Republic",
                                 "confidence": {
-                                  "Europe": 1.0
+                                  "Czech Republic": 1.0
                                 },
                                 "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "M"
                               },
-                              "country": {
-                                "value": "Czech Republic",
+                              "region": {
+                                "value": "Europe",
                                 "confidence": {
-                                  "Czech Republic": 1.0
+                                  "Europe": 1.0
                                 },
                                 "entropy": -1e-12
                               }
@@ -3759,19 +3759,19 @@
                               1939.177
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 1.33e-05
-                          },
                           "country": {
                             "value": "Czech Republic",
                             "confidence": {
                               "Czech Republic": 1.0
                             },
                             "entropy": 0.00132
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 1.33e-05
                           }
                         },
                         "branch_attrs": {
@@ -3793,13 +3793,6 @@
                                   1949.756
                                 ]
                               },
-                              "region": {
-                                "value": "Europe",
-                                "confidence": {
-                                  "Europe": 1.0
-                                },
-                                "entropy": 4.95e-05
-                              },
                               "country": {
                                 "value": "Czech Republic",
                                 "confidence": {
@@ -3807,6 +3800,13 @@
                                   "Austria": 0.00418
                                 },
                                 "entropy": 0.0364
+                              },
+                              "region": {
+                                "value": "Europe",
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "entropy": 4.95e-05
                               }
                             },
                             "branch_attrs": {
@@ -3866,22 +3866,6 @@
                                     "author": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N.",
                                     "value": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N."
                                   },
-                                  "region": {
-                                    "value": "Europe",
-                                    "confidence": {
-                                      "Europe": 1.0
-                                    },
-                                    "entropy": -1e-12
-                                  },
-                                  "division": {
-                                    "value": "Lower Austria"
-                                  },
-                                  "segment": {
-                                    "value": "M"
-                                  },
-                                  "location": {
-                                    "value": "Rohrau"
-                                  },
                                   "country": {
                                     "value": "Austria",
                                     "confidence": {
@@ -3891,6 +3875,22 @@
                                   },
                                   "year": {
                                     "value": "2019"
+                                  },
+                                  "segment": {
+                                    "value": "M"
+                                  },
+                                  "region": {
+                                    "value": "Europe",
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "location": {
+                                    "value": "Rohrau"
+                                  },
+                                  "division": {
+                                    "value": "Lower Austria"
                                   }
                                 },
                                 "branch_attrs": {
@@ -3940,19 +3940,19 @@
                                       1952.744
                                     ]
                                   },
-                                  "region": {
-                                    "value": "Europe",
-                                    "confidence": {
-                                      "Europe": 1.0
-                                    },
-                                    "entropy": 2.77e-05
-                                  },
                                   "country": {
                                     "value": "Czech Republic",
                                     "confidence": {
                                       "Czech Republic": 1.0
                                     },
                                     "entropy": 0.00369
+                                  },
+                                  "region": {
+                                    "value": "Europe",
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "entropy": 2.77e-05
                                   }
                                 },
                                 "branch_attrs": {
@@ -4004,20 +4004,20 @@
                                         "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                         "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                       },
-                                      "region": {
-                                        "value": "Europe",
+                                      "country": {
+                                        "value": "Czech Republic",
                                         "confidence": {
-                                          "Europe": 1.0
+                                          "Czech Republic": 1.0
                                         },
                                         "entropy": -1e-12
                                       },
                                       "segment": {
                                         "value": "M"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
+                                      "region": {
+                                        "value": "Europe",
                                         "confidence": {
-                                          "Czech Republic": 1.0
+                                          "Europe": 1.0
                                         },
                                         "entropy": -1e-12
                                       }
@@ -4095,20 +4095,20 @@
                                         "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                         "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                       },
-                                      "region": {
-                                        "value": "Europe",
+                                      "country": {
+                                        "value": "Czech Republic",
                                         "confidence": {
-                                          "Europe": 1.0
+                                          "Czech Republic": 1.0
                                         },
                                         "entropy": -1e-12
                                       },
                                       "segment": {
                                         "value": "M"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
+                                      "region": {
+                                        "value": "Europe",
                                         "confidence": {
-                                          "Czech Republic": 1.0
+                                          "Europe": 1.0
                                         },
                                         "entropy": -1e-12
                                       }
@@ -4155,19 +4155,19 @@
                                   1947.75
                                 ]
                               },
-                              "region": {
-                                "value": "Europe",
-                                "confidence": {
-                                  "Europe": 1.0
-                                },
-                                "entropy": 1.34e-05
-                              },
                               "country": {
                                 "value": "Czech Republic",
                                 "confidence": {
                                   "Czech Republic": 1.0
                                 },
                                 "entropy": 0.00208
+                              },
+                              "region": {
+                                "value": "Europe",
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "entropy": 1.34e-05
                               }
                             },
                             "branch_attrs": {
@@ -4201,19 +4201,19 @@
                                       1959.976
                                     ]
                                   },
-                                  "region": {
-                                    "value": "Europe",
-                                    "confidence": {
-                                      "Europe": 1.0
-                                    },
-                                    "entropy": 1e-05
-                                  },
                                   "country": {
                                     "value": "Czech Republic",
                                     "confidence": {
                                       "Czech Republic": 1.0
                                     },
                                     "entropy": 0.000334
+                                  },
+                                  "region": {
+                                    "value": "Europe",
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "entropy": 1e-05
                                   }
                                 },
                                 "branch_attrs": {
@@ -4275,20 +4275,20 @@
                                         "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                         "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                       },
-                                      "region": {
-                                        "value": "Europe",
+                                      "country": {
+                                        "value": "Czech Republic",
                                         "confidence": {
-                                          "Europe": 1.0
+                                          "Czech Republic": 1.0
                                         },
                                         "entropy": -1e-12
                                       },
                                       "segment": {
                                         "value": "M"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
+                                      "region": {
+                                        "value": "Europe",
                                         "confidence": {
-                                          "Czech Republic": 1.0
+                                          "Europe": 1.0
                                         },
                                         "entropy": -1e-12
                                       }
@@ -4349,20 +4349,20 @@
                                         "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                         "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                       },
-                                      "region": {
-                                        "value": "Europe",
+                                      "country": {
+                                        "value": "Czech Republic",
                                         "confidence": {
-                                          "Europe": 1.0
+                                          "Czech Republic": 1.0
                                         },
                                         "entropy": -1e-12
                                       },
                                       "segment": {
                                         "value": "M"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
+                                      "region": {
+                                        "value": "Europe",
                                         "confidence": {
-                                          "Czech Republic": 1.0
+                                          "Europe": 1.0
                                         },
                                         "entropy": -1e-12
                                       }
@@ -4398,13 +4398,6 @@
                                       1950.003
                                     ]
                                   },
-                                  "region": {
-                                    "value": "Europe",
-                                    "confidence": {
-                                      "Europe": 1.0
-                                    },
-                                    "entropy": 7.08e-05
-                                  },
                                   "country": {
                                     "value": "Czech Republic",
                                     "confidence": {
@@ -4412,6 +4405,13 @@
                                       "Italy": 0.00491
                                     },
                                     "entropy": 0.047
+                                  },
+                                  "region": {
+                                    "value": "Europe",
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "entropy": 7.08e-05
                                   }
                                 },
                                 "branch_attrs": {
@@ -4467,20 +4467,20 @@
                                         "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                         "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                       },
-                                      "region": {
-                                        "value": "Europe",
+                                      "country": {
+                                        "value": "Czech Republic",
                                         "confidence": {
-                                          "Europe": 1.0
+                                          "Czech Republic": 1.0
                                         },
                                         "entropy": -1e-12
                                       },
                                       "segment": {
                                         "value": "M"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
+                                      "region": {
+                                        "value": "Europe",
                                         "confidence": {
-                                          "Czech Republic": 1.0
+                                          "Europe": 1.0
                                         },
                                         "entropy": -1e-12
                                       }
@@ -4546,16 +4546,6 @@
                                         "author": "Calzolari,M.,Lelli,D.,Chiapponi,C.",
                                         "value": "Calzolari,M.,Lelli,D.,Chiapponi,C."
                                       },
-                                      "region": {
-                                        "value": "Europe",
-                                        "confidence": {
-                                          "Europe": 1.0
-                                        },
-                                        "entropy": -1e-12
-                                      },
-                                      "segment": {
-                                        "value": "M"
-                                      },
                                       "country": {
                                         "value": "Italy",
                                         "confidence": {
@@ -4565,6 +4555,16 @@
                                       },
                                       "year": {
                                         "value": "2021"
+                                      },
+                                      "segment": {
+                                        "value": "M"
+                                      },
+                                      "region": {
+                                        "value": "Europe",
+                                        "confidence": {
+                                          "Europe": 1.0
+                                        },
+                                        "entropy": -1e-12
                                       }
                                     },
                                     "branch_attrs": {
@@ -4644,19 +4644,19 @@
                               1938.816
                             ]
                           },
-                          "region": {
-                            "value": "Europe",
-                            "confidence": {
-                              "Europe": 1.0
-                            },
-                            "entropy": 2.38e-05
-                          },
                           "country": {
                             "value": "Czech Republic",
                             "confidence": {
                               "Czech Republic": 1.0
                             },
                             "entropy": 0.00104
+                          },
+                          "region": {
+                            "value": "Europe",
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "entropy": 2.38e-05
                           }
                         },
                         "branch_attrs": {
@@ -4706,20 +4706,20 @@
                                 "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                 "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                               },
-                              "region": {
-                                "value": "Europe",
+                              "country": {
+                                "value": "Czech Republic",
                                 "confidence": {
-                                  "Europe": 1.0
+                                  "Czech Republic": 1.0
                                 },
                                 "entropy": -1e-12
                               },
                               "segment": {
                                 "value": "M"
                               },
-                              "country": {
-                                "value": "Czech Republic",
+                              "region": {
+                                "value": "Europe",
                                 "confidence": {
-                                  "Czech Republic": 1.0
+                                  "Europe": 1.0
                                 },
                                 "entropy": -1e-12
                               }
@@ -4764,19 +4764,19 @@
                                   1940.578
                                 ]
                               },
-                              "region": {
-                                "value": "Europe",
-                                "confidence": {
-                                  "Europe": 1.0
-                                },
-                                "entropy": 8.25e-06
-                              },
                               "country": {
                                 "value": "Czech Republic",
                                 "confidence": {
                                   "Czech Republic": 0.999
                                 },
                                 "entropy": 0.00507
+                              },
+                              "region": {
+                                "value": "Europe",
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "entropy": 8.25e-06
                               }
                             },
                             "branch_attrs": {
@@ -4799,19 +4799,19 @@
                                       1942.702
                                     ]
                                   },
-                                  "region": {
-                                    "value": "Europe",
-                                    "confidence": {
-                                      "Europe": 1.0
-                                    },
-                                    "entropy": 1.89e-05
-                                  },
                                   "country": {
                                     "value": "Czech Republic",
                                     "confidence": {
                                       "Czech Republic": 1.0
                                     },
                                     "entropy": 0.000829
+                                  },
+                                  "region": {
+                                    "value": "Europe",
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "entropy": 1.89e-05
                                   }
                                 },
                                 "branch_attrs": {
@@ -4861,20 +4861,20 @@
                                         "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                         "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                       },
-                                      "region": {
-                                        "value": "Europe",
+                                      "country": {
+                                        "value": "Czech Republic",
                                         "confidence": {
-                                          "Europe": 1.0
+                                          "Czech Republic": 1.0
                                         },
                                         "entropy": -1e-12
                                       },
                                       "segment": {
                                         "value": "M"
                                       },
-                                      "country": {
-                                        "value": "Czech Republic",
+                                      "region": {
+                                        "value": "Europe",
                                         "confidence": {
-                                          "Czech Republic": 1.0
+                                          "Europe": 1.0
                                         },
                                         "entropy": -1e-12
                                       }
@@ -4899,19 +4899,19 @@
                                           1945.294
                                         ]
                                       },
-                                      "region": {
-                                        "value": "Europe",
-                                        "confidence": {
-                                          "Europe": 1.0
-                                        },
-                                        "entropy": 2.76e-05
-                                      },
                                       "country": {
                                         "value": "Czech Republic",
                                         "confidence": {
                                           "Czech Republic": 1.0
                                         },
                                         "entropy": 0.000686
+                                      },
+                                      "region": {
+                                        "value": "Europe",
+                                        "confidence": {
+                                          "Europe": 1.0
+                                        },
+                                        "entropy": 2.76e-05
                                       }
                                     },
                                     "branch_attrs": {
@@ -4969,20 +4969,20 @@
                                             "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                             "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                           },
-                                          "region": {
-                                            "value": "Europe",
+                                          "country": {
+                                            "value": "Czech Republic",
                                             "confidence": {
-                                              "Europe": 1.0
+                                              "Czech Republic": 1.0
                                             },
                                             "entropy": -1e-12
                                           },
                                           "segment": {
                                             "value": "M"
                                           },
-                                          "country": {
-                                            "value": "Czech Republic",
+                                          "region": {
+                                            "value": "Europe",
                                             "confidence": {
-                                              "Czech Republic": 1.0
+                                              "Europe": 1.0
                                             },
                                             "entropy": -1e-12
                                           }
@@ -5029,19 +5029,19 @@
                                               1946.539
                                             ]
                                           },
-                                          "region": {
-                                            "value": "Europe",
-                                            "confidence": {
-                                              "Europe": 1.0
-                                            },
-                                            "entropy": 0.000539
-                                          },
                                           "country": {
                                             "value": "Czech Republic",
                                             "confidence": {
                                               "Czech Republic": 1.0
                                             },
                                             "entropy": 0.00265
+                                          },
+                                          "region": {
+                                            "value": "Europe",
+                                            "confidence": {
+                                              "Europe": 1.0
+                                            },
+                                            "entropy": 0.000539
                                           }
                                         },
                                         "branch_attrs": {
@@ -5070,14 +5070,6 @@
                                                   1951.819
                                                 ]
                                               },
-                                              "region": {
-                                                "value": "Europe",
-                                                "confidence": {
-                                                  "Europe": 0.992,
-                                                  "": 0.00757
-                                                },
-                                                "entropy": 0.0448
-                                              },
                                               "country": {
                                                 "value": "Czech Republic",
                                                 "confidence": {
@@ -5085,6 +5077,14 @@
                                                   "": 0.0159
                                                 },
                                                 "entropy": 0.091
+                                              },
+                                              "region": {
+                                                "value": "Europe",
+                                                "confidence": {
+                                                  "Europe": 0.992,
+                                                  "": 0.00757
+                                                },
+                                                "entropy": 0.0448
                                               }
                                             },
                                             "branch_attrs": {
@@ -5215,20 +5215,20 @@
                                                     "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                                     "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                                   },
-                                                  "region": {
-                                                    "value": "Europe",
+                                                  "country": {
+                                                    "value": "Czech Republic",
                                                     "confidence": {
-                                                      "Europe": 1.0
+                                                      "Czech Republic": 1.0
                                                     },
                                                     "entropy": -1e-12
                                                   },
                                                   "segment": {
                                                     "value": "M"
                                                   },
-                                                  "country": {
-                                                    "value": "Czech Republic",
+                                                  "region": {
+                                                    "value": "Europe",
                                                     "confidence": {
-                                                      "Czech Republic": 1.0
+                                                      "Europe": 1.0
                                                     },
                                                     "entropy": -1e-12
                                                   }
@@ -5250,19 +5250,19 @@
                                                   1949.07
                                                 ]
                                               },
-                                              "region": {
-                                                "value": "Europe",
-                                                "confidence": {
-                                                  "Europe": 1.0
-                                                },
-                                                "entropy": 3.17e-05
-                                              },
                                               "country": {
                                                 "value": "Czech Republic",
                                                 "confidence": {
                                                   "Czech Republic": 1.0
                                                 },
                                                 "entropy": 0.000762
+                                              },
+                                              "region": {
+                                                "value": "Europe",
+                                                "confidence": {
+                                                  "Europe": 1.0
+                                                },
+                                                "entropy": 3.17e-05
                                               }
                                             },
                                             "branch_attrs": {
@@ -5318,20 +5318,20 @@
                                                     "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                                     "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                                   },
-                                                  "region": {
-                                                    "value": "Europe",
+                                                  "country": {
+                                                    "value": "Czech Republic",
                                                     "confidence": {
-                                                      "Europe": 1.0
+                                                      "Czech Republic": 1.0
                                                     },
                                                     "entropy": -1e-12
                                                   },
                                                   "segment": {
                                                     "value": "M"
                                                   },
-                                                  "country": {
-                                                    "value": "Czech Republic",
+                                                  "region": {
+                                                    "value": "Europe",
                                                     "confidence": {
-                                                      "Czech Republic": 1.0
+                                                      "Europe": 1.0
                                                     },
                                                     "entropy": -1e-12
                                                   }
@@ -5401,20 +5401,20 @@
                                                     "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                                     "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                                   },
-                                                  "region": {
-                                                    "value": "Europe",
+                                                  "country": {
+                                                    "value": "Czech Republic",
                                                     "confidence": {
-                                                      "Europe": 1.0
+                                                      "Czech Republic": 1.0
                                                     },
                                                     "entropy": -1e-12
                                                   },
                                                   "segment": {
                                                     "value": "M"
                                                   },
-                                                  "country": {
-                                                    "value": "Czech Republic",
+                                                  "region": {
+                                                    "value": "Europe",
                                                     "confidence": {
-                                                      "Czech Republic": 1.0
+                                                      "Europe": 1.0
                                                     },
                                                     "entropy": -1e-12
                                                   }
@@ -5463,13 +5463,6 @@
                                       1944.25
                                     ]
                                   },
-                                  "region": {
-                                    "value": "Europe",
-                                    "confidence": {
-                                      "Europe": 1.0
-                                    },
-                                    "entropy": 1.85e-05
-                                  },
                                   "country": {
                                     "value": "Czech Republic",
                                     "confidence": {
@@ -5480,6 +5473,13 @@
                                       "": 0.00108
                                     },
                                     "entropy": 0.18
+                                  },
+                                  "region": {
+                                    "value": "Europe",
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "entropy": 1.85e-05
                                   }
                                 },
                                 "branch_attrs": {
@@ -5506,13 +5506,6 @@
                                           1949.546
                                         ]
                                       },
-                                      "region": {
-                                        "value": "Europe",
-                                        "confidence": {
-                                          "Europe": 1.0
-                                        },
-                                        "entropy": 1.5e-05
-                                      },
                                       "country": {
                                         "value": "Czech Republic",
                                         "confidence": {
@@ -5522,6 +5515,13 @@
                                           "Austria": 0.00609
                                         },
                                         "entropy": 0.198
+                                      },
+                                      "region": {
+                                        "value": "Europe",
+                                        "confidence": {
+                                          "Europe": 1.0
+                                        },
+                                        "entropy": 1.5e-05
                                       }
                                     },
                                     "branch_attrs": {
@@ -5573,20 +5573,20 @@
                                             "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                             "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                           },
-                                          "region": {
-                                            "value": "Europe",
+                                          "country": {
+                                            "value": "Czech Republic",
                                             "confidence": {
-                                              "Europe": 1.0
+                                              "Czech Republic": 1.0
                                             },
                                             "entropy": -1e-12
                                           },
                                           "segment": {
                                             "value": "M"
                                           },
-                                          "country": {
-                                            "value": "Czech Republic",
+                                          "region": {
+                                            "value": "Europe",
                                             "confidence": {
-                                              "Czech Republic": 1.0
+                                              "Europe": 1.0
                                             },
                                             "entropy": -1e-12
                                           }
@@ -5624,13 +5624,6 @@
                                               1952.43
                                             ]
                                           },
-                                          "region": {
-                                            "value": "Europe",
-                                            "confidence": {
-                                              "Europe": 1.0
-                                            },
-                                            "entropy": 4.15e-05
-                                          },
                                           "country": {
                                             "value": "Czech Republic",
                                             "confidence": {
@@ -5644,6 +5637,13 @@
                                               "Italy": 0.00264
                                             },
                                             "entropy": 1.036
+                                          },
+                                          "region": {
+                                            "value": "Europe",
+                                            "confidence": {
+                                              "Europe": 1.0
+                                            },
+                                            "entropy": 4.15e-05
                                           }
                                         },
                                         "branch_attrs": {
@@ -5699,20 +5699,20 @@
                                                 "author": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L.",
                                                 "value": "Kilian,P.,Ruzek,D.,Danielova,V.,Hypsa,V.,Grubhoffer,L."
                                               },
-                                              "region": {
-                                                "value": "Europe",
+                                              "country": {
+                                                "value": "Slovakia",
                                                 "confidence": {
-                                                  "Europe": 1.0
+                                                  "Slovakia": 1.0
                                                 },
                                                 "entropy": -1e-12
                                               },
                                               "segment": {
                                                 "value": "M"
                                               },
-                                              "country": {
-                                                "value": "Slovakia",
+                                              "region": {
+                                                "value": "Europe",
                                                 "confidence": {
-                                                  "Slovakia": 1.0
+                                                  "Europe": 1.0
                                                 },
                                                 "entropy": -1e-12
                                               }
@@ -5777,22 +5777,6 @@
                                                 "author": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N.",
                                                 "value": "Camp,J.V.,Kniha,E.,Obwaller,A.G.,Walochnik,J.,Nowotny,N."
                                               },
-                                              "region": {
-                                                "value": "Europe",
-                                                "confidence": {
-                                                  "Europe": 1.0
-                                                },
-                                                "entropy": -1e-12
-                                              },
-                                              "division": {
-                                                "value": "Lower Austria"
-                                              },
-                                              "segment": {
-                                                "value": "M"
-                                              },
-                                              "location": {
-                                                "value": "Rohrau"
-                                              },
                                               "country": {
                                                 "value": "Austria",
                                                 "confidence": {
@@ -5802,6 +5786,22 @@
                                               },
                                               "year": {
                                                 "value": "2019"
+                                              },
+                                              "segment": {
+                                                "value": "M"
+                                              },
+                                              "region": {
+                                                "value": "Europe",
+                                                "confidence": {
+                                                  "Europe": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "location": {
+                                                "value": "Rohrau"
+                                              },
+                                              "division": {
+                                                "value": "Lower Austria"
                                               }
                                             },
                                             "branch_attrs": {
@@ -5851,13 +5851,6 @@
                                           1955.862
                                         ]
                                       },
-                                      "region": {
-                                        "value": "Europe",
-                                        "confidence": {
-                                          "Europe": 1.0
-                                        },
-                                        "entropy": 0.00119
-                                      },
                                       "country": {
                                         "value": "Czechoslovakia",
                                         "confidence": {
@@ -5866,6 +5859,13 @@
                                           "Czech Republic": 0.0182
                                         },
                                         "entropy": 0.22
+                                      },
+                                      "region": {
+                                        "value": "Europe",
+                                        "confidence": {
+                                          "Europe": 1.0
+                                        },
+                                        "entropy": 0.00119
                                       }
                                     },
                                     "branch_attrs": {
@@ -5983,16 +5983,6 @@
                                             "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                                             "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
                                           },
-                                          "region": {
-                                            "value": "Europe",
-                                            "confidence": {
-                                              "Europe": 1.0
-                                            },
-                                            "entropy": -1e-12
-                                          },
-                                          "segment": {
-                                            "value": "M"
-                                          },
                                           "country": {
                                             "value": "Czechoslovakia",
                                             "confidence": {
@@ -6002,6 +5992,16 @@
                                           },
                                           "year": {
                                             "value": "1984"
+                                          },
+                                          "segment": {
+                                            "value": "M"
+                                          },
+                                          "region": {
+                                            "value": "Europe",
+                                            "confidence": {
+                                              "Europe": 1.0
+                                            },
+                                            "entropy": -1e-12
                                           }
                                         },
                                         "branch_attrs": {
@@ -6031,19 +6031,19 @@
                                               1957.372
                                             ]
                                           },
-                                          "region": {
-                                            "value": "Europe",
-                                            "confidence": {
-                                              "Europe": 1.0
-                                            },
-                                            "entropy": 1.84e-05
-                                          },
                                           "country": {
                                             "value": "Czechoslovakia",
                                             "confidence": {
                                               "Czechoslovakia": 0.999
                                             },
                                             "entropy": 0.00517
+                                          },
+                                          "region": {
+                                            "value": "Europe",
+                                            "confidence": {
+                                              "Europe": 1.0
+                                            },
+                                            "entropy": 1.84e-05
                                           }
                                         },
                                         "branch_attrs": {
@@ -6103,16 +6103,6 @@
                                                 "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                                                 "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
                                               },
-                                              "region": {
-                                                "value": "Europe",
-                                                "confidence": {
-                                                  "Europe": 1.0
-                                                },
-                                                "entropy": -1e-12
-                                              },
-                                              "segment": {
-                                                "value": "M"
-                                              },
                                               "country": {
                                                 "value": "Czechoslovakia",
                                                 "confidence": {
@@ -6122,6 +6112,16 @@
                                               },
                                               "year": {
                                                 "value": "1958"
+                                              },
+                                              "segment": {
+                                                "value": "M"
+                                              },
+                                              "region": {
+                                                "value": "Europe",
+                                                "confidence": {
+                                                  "Europe": 1.0
+                                                },
+                                                "entropy": -1e-12
                                               }
                                             },
                                             "branch_attrs": {
@@ -6177,16 +6177,6 @@
                                                 "author": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S.",
                                                 "value": "Bennett,R.S.,Gresko,A.K.,Murphy,B.R.,Whitehead,S.,Whitehead,S.S."
                                               },
-                                              "region": {
-                                                "value": "Europe",
-                                                "confidence": {
-                                                  "Europe": 1.0
-                                                },
-                                                "entropy": -1e-12
-                                              },
-                                              "segment": {
-                                                "value": "M"
-                                              },
                                               "country": {
                                                 "value": "Czechoslovakia",
                                                 "confidence": {
@@ -6196,6 +6186,16 @@
                                               },
                                               "year": {
                                                 "value": "1958"
+                                              },
+                                              "segment": {
+                                                "value": "M"
+                                              },
+                                              "region": {
+                                                "value": "Europe",
+                                                "confidence": {
+                                                  "Europe": 1.0
+                                                },
+                                                "entropy": -1e-12
                                               }
                                             },
                                             "branch_attrs": {
