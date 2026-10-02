@@ -38,14 +38,16 @@ downstream is identical. The fixture is `fixture/ncbi_dataset.zip`
 
 ### View on nextstrain.org
 
-Once this repo is **public** (keep Actions off), nextstrain.org/community
-serves `auspice/<name>.json` from the default branch directly:
+The repo is public and nextstrain.org/community serves `auspice/tahyna_<segment>.json`
+from the default branch (the dataset path is the filename minus the `tahyna_`
+prefix and extension; underscores are banned in community URL paths but fine
+in filenames):
 
-- S: https://nextstrain.org/community/corneliusroemer-agent/tahyna/tahyna_s
-- M: https://nextstrain.org/community/corneliusroemer-agent/tahyna/tahyna_m
-- L: https://nextstrain.org/community/corneliusroemer-agent/tahyna/tahyna_l
+- S: https://nextstrain.org/community/corneliusroemer-agent/tahyna/s
+- M: https://nextstrain.org/community/corneliusroemer-agent/tahyna/m
+- L: https://nextstrain.org/community/corneliusroemer-agent/tahyna/l
 - Tangle, S vs M (shared isolate prefixes make the pairing readable):
-  https://nextstrain.org/community/corneliusroemer-agent/tahyna/tahyna_s:community/corneliusroemer-agent/tahyna/tahyna_m
+  https://nextstrain.org/community/corneliusroemer-agent/tahyna/s:corneliusroemer-agent/tahyna/m
 
 ### View the trees locally
 

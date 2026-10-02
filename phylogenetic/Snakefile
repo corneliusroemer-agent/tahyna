@@ -140,6 +140,14 @@ rule filter_qc:
         ),
         zero_frameshifts=config["qc_gate"]["zero_frameshifts"],
         zero_stop_codons=config["qc_gate"]["zero_stop_codons"],
+        zero_flags=" ".join(
+            flag
+            for flag, enabled in (
+                ("--zero-frameshifts", config["qc_gate"]["zero_frameshifts"]),
+                ("--zero-stop-codons", config["qc_gate"]["zero_stop_codons"]),
+            )
+            if enabled
+        ),
         exceptions=" ".join(config["qc_gate"].get("exceptions", [])),
     log:
         "logs/filter_qc_{segment}.log",
@@ -152,6 +160,7 @@ rule filter_qc:
             --min-coverage {params.min_coverage} \
             --missing-data-max {params.missing_data_max} \
             --max-subs {params.max_subs} \
+            {params.zero_flags} \
             --exceptions {params.exceptions} \
             --output {output.metadata:q} \
             --report {output.report:q}

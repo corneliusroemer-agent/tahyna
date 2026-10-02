@@ -5,115 +5,117 @@ Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
 Host:    7866abcddd43 (SSE4.2, 27 GB RAM)
 Command: iqtree3 --threads-max 4 -s results/aligned_qc_m-delim.fasta -m GTR --ninit 2 -n 2 --epsilon 0.05 -T AUTO --redo
-Seed:    873873 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Fri Oct  2 22:20:33 2026
+Seed:    18370 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Oct  3 01:39:05 2026
 Kernel:  SSE2 - auto-detect threads (16 CPU cores detected)
 
 Reading alignment file results/aligned_qc_m-delim.fasta ... Fasta format detected
-Reading fasta file: done in 0.00113797 secs using 92.18% CPU
+Reading fasta file: done in 0.00104308 secs using 92.9% CPU
 Alignment most likely contains DNA/RNA sequences
-Constructing alignment: done in 0.00170898 secs using 99.94% CPU
+Constructing alignment: done in 0.00178695 secs using 97.04% CPU
 Alignment has 33 sequences with 4489 columns, 564 distinct patterns
 1022 parsimony-informative, 494 singleton sites, 2973 constant sites
                                                      Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 1.78814e-05 secs using 100.7% CPU
+Analyzing sequences: done in 1.69277e-05 secs using 94.52% CPU
    1  XJ0625_EU622819                                        0.00%    passed     42.84%
-   2  29_GQ386823                                            0.00%    passed    100.00%
-   3  Bardos_92_AF123485                                     0.00%    passed     98.36%
-   4  76_GQ386824                                            0.00%    passed     99.98%
-   5  181-57_AF229129                                        0.00%    passed     98.00%
-   6  90_GQ386827                                            0.00%    passed     99.36%
-   7  94_GQ386828                                            0.00%    passed     99.45%
-   8  106_GQ386830                                           0.00%    passed     99.50%
-   9  83_GQ386825                                            0.00%    passed     99.02%
-  10  4019_GQ386834                                          0.00%    passed    100.00%
-  11  181_GQ386831                                           0.00%    passed     99.76%
+   2  181-57_AF229129                                        0.00%    passed     98.00%
+   3  76_GQ386824                                            0.00%    passed     99.98%
+   4  29_GQ386823                                            0.00%    passed    100.00%
+   5  83_GQ386825                                            0.00%    passed     99.02%
+   6  89_GQ386826                                            0.00%    passed     98.82%
+   7  90_GQ386827                                            0.00%    passed     99.36%
+   8  94_GQ386828                                            0.00%    passed     99.45%
+   9  Bardos_92_AF123485                                     0.00%    passed     98.36%
+  10  181_GQ386831                                           0.00%    passed     99.76%
+  11  4019_GQ386834                                          0.00%    passed    100.00%
   12  1014_GQ386833                                          0.00%    passed     99.97%
-  13  236_GQ386832                                           0.00%    passed     98.35%
-  14  89_GQ386826                                            0.00%    passed     98.82%
-  15  4020_GQ386835                                          0.00%    passed     99.02%
-  16  4030_GQ386836                                          0.00%    passed     99.29%
-  17  5060_GQ386841                                          0.00%    passed     99.81%
-  18  4033_GQ386837                                          0.00%    passed     99.06%
+  13  4020_GQ386835                                          0.00%    passed     99.02%
+  14  106_GQ386830                                           0.00%    passed     99.50%
+  15  4030_GQ386836                                          0.00%    passed     99.29%
+  16  4033_GQ386837                                          0.00%    passed     99.06%
+  17  4034_GQ386838                                          0.00%    passed     99.94%
+  18  105_GQ386829                                           0.00%    passed     99.47%
   19  4057_GQ386839                                          0.00%    passed     99.74%
-  20  Prototype_92_Bardos_HM036209                           0.00%    passed     98.46%
-  21  22595-6_HM036218                                       0.00%    passed     97.79%
-  22  105_GQ386829                                           0.00%    passed     99.47%
-  23  XJ0710_HM243141                                        0.00%    passed     25.72%
-  24  4034_GQ386838                                          0.00%    passed     99.94%
-  25  XJ0625_NC_055205                                       0.00%    passed     42.84%
-  26  Austria_DELIM-0x2f_OadD823_DELIM-0x2f_2019_MZ245727    1.16%    passed     99.11%
-  27  404118_ON156451                                        0.29%    passed     98.87%
-  28  Prototype_92_Bardos_HM036212                           0.00%    passed     96.45%
-  29  Austria_DELIM-0x2f_OadD806_DELIM-0x2f_2019_MZ245726    1.14%    passed     98.67%
-  30  Souche_D_C14019-29_HM036215                            0.00%    passed     98.21%
-  31  4060_GQ386840                                          0.00%    passed     98.71%
-  32  XJ0708_HM243138                                        0.00%    passed     96.17%
-  33  PJ01_OP727995                                          0.20%    passed     83.90%
+  20  4060_GQ386840                                          0.00%    passed     98.71%
+  21  5060_GQ386841                                          0.00%    passed     99.81%
+  22  Prototype_92_Bardos_HM036209                           0.00%    passed     98.46%
+  23  Prototype_92_Bardos_HM036212                           0.00%    passed     96.45%
+  24  Souche_D_C14019-29_HM036215                            0.00%    passed     98.21%
+  25  22595-6_HM036218                                       0.00%    passed     97.79%
+  26  XJ0710_HM243141                                        0.00%    passed     25.72%
+  27  XJ0708_HM243138                                        0.00%    passed     96.17%
+  28  XJ0625_NC_055205                                       0.00%    passed     42.84%
+  29  236_GQ386832                                           0.00%    passed     98.35%
+  30  Austria_DELIM-0x2f_OadD806_DELIM-0x2f_2019_MZ245726    1.14%    passed     98.67%
+  31  Austria_DELIM-0x2f_OadD823_DELIM-0x2f_2019_MZ245727    1.16%    passed     99.11%
+  32  PJ01_OP727995                                          0.20%    passed     83.90%
+  33  404118_ON156451                                        0.29%    passed     98.87%
 ****  TOTAL                                                  0.08%  0 sequences failed composition chi2 test (p-value<5%; df=3)
 NOTE: XJ0625_NC_055205 is identical to XJ0625_EU622819 but kept for subsequent analysis
-Checking for duplicate sequences: done in 0.000159979 secs using 31.25% CPU
+Checking for duplicate sequences: done in 0.000124931 secs using 69.64% CPU
 
 Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
 
 NOTE: 0 MB RAM (0 GB) is required!
 Measuring multi-threading efficiency up to 4 CPU cores
 Increase to 10 rounds for branch lengths
-777 trees examined
-Threads: 1 / Time: 4.009 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -25001
-Threads: 2 / Time: 4.715 sec / Speedup: 0.850 / Efficiency: 43% / LogL: -25001
-Determining AUTO threadcount: done in 8.72686 secs using 150.2% CPU
-BEST NUMBER OF THREADS: 1
+602 trees examined
+Threads: 1 / Time: 4.010 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -25002
+Threads: 2 / Time: 2.540 sec / Speedup: 1.579 / Efficiency: 79% / LogL: -25002
+Threads: 3 / Time: 2.206 sec / Speedup: 1.818 / Efficiency: 61% / LogL: -25002
+Threads: 4 / Time: 2.282 sec / Speedup: 1.757 / Efficiency: 44% / LogL: -25002
+Determining AUTO threadcount: done in 11.0399 secs using 221.4% CPU
+BEST NUMBER OF THREADS: 3
 
 Estimate model parameters (epsilon = 0.500)
-1. Initial log-likelihood: -18233.319
-2. Current log-likelihood: -17426.378
-3. Current log-likelihood: -17094.153
-4. Current log-likelihood: -17093.139
-Optimal log-likelihood: -17093.138
-Rate parameters:  A-C: 2.52436  A-G: 12.02092  A-T: 2.70336  C-G: 1.18488  C-T: 21.33792  G-T: 1.00000
+1. Initial log-likelihood: -18233.325
+2. Current log-likelihood: -17424.268
+3. Current log-likelihood: -17105.322
+4. Current log-likelihood: -17094.038
+Optimal log-likelihood: -17094.008
+Rate parameters:  A-C: 2.55042  A-G: 12.13000  A-T: 2.72738  C-G: 1.19952  C-T: 21.55266  G-T: 1.00000
 Base frequencies:  A: 0.346  C: 0.174  G: 0.207  T: 0.273
-Parameters optimization took 4 rounds (0.072 sec)
+Parameters optimization took 4 rounds (0.034 sec)
 Wrote distance file to... 
 Computing ML distances based on estimated model parameters...
-Calculating distance matrix: done in 0.00111485 secs using 170.7% CPU
-Computing ML distances took 0.001569 sec (of wall-clock time) 0.002459 sec (of CPU time)
-Setting up auxiliary I and S matrices: done in 3.69549e-05 secs using 97.42% CPU
-Constructing RapidNJ tree: done in 6.00815e-05 secs using 98.2% CPU
-Computing RapidNJ tree took 0.000480 sec (of wall-clock time) 0.000193 sec (of CPU time)
-Log-likelihood of RapidNJ tree: -17081.904
+Calculating distance matrix: done in 0.000405073 secs using 396.2% CPU
+Computing ML distances took 0.000507 sec (of wall-clock time) 0.001937 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 5.10216e-05 secs using 297.9% CPU
+Constructing RapidNJ tree: done in 0.000743866 secs using 167% CPU
+Computing RapidNJ tree took 0.000895 sec (of wall-clock time) 0.001645 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -17081.926
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
 
 Do NNI search on 2 best initial trees
 Estimate model parameters (epsilon = 0.500)
-BETTER TREE FOUND at iteration 1: -17074.268
+BETTER TREE FOUND at iteration 1: -17074.272
 Estimate model parameters (epsilon = 0.500)
-BETTER TREE FOUND at iteration 2: -17072.612
+BETTER TREE FOUND at iteration 2: -17072.615
 Finish initializing candidate tree set (4)
-Current best tree score: -17072.612 / CPU time: 0.046
+Current best tree score: -17072.615 / CPU time: 0.041
 Number of iterations: 2
-TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:8s
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:11s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.050)
-1. Initial log-likelihood: -17072.612
-Optimal log-likelihood: -17072.611
-Rate parameters:  A-C: 2.42409  A-G: 12.01408  A-T: 2.65365  C-G: 1.07012  C-T: 21.36792  G-T: 1.00000
+1. Initial log-likelihood: -17072.615
+Optimal log-likelihood: -17072.615
+Rate parameters:  A-C: 2.46580  A-G: 12.13070  A-T: 2.68018  C-G: 1.09071  C-T: 21.57252  G-T: 1.00000
 Base frequencies:  A: 0.346  C: 0.174  G: 0.207  T: 0.273
-Parameters optimization took 1 rounds (0.006 sec)
-BEST SCORE FOUND : -17072.611
+Parameters optimization took 1 rounds (0.003 sec)
+BEST SCORE FOUND : -17072.615
 Total tree length: 0.596
 
 Total number of iterations: 2
-CPU time used for tree search: 0.072 sec (0h:0m:0s)
-Wall-clock time used for tree search: 0.046 sec (0h:0m:0s)
-Total CPU time used: 13.343 sec (0h:0m:13s)
-Total wall-clock time used: 8.881 sec (0h:0m:8s)
+CPU time used for tree search: 0.120 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.041 sec (0h:0m:0s)
+Total CPU time used: 24.732 sec (0h:0m:24s)
+Total wall-clock time used: 11.141 sec (0h:0m:11s)
 
 Analysis results written to: 
   IQ-TREE report:                results/aligned_qc_m-delim.fasta.iqtree
@@ -121,4 +123,4 @@ Analysis results written to:
   Likelihood distances:          results/aligned_qc_m-delim.fasta.mldist
   Screen log file:               results/aligned_qc_m-delim.fasta.log
 
-Date and Time: Fri Oct  2 22:20:42 2026
+Date and Time: Sat Oct  3 01:39:16 2026

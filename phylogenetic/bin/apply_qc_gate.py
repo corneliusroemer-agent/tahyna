@@ -53,7 +53,7 @@ def main():
         reader = csv.DictReader(fh, delimiter="\t")
         fieldnames = list(reader.fieldnames or [])
         records = list(reader)
-    for col in ("qc_exception",):
+    for col in ("qc_exception", "coverage"):
         if col not in fieldnames:
             fieldnames.append(col)
 
@@ -61,6 +61,7 @@ def main():
     for rec in records:
         row = ncl.get(rec["strain"], {})
         cov = num(row.get(COLS["coverage"]))
+        rec["coverage"] = f"{cov:.4f}"  # continuous coloring: aligned fraction of the reference
         missing = int(num(row.get(COLS["missing"])))
         subs = int(num(row.get(COLS["subs"])))
         frameshifts = int(num(row.get(COLS["frameshifts"])))
