@@ -155,17 +155,6 @@
         "KM532_sSgp2": []
       }
     },
-    "92": {
-      "aa_muts": {
-        "KM532_sSgp1": [
-          "N75Y",
-          "S96Y"
-        ],
-        "KM532_sSgp2": [
-          "Q90T"
-        ]
-      }
-    },
     "94": {
       "aa_muts": {
         "KM532_sSgp1": [],
@@ -179,6 +168,23 @@
       }
     },
     "Austria/OadD823/2019": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
+      }
+    },
+    "Bardos_92_helsinki": {
+      "aa_muts": {
+        "KM532_sSgp1": [
+          "N75Y",
+          "S96Y"
+        ],
+        "KM532_sSgp2": [
+          "Q90T"
+        ]
+      }
+    },
+    "Bardos_92_wadsworth": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
@@ -226,6 +232,7 @@
       "aa_muts": {
         "KM532_sSgp1": [
           "S33A",
+          "I72V",
           "H170Q",
           "V225T",
           "K233R"
@@ -238,27 +245,15 @@
           "F36S",
           "L41Q",
           "R42K",
-          "R51Q"
+          "R51Q",
+          "S66L"
         ]
       }
     },
     "NODE_0000002": {
       "aa_muts": {
-        "KM532_sSgp1": [
-          "R59G",
-          "S62N",
-          "V73I",
-          "D86G",
-          "E111D",
-          "V123I",
-          "D208E"
-        ],
-        "KM532_sSgp2": [
-          "V56I",
-          "I80V",
-          "G91D",
-          "I92T"
-        ]
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
       }
     },
     "NODE_0000003": {
@@ -270,10 +265,21 @@
     "NODE_0000004": {
       "aa_muts": {
         "KM532_sSgp1": [
-          "I72V"
+          "R59G",
+          "S62N",
+          "V72I",
+          "V73I",
+          "D86G",
+          "E111D",
+          "V123I",
+          "D208E"
         ],
         "KM532_sSgp2": [
-          "S66L"
+          "V56I",
+          "L66S",
+          "I80V",
+          "G91D",
+          "I92T"
         ]
       }
     },
@@ -392,7 +398,9 @@
     },
     "NODE_0000021": {
       "aa_muts": {
-        "KM532_sSgp1": [],
+        "KM532_sSgp1": [
+          "E111D"
+        ],
         "KM532_sSgp2": []
       }
     },
@@ -464,9 +472,7 @@
     },
     "NODE_0000033": {
       "aa_muts": {
-        "KM532_sSgp1": [
-          "E111D"
-        ],
+        "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
@@ -525,12 +531,6 @@
       }
     },
     "Prototype_92_Bardos_clone2": {
-      "aa_muts": {
-        "KM532_sSgp1": [],
-        "KM532_sSgp2": []
-      }
-    },
-    "Prototype_Bardos_92": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []

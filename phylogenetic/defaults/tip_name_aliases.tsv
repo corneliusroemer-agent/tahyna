@@ -25,9 +25,18 @@ HM036213.1	Prototype_92_Bardos_clone2
 GU390677.1	181-57
 AF229129.1	181-57
 KF361879.1	181-57
-# PENDING CURATOR CONFIRMATION - are 92 / Bardos 92 / Prototype Bardos 92 the
-# same biological isolate as the Bardos-92 clones? Un comment once confirmed
-# (they are S/M/S single-segment records; no tangle lines until then):
-# Z68497.1	Bardos_92
-# AF123485.1	Bardos_92
-# U47142.1	Bardos_92
+# 92-family: curator-confirmed 2026-10-03 (Camp 2021 + Bennett 2011 Table 1,
+# strain code TAHV/58/CZ) - "92" is the isolate number of the 1958 prototype,
+# and every spelling below is that one isolate. Bennett Table 1 also
+# independently validates the clone pairing above (cl(1)=HM036208-10,
+# cl(2)=HM036211-13). The four records here are independent sequencing runs of
+# prototype stocks, not the cloned genomes, so they get provenance suffixes
+# rather than clone numbers; the two Wadsworth records (U47142.1 S + AF123485.1
+# M, same lab/genome project 1996-1999) are paired to give them an S-M tangle
+# line; Helsinki (S only) and China CDC (L only) have no cross-segment partner.
+# Z68497.1 (S) -> Bardos_92_helsinki
+# AF123485.1 (M) -> Bardos_92_wadsworth
+Z68497.1	Bardos_92_helsinki
+U47142.1	Bardos_92_wadsworth
+AF123485.1	Bardos_92_wadsworth
+HM243136.1	Bardos_92_chinacdc

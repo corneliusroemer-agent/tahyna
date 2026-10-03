@@ -7,55 +7,55 @@
   "input_tree": "results/tree_raw_s.nwk",
   "nodes": {
     "1014": {
-      "branch_length": 0.00204964
+      "branch_length": 0.00205058
     },
     "105": {
-      "branch_length": 3e-06
+      "branch_length": 1e-06
     },
     "106": {
       "branch_length": 0.0
     },
     "181": {
-      "branch_length": 2.03e-06
+      "branch_length": 1e-06
     },
     "181-57": {
-      "branch_length": 0.00205171
+      "branch_length": 0.00205234
     },
     "22595-6": {
-      "branch_length": 3e-06
+      "branch_length": 1e-06
     },
     "236": {
       "branch_length": 0.0
     },
     "29": {
-      "branch_length": 0.00307697
+      "branch_length": 0.00307781
     },
     "4019": {
       "branch_length": 1e-06
     },
     "4020": {
-      "branch_length": 3e-06
+      "branch_length": 1e-06
     },
     "4030": {
-      "branch_length": 0.00102387
+      "branch_length": 0.00102389
     },
     "4033": {
       "branch_length": 0.0
     },
     "4034": {
-      "branch_length": 0.00102467
+      "branch_length": 0.00102389
     },
     "404118": {
-      "branch_length": 0.00315197
+      "branch_length": 0.00315198
     },
     "4057": {
-      "branch_length": 0.00102383
+      "branch_length": 0.00102389
     },
     "4060": {
-      "branch_length": 0.00308632
+      "branch_length": 0.00308626
     },
     "5060": {
-      "branch_length": 0.0030772
+      "branch_length": 0.00307792
     },
     "76": {
       "branch_length": 0.0
@@ -64,28 +64,31 @@
       "branch_length": 1e-06
     },
     "89": {
-      "branch_length": 0.00102443
+      "branch_length": 0.00102389
     },
     "90": {
       "branch_length": 1e-06
-    },
-    "92": {
-      "branch_length": 0.00620536
     },
     "94": {
       "branch_length": 1e-06
     },
     "Austria/OadD806/2019": {
-      "branch_length": 0.00108033
+      "branch_length": 0.00107991
     },
     "Austria/OadD823/2019": {
-      "branch_length": 0.00433313
+      "branch_length": 0.00433327
+    },
+    "Bardos_92_helsinki": {
+      "branch_length": 0.00620874
+    },
+    "Bardos_92_wadsworth": {
+      "branch_length": 0.00102561
     },
     "GEM09121": {
-      "branch_length": 0.00181519
+      "branch_length": 0.00181506
     },
     "GER09112": {
-      "branch_length": 0.00363467
+      "branch_length": 0.00363356
     },
     "NM08003": {
       "branch_length": 1e-06
@@ -97,124 +100,124 @@
       "branch_length": 0.001
     },
     "NODE_0000001": {
-      "branch_length": 0.09665993
+      "branch_length": 0.10887102
     },
     "NODE_0000002": {
-      "branch_length": 0.04828292
+      "branch_length": 0.00861558
     },
     "NODE_0000003": {
-      "branch_length": 2.33e-06
+      "branch_length": 0.00765571
     },
     "NODE_0000004": {
-      "branch_length": 0.01642517
+      "branch_length": 0.05558012
     },
     "NODE_0000005": {
-      "branch_length": 0.01022265
+      "branch_length": 1e-06
     },
     "NODE_0000006": {
-      "branch_length": 0.02698663
+      "branch_length": 0.02442454
     },
     "NODE_0000007": {
-      "branch_length": 0.00251033
+      "branch_length": 0.00297658
     },
     "NODE_0000008": {
-      "branch_length": 0.00412688
+      "branch_length": 0.0041622
     },
     "NODE_0000009": {
-      "branch_length": 0.02093831
+      "branch_length": 0.02513592
     },
     "NODE_0000010": {
-      "branch_length": 0.01143535
+      "branch_length": 0.01112119
     },
     "NODE_0000011": {
-      "branch_length": 0.01463808
+      "branch_length": 0.01405006
     },
     "NODE_0000012": {
-      "branch_length": 3e-06
+      "branch_length": 0.00100922
     },
     "NODE_0000013": {
-      "branch_length": 0.00102437
+      "branch_length": 1e-06
     },
     "NODE_0000014": {
-      "branch_length": 2.4e-06
+      "branch_length": 1e-06
     },
     "NODE_0000015": {
-      "branch_length": 2.51e-06
+      "branch_length": 1e-06
     },
     "NODE_0000016": {
-      "branch_length": 0.00102543
+      "branch_length": 1e-06
     },
     "NODE_0000017": {
-      "branch_length": 0.00102435
+      "branch_length": 1e-06
     },
     "NODE_0000018": {
-      "branch_length": 2.12e-06
+      "branch_length": 0.00102389
     },
     "NODE_0000019": {
       "branch_length": 1e-06
     },
     "NODE_0000020": {
-      "branch_length": 0.0
+      "branch_length": 1e-06
     },
     "NODE_0000021": {
-      "branch_length": 0.0
+      "branch_length": 0.00102535
     },
     "NODE_0000022": {
-      "branch_length": 2.28e-06
+      "branch_length": 0.00102389
     },
     "NODE_0000023": {
-      "branch_length": 2.11e-06
+      "branch_length": 0.00102389
     },
     "NODE_0000024": {
-      "branch_length": 3e-06
+      "branch_length": 1e-06
     },
     "NODE_0000025": {
-      "branch_length": 3e-06
+      "branch_length": 1e-06
     },
     "NODE_0000026": {
-      "branch_length": 2.78e-06
+      "branch_length": 1e-06
     },
     "NODE_0000027": {
-      "branch_length": 0.00102457
+      "branch_length": 1e-06
     },
     "NODE_0000028": {
-      "branch_length": 3e-06
+      "branch_length": 0.00102389
     },
     "NODE_0000029": {
-      "branch_length": 0.00102456
+      "branch_length": 1e-06
     },
     "NODE_0000030": {
-      "branch_length": 0.00102438
+      "branch_length": 1e-06
     },
     "NODE_0000031": {
-      "branch_length": 2.15e-06
+      "branch_length": 1e-06
     },
     "NODE_0000032": {
-      "branch_length": 3e-06
+      "branch_length": 0.0
     },
     "NODE_0000033": {
-      "branch_length": 0.00102525
+      "branch_length": 0.0
     },
     "NODE_0000034": {
-      "branch_length": 2.24e-06
+      "branch_length": 1e-06
     },
     "NODE_0000035": {
-      "branch_length": 2.26e-06
+      "branch_length": 1e-06
     },
     "NODE_0000036": {
-      "branch_length": 3e-06
+      "branch_length": 0.00102539
     },
     "NODE_0000037": {
-      "branch_length": 2.21e-06
+      "branch_length": 1e-06
     },
     "NODE_0000038": {
-      "branch_length": 2.19e-06
+      "branch_length": 0.00102389
     },
     "OUTGROUP": {
       "branch_length": 0.0
     },
     "PJ01": {
-      "branch_length": 0.03825242
+      "branch_length": 0.0332351
     },
     "Prototype_92_Bardos_clone1": {
       "branch_length": 1e-06
@@ -222,14 +225,11 @@
     "Prototype_92_Bardos_clone2": {
       "branch_length": 1e-06
     },
-    "Prototype_Bardos_92": {
-      "branch_length": 0.00102541
-    },
     "QH07060": {
-      "branch_length": 3e-06
+      "branch_length": 1e-06
     },
     "Souche_D_C14019-29": {
-      "branch_length": 0.00410701
+      "branch_length": 0.00309912
     },
     "XJ0625": {
       "branch_length": 1e-06
@@ -238,10 +238,10 @@
       "branch_length": 1e-06
     },
     "XJ0708": {
-      "branch_length": 0.00678957
+      "branch_length": 0.00635329
     },
     "XJ0710": {
-      "branch_length": 0.00307212
+      "branch_length": 0.00303663
     }
   }
 }

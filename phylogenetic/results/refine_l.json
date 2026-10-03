@@ -3,18 +3,18 @@
   "clock": {
     "cov": [
       [
-        3.346691834165816e-10,
-        -6.677723389625513e-07
+        3.347668172795279e-10,
+        -6.679672730157843e-07
       ],
       [
-        -6.677723389625513e-07,
-        0.0013390830528303402
+        -6.679672730157843e-07,
+        0.001339471389472733
       ]
     ],
-    "intercept": -0.02681094926533816,
-    "rate": 7.637121386646747e-05,
-    "rate_std": 1.829396576515277e-05,
-    "rtt_Tmrca": 351.0609286925335
+    "intercept": -0.02683440204070501,
+    "rate": 7.636995952215317e-05,
+    "rate_std": 1.829663404234582e-05,
+    "rtt_Tmrca": 351.3737889689593
   },
   "generated_by": {
     "program": "augur",
@@ -23,11 +23,11 @@
   "input_tree": "results/tree_raw_l.nwk",
   "nodes": {
     "1014": {
-      "branch_length": 0.0025657272152829827,
-      "clock_length": 0.0025657272152829827,
+      "branch_length": 0.0026651382311449765,
+      "clock_length": 0.0026651382311449765,
       "date": "1964-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00143561,
+      "mutation_length": 0.00143605,
       "num_date_confidence": [
         1964.0013661202186,
         1964.8989071038252
@@ -36,37 +36,37 @@
       "raw_date": "1964-XX-XX"
     },
     "181": {
-      "branch_length": 0.0006123199466308536,
-      "clock_length": 0.0006123199466308536,
+      "branch_length": 0.0006133827590036507,
+      "clock_length": 0.0006133827590036507,
       "date": "1962-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00016174,
+      "mutation_length": 0.00016215,
       "num_date_confidence": [
         1962.0013698630137,
-        1962.8928726617214
+        1962.8910339328481
       ],
       "numdate": 1962.0013698630137,
       "raw_date": "1962-XX-XX"
     },
     "181-57": {
-      "branch_length": 0.0006884819242949508,
-      "clock_length": 0.0006884819242949508,
+      "branch_length": 0.0006895434857599929,
+      "clock_length": 0.0006895434857599929,
       "date": "1962-12-31",
       "date_inferred": true,
-      "mutation_length": 0.0014174,
+      "mutation_length": 0.00141736,
       "num_date_confidence": [
-        1962.1367283703212,
+        1962.1237604854114,
         1962.9986301369863
       ],
       "numdate": 1962.9986301369863,
       "raw_date": "1962-XX-XX"
     },
     "22595-6": {
-      "branch_length": 0.002095142200538015,
-      "clock_length": 0.002095142200538015,
+      "branch_length": 0.0020951108384402502,
+      "clock_length": 0.0020951108384402502,
       "date": "1984-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00045263,
+      "mutation_length": 0.00045195,
       "num_date_confidence": [
         1984.0013661202186,
         1984.8989071038252
@@ -75,76 +75,76 @@
       "raw_date": "1984-XX-XX"
     },
     "236": {
-      "branch_length": 0.001554112524039579,
-      "clock_length": 0.001554112524039579,
+      "branch_length": 0.0015540942240832778,
+      "clock_length": 0.0015540942240832778,
       "date": "1958-12-31",
       "date_inferred": true,
-      "mutation_length": 0.00172676,
+      "mutation_length": 0.00172674,
       "num_date_confidence": [
-        1958.1041255305172,
+        1958.1041159883312,
         1958.9986301369863
       ],
       "numdate": 1958.9986301369863,
       "raw_date": "1958-XX-XX"
     },
     "29": {
-      "branch_length": 0.002844972718848644,
-      "clock_length": 0.002844972718848644,
+      "branch_length": 0.0028456757742244864,
+      "clock_length": 0.0028456757742244864,
       "date": "1963-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00244086,
+      "mutation_length": 0.00244085,
       "num_date_confidence": [
         1963.0013698630137,
-        1963.8958528078833
+        1963.8984891003972
       ],
       "numdate": 1963.0013698630137,
       "raw_date": "1963-XX-XX"
     },
     "4020": {
-      "branch_length": 0.0030740863604480466,
-      "clock_length": 0.0030740863604480466,
+      "branch_length": 0.0030747856527909463,
+      "clock_length": 0.0030747856527909463,
       "date": "1966-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00258521,
+      "mutation_length": 0.00258523,
       "num_date_confidence": [
         1966.0013698630137,
-        1966.8951900119077
+        1966.8981959981136
       ],
       "numdate": 1966.0013698630137,
       "raw_date": "1966-XX-XX"
     },
     "4034": {
-      "branch_length": 0.002091352596731974,
-      "clock_length": 0.002091352596731974,
+      "branch_length": 0.002056425050439086,
+      "clock_length": 0.002056425050439086,
       "date": "1966-01-01",
       "date_inferred": true,
-      "mutation_length": 0.0017143,
+      "mutation_length": 0.00171479,
       "num_date_confidence": [
         1966.0013698630137,
-        1966.8967673870995
+        1966.8956657293104
       ],
       "numdate": 1966.0013698630137,
       "raw_date": "1966-XX-XX"
     },
     "404118": {
-      "branch_length": 0.006793546765258451,
-      "clock_length": 0.006793546765258451,
+      "branch_length": 0.006758598807410837,
+      "clock_length": 0.006758598807410837,
       "date": "2021-12-31",
       "date_inferred": true,
-      "mutation_length": 0.00692277,
+      "mutation_length": 0.00692326,
       "num_date_confidence": [
-        2021.1023322484498,
+        2021.1023802022669,
         2021.9986301369863
       ],
       "numdate": 2021.9986301369863,
       "raw_date": "2021-XX-XX"
     },
     "4057": {
-      "branch_length": 0.0021446061767320277,
-      "clock_length": 0.0021446061767320277,
+      "branch_length": 0.002144796105688824,
+      "clock_length": 0.002144796105688824,
       "date": "1966-12-31",
       "date_inferred": true,
-      "mutation_length": 0.00201631,
+      "mutation_length": 0.0020162,
       "num_date_confidence": [
         1966.0013698630137,
         1966.9986301369863
@@ -153,50 +153,50 @@
       "raw_date": "1966-XX-XX"
     },
     "76": {
-      "branch_length": 0.0018622389551325716,
-      "clock_length": 0.0018622389551325716,
+      "branch_length": 0.0018273151718726259,
+      "clock_length": 0.0018273151718726259,
       "date": "1963-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00173713,
+      "mutation_length": 0.00173694,
       "num_date_confidence": [
         1963.0013698630137,
-        1963.8973281523213
+        1963.896824052251
       ],
       "numdate": 1963.0013698630137,
       "raw_date": "1963-XX-XX"
     },
     "89": {
-      "branch_length": 0.002001656321145031,
-      "clock_length": 0.002001656321145031,
+      "branch_length": 0.0020136734532625027,
+      "clock_length": 0.0020136734532625027,
       "date": "1963-01-01",
       "date_inferred": true,
-      "mutation_length": 0.0016013,
+      "mutation_length": 0.00160112,
       "num_date_confidence": [
         1963.0013698630137,
-        1963.8957761137924
+        1963.8958150041055
       ],
       "numdate": 1963.0013698630137,
       "raw_date": "1963-XX-XX"
     },
     "94": {
-      "branch_length": 0.003221690183684384,
-      "clock_length": 0.003221690183684384,
+      "branch_length": 0.0032155391428970934,
+      "clock_length": 0.0032155391428970934,
       "date": "1963-12-31",
       "date_inferred": true,
-      "mutation_length": 0.00402551,
+      "mutation_length": 0.00402548,
       "num_date_confidence": [
-        1963.1063800727352,
+        1963.107741565911,
         1963.9986301369863
       ],
       "numdate": 1963.9986301369863,
       "raw_date": "1963-XX-XX"
     },
     "Austria/OadD806/2019": {
-      "branch_length": 0.006136594592229998,
-      "clock_length": 0.006136594592229998,
+      "branch_length": 0.006136501028178279,
+      "clock_length": 0.006136501028178279,
       "date": "2019-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00381833,
+      "mutation_length": 0.003818,
       "num_date_confidence": [
         2019.0013698630137,
         2019.898904109589
@@ -205,288 +205,301 @@
       "raw_date": "2019-XX-XX"
     },
     "Austria/OadD823/2019": {
-      "branch_length": 0.006116118533990708,
-      "clock_length": 0.006116118533990708,
+      "branch_length": 0.0061162432336066,
+      "clock_length": 0.0061162432336066,
       "date": "2019-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00495314,
+      "mutation_length": 0.00495324,
       "num_date_confidence": [
         2019.0013698630137,
-        2019.8978921209928
+        2019.898904109589
       ],
       "numdate": 2019.0013698630137,
       "raw_date": "2019-XX-XX"
     },
+    "Bardos_92_chinacdc": {
+      "branch_length": 0.00018565290345772152,
+      "clock_length": 0.00018565290345772152,
+      "date": "1958-12-31",
+      "date_inferred": true,
+      "mutation_length": 0.000266,
+      "num_date_confidence": [
+        1958.1222518444715,
+        1958.9986301369863
+      ],
+      "numdate": 1958.9986301369863,
+      "raw_date": "1958"
+    },
     "NODE_0000001": {
       "branch_length": 0.001,
       "clock_length": 0.001,
-      "date": "401-08-02",
+      "date": "419-12-04",
       "date_inferred": true,
       "mutation_length": 0.001,
       "num_date_confidence": [
-        -146.6975101309215,
-        987.7651686971763
+        -160.90303693209069,
+        992.7481607424502
       ],
-      "numdate": 401.58481787924825
+      "numdate": 419.92602402976945
     },
     "NODE_0000002": {
-      "branch_length": 0.03083490473493325,
-      "clock_length": 0.03083490473493325,
-      "date": "805-05-03",
+      "branch_length": 0.02910227043501548,
+      "clock_length": 0.02910227043501548,
+      "date": "800-12-30",
       "date_inferred": true,
-      "mutation_length": 0.03770599,
+      "mutation_length": 0.03769163,
       "num_date_confidence": [
-        379.7004834385155,
-        1236.2018013403947
+        366.72102301694446,
+        1243.2748804752207
       ],
-      "numdate": 805.335173200915
+      "numdate": 800.9956306801905
     },
     "NODE_0000003": {
-      "branch_length": 0.07529753153903627,
-      "clock_length": 0.07529753153903627,
-      "date": "1791-04-11",
+      "branch_length": 0.07560055185951589,
+      "clock_length": 0.07560055185951589,
+      "date": "1790-12-03",
       "date_inferred": true,
-      "mutation_length": 0.08978169,
+      "mutation_length": 0.08977515,
       "num_date_confidence": [
-        1715.498531308511,
-        1878.9398633573928
+        1715.8709290997976,
+        1878.8668447197024
       ],
-      "numdate": 1791.2764425212051
+      "numdate": 1790.9208883672254
     },
     "NODE_0000004": {
-      "branch_length": 0.006534658208252834,
-      "clock_length": 0.006534658208252834,
-      "date": "1876-11-03",
+      "branch_length": 0.006491031949298381,
+      "clock_length": 0.006491031949298381,
+      "date": "1875-12-01",
       "date_inferred": true,
-      "mutation_length": 0.01018985,
+      "mutation_length": 0.01019716,
       "num_date_confidence": [
-        1829.7487699902135,
-        1935.5645615421445
+        1830.2580046870853,
+        1935.6896000145973
       ],
-      "numdate": 1876.8408571405469
+      "numdate": 1875.9154593989865
     },
     "NODE_0000005": {
-      "branch_length": 0.009864145140230113,
-      "clock_length": 0.009864145140230113,
+      "branch_length": 0.009934655716540187,
+      "clock_length": 0.009934655716540187,
       "date": "2006-01-01",
       "date_inferred": true,
-      "mutation_length": 0.0142003,
+      "mutation_length": 0.01419865,
       "num_date_confidence": [
-        2004.200348889314,
-        2006.9520405985352
+        2004.201064227922,
+        2006.9520500705582
       ],
       "numdate": 2006.0013698630137
     },
     "NODE_0000006": {
-      "branch_length": 0.11061449293845936,
-      "clock_length": 0.11061449293845936,
-      "date": "1849-12-18",
+      "branch_length": 0.10929433022828562,
+      "clock_length": 0.10929433022828562,
+      "date": "1851-01-16",
       "date_inferred": true,
-      "mutation_length": 0.08613459,
+      "mutation_length": 0.08611957,
       "num_date_confidence": [
-        1815.686916077535,
-        1894.6978825157523
+        1814.290009437811,
+        1895.6047454221673
       ],
-      "numdate": 1849.9642181578026
+      "numdate": 1851.042799685279
     },
     "NODE_0000007": {
-      "branch_length": 0.005203935128603234,
-      "clock_length": 0.005203935128603234,
-      "date": "1918-02-08",
+      "branch_length": 0.00497476760418415,
+      "clock_length": 0.00497476760418415,
+      "date": "1916-03-08",
       "date_inferred": true,
-      "mutation_length": 0.00377175,
+      "mutation_length": 0.00377645,
       "num_date_confidence": [
-        1909.3093987196596,
-        1933.669818941866
+        1909.9677670300264,
+        1934.4452892225686
       ],
-      "numdate": 1918.1042262202925
+      "numdate": 1916.1831720949447
     },
     "NODE_0000008": {
-      "branch_length": 0.0011285953157752675,
-      "clock_length": 0.0011285953157752675,
-      "date": "1933-01-17",
+      "branch_length": 0.0011628000000000003,
+      "clock_length": 0.0011628000000000003,
+      "date": "1933-07-02",
       "date_inferred": true,
-      "mutation_length": 0.00116238,
+      "mutation_length": 0.0011628,
       "num_date_confidence": [
-        1926.5096320831713,
-        1944.0269903857609
+        1926.332094715399,
+        1943.8489443233734
       ],
-      "numdate": 1933.0443445977157
+      "numdate": 1933.5004974981923
     },
     "NODE_0000009": {
-      "branch_length": 0.0004256154282066696,
-      "clock_length": 0.0004256154282066696,
-      "date": "1938-08-14",
+      "branch_length": 0.00042566525649698553,
+      "clock_length": 0.00042566525649698553,
+      "date": "1939-01-28",
       "date_inferred": true,
-      "mutation_length": 0.00013723,
+      "mutation_length": 0.00013727,
       "num_date_confidence": [
-        1927.5484122538644,
-        1944.5779385491792
+        1927.3925599328322,
+        1944.358160343192
       ],
-      "numdate": 1938.617326964486
+      "numdate": 1939.074223858143
     },
     "NODE_0000010": {
-      "branch_length": 1.2399660017264544e-05,
-      "clock_length": 1.2399660017264544e-05,
-      "date": "1918-04-08",
+      "branch_length": 0.00015972344007797457,
+      "clock_length": 0.00015972344007797457,
+      "date": "1918-04-11",
       "date_inferred": true,
       "mutation_length": 0.0,
       "num_date_confidence": [
-        1911.4592249573577,
-        1934.163047038632
+        1911.5716659711097,
+        1934.5020043607697
       ],
-      "numdate": 1918.2665866096263
+      "numdate": 1918.2746153938199
     },
     "NODE_0000011": {
-      "branch_length": 0.00027092149309422206,
-      "clock_length": 0.00027092149309422206,
-      "date": "1921-10-25",
+      "branch_length": 0.00027640201222886053,
+      "clock_length": 0.00027640201222886053,
+      "date": "1921-11-23",
       "date_inferred": true,
-      "mutation_length": 0.00014331,
+      "mutation_length": 0.00014289,
       "num_date_confidence": [
-        1914.2721633970796,
-        1937.118189346719
+        1914.3817678579373,
+        1937.1698681300495
       ],
-      "numdate": 1921.8140160582132
+      "numdate": 1921.8938658681989
     },
     "NODE_0000012": {
-      "branch_length": 0.00030055548717164253,
-      "clock_length": 0.00030055548717164253,
-      "date": "1925-10-01",
+      "branch_length": 0.0002937026419162648,
+      "clock_length": 0.0002937026419162648,
+      "date": "1925-09-27",
       "date_inferred": true,
-      "mutation_length": 0.00014331,
+      "mutation_length": 0.00014303,
       "num_date_confidence": [
-        1918.618161017152,
-        1939.6510657794468
+        1918.7359834014896,
+        1939.7131325847438
       ],
-      "numdate": 1925.7494712114749
+      "numdate": 1925.7396534495197
     },
     "NODE_0000014": {
-      "branch_length": 0.0010056421613801152,
-      "clock_length": 0.0010056421613801152,
-      "date": "1938-12-01",
+      "branch_length": 0.0010061502738584645,
+      "clock_length": 0.0010061502738584645,
+      "date": "1938-11-30",
       "date_inferred": true,
-      "mutation_length": 0.0011446,
+      "mutation_length": 0.00114514,
       "num_date_confidence": [
-        1933.596064035066,
-        1952.5660664956115
+        1933.7483412765216,
+        1952.6620736538637
       ],
-      "numdate": 1938.9172881213703
+      "numdate": 1938.9143399382117
     },
     "NODE_0000015": {
-      "branch_length": 0.0005096960420634062,
-      "clock_length": 0.0005096960420634062,
-      "date": "1924-10-11",
+      "branch_length": 0.0006772108042371388,
+      "clock_length": 0.0006772108042371388,
+      "date": "1925-01-19",
       "date_inferred": true,
-      "mutation_length": 0.00071712,
+      "mutation_length": 0.00071648,
       "num_date_confidence": [
-        1919.9905325533982,
-        1937.3336180005456
+        1919.8082965506658,
+        1938.3420189206397
       ],
-      "numdate": 1924.7781549986748
+      "numdate": 1925.0506745589298
     },
     "NODE_0000016": {
-      "branch_length": 0.0004297970298100459,
-      "clock_length": 0.0004297970298100459,
-      "date": "1930-05-29",
+      "branch_length": 0.00030952450675051247,
+      "clock_length": 0.00030952450675051247,
+      "date": "1929-02-07",
       "date_inferred": true,
-      "mutation_length": 0.00014331,
+      "mutation_length": 0.00014234,
       "num_date_confidence": [
-        1922.544537685064,
-        1937.8294130361928
+        1922.671624271784,
+        1939.1761525547342
       ],
-      "numdate": 1930.4058910009012
+      "numdate": 1929.1036360726876
     },
     "NODE_0000017": {
-      "branch_length": 0.00048769996611329035,
-      "clock_length": 0.00048769996611329035,
-      "date": "1936-10-16",
+      "branch_length": 0.0005750951041974322,
+      "clock_length": 0.0005750951041974322,
+      "date": "1936-08-20",
       "date_inferred": true,
-      "mutation_length": 0.00055264,
+      "mutation_length": 0.0005535,
       "num_date_confidence": [
-        1928.7260219633686,
-        1943.303597366081
+        1928.8943378235779,
+        1944.3852194643873
       ],
-      "numdate": 1936.791804507082
+      "numdate": 1936.6340198491855
     },
     "NODE_0000018": {
-      "branch_length": 0.0013129651606477097,
-      "clock_length": 0.0013129651606477097,
-      "date": "1953-12-26",
+      "branch_length": 0.0013239207347366987,
+      "clock_length": 0.0013239207347366987,
+      "date": "1953-12-20",
       "date_inferred": true,
-      "mutation_length": 0.00186965,
+      "mutation_length": 0.00187085,
       "num_date_confidence": [
-        1949.7739808290899,
-        1958.36740914875
+        1947.9146763142076,
+        1958.3341194000923
       ],
-      "numdate": 1953.9836899594118
+      "numdate": 1953.9696416436773
     },
     "NODE_0000019": {
-      "branch_length": 0.00032834474803835733,
-      "clock_length": 0.00032834474803835733,
-      "date": "1929-01-29",
+      "branch_length": 0.0003074522173809758,
+      "clock_length": 0.0003074522173809758,
+      "date": "1929-01-28",
       "date_inferred": true,
-      "mutation_length": 0.00028668,
+      "mutation_length": 0.00028707,
       "num_date_confidence": [
-        1923.0117917648624,
-        1938.4032340409192
+        1922.8125773138433,
+        1939.2606326216767
       ],
-      "numdate": 1929.077481032859
+      "numdate": 1929.0765011968474
     },
     "NODE_0000020": {
-      "branch_length": 0.0007310019533221905,
-      "clock_length": 0.0007310019533221905,
+      "branch_length": 0.0007310575518917704,
+      "clock_length": 0.0007310575518917704,
       "date": "1938-08-25",
       "date_inferred": true,
       "mutation_length": 0.00071464,
       "num_date_confidence": [
-        1932.953775057019,
-        1948.5885532253005
+        1932.9938092641246,
+        1948.5904576811904
       ],
-      "numdate": 1938.6491758680402
+      "numdate": 1938.649081259296
     },
     "NODE_0000021": {
-      "branch_length": 0.0014851324320086607,
-      "clock_length": 0.0014851324320086607,
-      "date": "1948-07-10",
+      "branch_length": 0.0015055098733331692,
+      "clock_length": 0.0015055098733331692,
+      "date": "1948-10-16",
       "date_inferred": true,
-      "mutation_length": 0.00213293,
+      "mutation_length": 0.00213295,
       "num_date_confidence": [
-        1943.6472071018516,
-        1954.0462508148812
+        1940.3105612095871,
+        1953.9371631120966
       ],
-      "numdate": 1948.5237141987395
+      "numdate": 1948.7898791107962
     },
     "NODE_0000022": {
-      "branch_length": 0.00039968758115534273,
-      "clock_length": 0.00039968758115534273,
+      "branch_length": 0.0003793473145692035,
+      "clock_length": 0.0003793473145692035,
       "date": "1953-10-04",
       "date_inferred": true,
-      "mutation_length": 0.00045244,
+      "mutation_length": 0.00045228,
       "num_date_confidence": [
-        1950.2674215791064,
-        1956.8848091691445
+        1948.188979332844,
+        1956.881289820513
       ],
-      "numdate": 1953.7571989231567
+      "numdate": 1953.7571112128267
     },
     "NODE_0000023": {
-      "branch_length": 0.0006143291418373451,
-      "clock_length": 0.0006143291418373451,
+      "branch_length": 0.0005939889991841574,
+      "clock_length": 0.0005939889991841574,
       "date": "1956-07-26",
       "date_inferred": true,
-      "mutation_length": 0.00057359,
+      "mutation_length": 0.00057358,
       "num_date_confidence": [
-        1953.5661120004477,
-        1958.5824203919983
+        1953.392597168885,
+        1958.5842553341095
       ],
-      "numdate": 1956.5677023814007
+      "numdate": 1956.5676624551995
     },
     "PJ01": {
-      "branch_length": 0.0925362092896898,
-      "clock_length": 0.0925362092896898,
+      "branch_length": 0.09286610013316945,
+      "clock_length": 0.09286610013316945,
       "date": "2016-12-31",
       "date_inferred": true,
-      "mutation_length": 0.1099857,
+      "mutation_length": 0.10994701,
       "num_date_confidence": [
         2016.1010928961748,
         2016.9986338797814
@@ -495,47 +508,47 @@
       "raw_date": "2016-XX-XX"
     },
     "Prototype_92_Bardos_clone1": {
-      "branch_length": 0.000400294464197766,
-      "clock_length": 0.000400294464197766,
+      "branch_length": 0.00040029458807267545,
+      "clock_length": 0.00040029458807267545,
       "date": "1958-12-31",
       "date_inferred": true,
-      "mutation_length": 0.00071712,
+      "mutation_length": 0.00071743,
       "num_date_confidence": [
-        1958.1271069422437,
+        1958.1270118132545,
         1958.9986301369863
       ],
       "numdate": 1958.9986301369863,
       "raw_date": "1958-XX-XX"
     },
     "Prototype_92_Bardos_clone2": {
-      "branch_length": 0.0003241324865336688,
-      "clock_length": 0.0003241324865336688,
+      "branch_length": 0.00032413386131633325,
+      "clock_length": 0.00032413386131633325,
       "date": "1958-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00014331,
+      "mutation_length": 0.00014287,
       "num_date_confidence": [
         1958.0013698630137,
-        1958.8892804530656
+        1958.8894883292364
       ],
       "numdate": 1958.0013698630137,
       "raw_date": "1958-XX-XX"
     },
     "Souche_D_C14019-29": {
-      "branch_length": 0.00901464027122554,
-      "clock_length": 0.00901464027122554,
+      "branch_length": 0.008932120984405392,
+      "clock_length": 0.008932120984405392,
       "date": "1968-01-01",
       "date_inferred": true,
-      "mutation_length": 0.00889586,
+      "mutation_length": 0.00889012,
       "num_date_confidence": [
         1968.0013661202186,
-        1968.9301251487714
+        1968.9255306892949
       ],
       "numdate": 1968.0013661202186,
       "raw_date": "1968-XX-XX"
     },
     "XJ0625": {
-      "branch_length": 4.432566917285776e-05,
-      "clock_length": 4.432566917285776e-05,
+      "branch_length": 4.432550792041667e-05,
+      "clock_length": 4.432550792041667e-05,
       "date": "2006-08-01",
       "date_inferred": true,
       "mutation_length": 1e-06,
@@ -543,12 +556,12 @@
         2006.0013698630137,
         2006.9986301369863
       ],
-      "numdate": 2006.5817674621715,
+      "numdate": 2006.5817748834925,
       "raw_date": "2006-XX-XX"
     },
     "XJ0625_refseq": {
-      "branch_length": 4.432566917285776e-05,
-      "clock_length": 4.432566917285776e-05,
+      "branch_length": 4.432550792041667e-05,
+      "clock_length": 4.432550792041667e-05,
       "date": "2006-08-01",
       "date_inferred": true,
       "mutation_length": 1e-06,
@@ -556,15 +569,15 @@
         2006.0013698630137,
         2006.9986301369863
       ],
-      "numdate": 2006.5817674621715,
+      "numdate": 2006.5817748834925,
       "raw_date": "2006-XX-XX"
     },
     "XJ0708": {
-      "branch_length": 0.00998048046875,
-      "clock_length": 0.00998048046875,
+      "branch_length": 0.010050989134332847,
+      "clock_length": 0.010050989134332847,
       "date": "2007-07-11",
       "date_inferred": false,
-      "mutation_length": 0.01161365,
+      "mutation_length": 0.01161331,
       "num_date_confidence": [
         2007.5246575342467,
         2007.5246575342467
@@ -573,30 +586,17 @@
       "raw_date": "2007-07-11"
     },
     "XJ0710": {
-      "branch_length": 0.016515138677002834,
-      "clock_length": 0.016515138677002834,
+      "branch_length": 0.016542021083631227,
+      "clock_length": 0.016542021083631227,
       "date": "2007-07-11",
       "date_inferred": false,
-      "mutation_length": 0.009771,
+      "mutation_length": 0.00976449,
       "num_date_confidence": [
         2007.5246575342467,
         2007.5246575342467
       ],
       "numdate": 2007.5246575342467,
       "raw_date": "2007-07-11"
-    },
-    "prototype_Bardos_92": {
-      "branch_length": 0.00018565290351576363,
-      "clock_length": 0.00018565290351576363,
-      "date": "1958-12-31",
-      "date_inferred": true,
-      "mutation_length": 0.000266,
-      "num_date_confidence": [
-        1958.1223106799748,
-        1958.9986301369863
-      ],
-      "numdate": 1958.9986301369863,
-      "raw_date": "1958"
     }
   }
 }

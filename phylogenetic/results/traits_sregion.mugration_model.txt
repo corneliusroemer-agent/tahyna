@@ -5,21 +5,21 @@ C:	Europe
 D:	?
 
 
-Substitution rate (mu): 14.629401
+Substitution rate (mu): 14.778678
 
 Equilibrium frequencies (pi_i):
-  A: 0.3376
-  B: 0.3944
-  C: 0.268
+  A: 0.3358
+  B: 0.3989
+  C: 0.2653
 
 Symmetrized rates from j->i (W_ij):
 	A	B	C
-  A	0	1.0883	1.9723
-  B	1.0883	0	1.6711
-  C	1.9723	1.6711	0
+  A	0	1.0945	1.9636
+  B	1.0945	0	1.6862
+  C	1.9636	1.6862	0
 
 Actual rates from j->i (Q_ij):
 	A	B	C
-  A	0	0.3674	0.6659
-  B	0.4292	0	0.6591
-  C	0.5286	0.4479	0
+  A	0	0.3675	0.6593
+  B	0.4366	0	0.6726
+  C	0.521	0.4474	0

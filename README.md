@@ -46,8 +46,12 @@ in filenames):
 - S: https://nextstrain.org/community/corneliusroemer-agent/tahyna/s
 - M: https://nextstrain.org/community/corneliusroemer-agent/tahyna/m
 - L: https://nextstrain.org/community/corneliusroemer-agent/tahyna/l
-- Tangle, S vs M (shared isolate prefixes make the pairing readable):
-  https://nextstrain.org/community/corneliusroemer-agent/tahyna/s:corneliusroemer-agent/tahyna/m
+- Tangles (for community datasets the second half must repeat
+  `community/<owner>/<repo>/` in full — a bare second half resolves as a core
+  pathogen and 404s):
+  - S vs M: https://nextstrain.org/community/corneliusroemer-agent/tahyna/s:community/corneliusroemer-agent/tahyna/m
+  - S vs L: https://nextstrain.org/community/corneliusroemer-agent/tahyna/s:community/corneliusroemer-agent/tahyna/l
+  - M vs L: https://nextstrain.org/community/corneliusroemer-agent/tahyna/m:community/corneliusroemer-agent/tahyna/l
 
 ### View the trees locally
 
@@ -181,9 +185,11 @@ pure isolate name, tokenized. Accessions stay on every tip as
 `node_attrs.accession`. Ingest ids remain globally unique (one combined FASTA)
 — renaming happens per segment in phylo, where uniqueness within a segment is
 the invariant tangle matching needs (violations hard-error; the alias table is
-the fix). Verified intersection: **32 S↔M, 23 S↔L, 23 M↔L tangle lines**. The
-S:M tangle URL above shows them; rows pending curator confirmation
-(`92`/`Bardos 92`/`Prototype Bardos 92`) sit commented out in the table.
+the fix). Verified intersection: **33 S↔M, 23 S↔L, 23 M↔L tangle lines**. The
+92-family is curator-confirmed as one isolate (Camp 2021 + Bennett 2011:
+"92" is the 1958 prototype's isolate number) and carries provenance suffixes
+(`Bardos_92_helsinki/_wadsworth/_chinacdc`; the two Wadsworth records pair
+for an S-M line), see the alias table comments.
 
 ## Caveats
 
