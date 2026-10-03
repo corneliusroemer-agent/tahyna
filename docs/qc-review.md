@@ -216,3 +216,31 @@ Note for anyone retrying an S timetree: pinning a clock (`--clock-rate`) is
 excluded by the standing "unpinned" decision; an outgroup OLDER than 1957
 would be the other lever, and none is available (Lumbo 1962 is the closest
 relative with complete genomes).
+
+## 8. The prune-then-time experiment (Cornelius, 2026-10-03)
+
+Exact recipe tried: root S on the Lumbo outgroup (the current divergence-only
+refine does this, `--root OUTGROUP`), zero the outgroup branch and prune it
+from the rooted newick (ingroup branch lengths preserved exactly), drop the
+outgroup row from the alignment, then re-run the timetree on the ingroup-only
+tree at that fixed root: `augur refine --timetree --keep-root --date-confidence
+--coalescent opt --date-inference marginal --clock-filter-iqd 10`.
+
+Result (39 ingroup tips, root fixed at the Lumbo attachment point):
+
+- treetime rate: **+1.41e-5** subs/site/yr, but **std 9.2e-5** - the 1-sigma
+  band spans zero and the whole plausible range;
+- independent root-to-tip regression on the same tree: slope **+1.8e-5**,
+  **R-squared 0.014** - the root position explains ~1% of divergence variance;
+- the run completes (root fixing avoids the rerooting path that raised the
+  negative-rate error) but the clock it estimates is noise.
+
+Verdict: still flat - the divergence-tree fallback stands, exactly as before.
+What this experiment ADDS: it rules out "the rerooting heuristic caused the
+negative rate" for good; the temporal signal itself is absent at every root.
+If Cornelius wants this variant wired anyway (a date axis with huge error
+bars), the wiring is: prune rule + `--keep-root` refine on S; say the word.
+
+One additional observation: the OUTGROUP branch length in the outgroup-rooted
+divergence tree is 0.0 - the divergence-only refine collapses it; the ingroup
+topology and branch lengths are unaffected (pruning merged a 0-length branch).
