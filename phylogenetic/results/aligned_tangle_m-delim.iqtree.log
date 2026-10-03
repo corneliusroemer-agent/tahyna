@@ -1,0 +1,125 @@
+IQ-TREE version 3.1.2 for Linux ARM 64-bit built May 17 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    7866abcddd43 (SSE4.2, 27 GB RAM)
+Command: iqtree3 --threads-max 4 -s results/aligned_tangle_m-delim.fasta -m GTR --ninit 2 -n 2 --epsilon 0.05 -T AUTO --redo
+Seed:    272652 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Oct  3 02:01:14 2026
+Kernel:  SSE2 - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file results/aligned_tangle_m-delim.fasta ... Fasta format detected
+Reading fasta file: done in 0.00287604 secs using 44.54% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.005229 secs using 23.24% CPU
+Alignment has 34 sequences with 4489 columns, 725 distinct patterns
+1166 parsimony-informative, 497 singleton sites, 2826 constant sites
+                                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.19617e-05 secs using 54.81% CPU
+   1  Bardos_92                                     0.00%    passed     96.96%
+   2  XJ0625                                        0.00%    passed     47.33%
+   3  181-57                                        0.00%    passed     96.32%
+   4  29                                            0.00%    passed     99.97%
+   5  76                                            0.00%    passed     99.90%
+   6  83                                            0.00%    passed     98.50%
+   7  89                                            0.00%    passed     97.57%
+   8  90                                            0.00%    passed     98.50%
+   9  94                                            0.00%    passed     98.93%
+  10  105                                           0.00%    passed     98.66%
+  11  236                                           0.00%    passed     97.11%
+  12  181                                           0.00%    passed     99.29%
+  13  1014                                          0.00%    passed     99.77%
+  14  4019                                          0.00%    passed     99.98%
+  15  4020                                          0.00%    passed     97.95%
+  16  4030                                          0.00%    passed     99.07%
+  17  4033                                          0.00%    passed     97.94%
+  18  4034                                          0.00%    passed     99.83%
+  19  4060                                          0.00%    passed     97.57%
+  20  4057                                          0.00%    passed     99.27%
+  21  5060                                          0.00%    passed     99.81%
+  22  106                                           0.00%    passed     98.74%
+  23  Prototype_92_Bardos_clone1                    0.00%    passed     97.26%
+  24  Prototype_92_Bardos_clone2                    0.00%    passed     94.52%
+  25  Souche_D_C14019-29                            0.00%    passed     97.68%
+  26  22595-6                                       0.00%    passed     96.16%
+  27  XJ0625_refseq                                 0.00%    passed     47.33%
+  28  XJ0710                                        0.00%    passed     29.97%
+  29  404118                                        0.29%    passed     98.86%
+  30  XJ0708                                        0.00%    passed     97.75%
+  31  PJ01                                          0.20%    passed     87.58%
+  32  Austria_DELIM-0x2f_OadD806_DELIM-0x2f_2019    1.14%    passed     97.40%
+  33  Austria_DELIM-0x2f_OadD823_DELIM-0x2f_2019    1.16%    passed     98.07%
+  34  OUTGROUP                                      0.00%    failed      0.85%
+****  TOTAL                                         0.08%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: XJ0625_refseq is identical to XJ0625 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000138044 secs
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 4 CPU cores
+Increase to 10 rounds for branch lengths
+583 trees examined
+Threads: 1 / Time: 4.004 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -28000
+Threads: 2 / Time: 2.751 sec / Speedup: 1.455 / Efficiency: 73% / LogL: -28000
+Threads: 3 / Time: 2.730 sec / Speedup: 1.467 / Efficiency: 49% / LogL: -28000
+Determining AUTO threadcount: done in 9.48554 secs using 180.1% CPU
+BEST NUMBER OF THREADS: 2
+
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -20839.764
+2. Current log-likelihood: -19615.629
+3. Current log-likelihood: -19404.904
+Optimal log-likelihood: -19404.510
+Rate parameters:  A-C: 2.66485  A-G: 13.89502  A-T: 3.21147  C-G: 1.22239  C-T: 23.49704  G-T: 1.00000
+Base frequencies:  A: 0.346  C: 0.174  G: 0.206  T: 0.273
+Parameters optimization took 3 rounds (0.064 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000650167 secs using 295.3% CPU
+Computing ML distances took 0.000848 sec (of wall-clock time) 0.002387 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 3.00407e-05 secs using 196.4% CPU
+Constructing RapidNJ tree: done in 0.000236034 secs using 202.9% CPU
+Computing RapidNJ tree took 0.000515 sec (of wall-clock time) 0.000863 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -19428.653
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 2 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -19403.885
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 2: -19403.576
+Finish initializing candidate tree set (4)
+Current best tree score: -19403.576 / CPU time: 0.064
+Number of iterations: 2
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:9s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -19403.576
+Optimal log-likelihood: -19403.572
+Rate parameters:  A-C: 2.63726  A-G: 13.88959  A-T: 3.21444  C-G: 1.22460  C-T: 23.49385  G-T: 1.00000
+Base frequencies:  A: 0.346  C: 0.174  G: 0.206  T: 0.273
+Parameters optimization took 1 rounds (0.007 sec)
+BEST SCORE FOUND : -19403.572
+Total tree length: 0.745
+
+Total number of iterations: 2
+CPU time used for tree search: 0.162 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.065 sec (0h:0m:0s)
+Total CPU time used: 17.488 sec (0h:0m:17s)
+Total wall-clock time used: 9.661 sec (0h:0m:9s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/aligned_tangle_m-delim.fasta.iqtree
+  Maximum-likelihood tree:       results/aligned_tangle_m-delim.fasta.treefile
+  Likelihood distances:          results/aligned_tangle_m-delim.fasta.mldist
+  Screen log file:               results/aligned_tangle_m-delim.fasta.log
+
+Date and Time: Sat Oct  3 02:01:23 2026

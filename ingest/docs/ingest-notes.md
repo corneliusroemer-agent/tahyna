@@ -79,7 +79,7 @@ accession without version suffixes the name, so ids are unique by construction
 (a version collision would fall back to the full versioned accession — not
 triggered in this dataset; the script errors if it ever is).
 
-Deviation from the literal `XJ0625 (OP727994)` form: spaces/parentheses are
+Deviation 1 from the literal `XJ0625 (OP727994)` form: spaces/parentheses are
 newick syntax and whitespace splits FASTA ids, so the same content is carried
 with `_` instead. `isolate` preserves the readable form for tanglegrams and
 export colorings.

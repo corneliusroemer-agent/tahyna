@@ -27,25 +27,31 @@
     "version": "34.0.0"
   },
   "nodes": {
-    "1014_GU390680": {
+    "1014": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "105_GU390675": {
+    "105": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "106_GU390676": {
+    "106": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "181/57_GU390677": {
+    "181": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
+      }
+    },
+    "181-57": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": [
@@ -53,109 +59,103 @@
         ]
       }
     },
-    "181_GU390678": {
+    "22595-6": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "22595-6_HM036217": {
+    "236": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "236_GU390679": {
+    "29": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "29_GU390669": {
+    "4019": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "4019_GU390681": {
+    "4020": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "4020_GU390682": {
+    "4030": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "4030_GU390683": {
+    "4033": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "4033_GU390684": {
+    "4034": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "4034_GU390685": {
+    "404118": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "404118_ON156452": {
+    "4057": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "4057_GU390686": {
+    "4060": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "4060_GU390687": {
+    "5060": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "5060_GU390688": {
+    "76": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "76_GU390670": {
+    "83": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "83_GU390671": {
+    "89": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "89_GU390672": {
+    "90": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "90_GU390673": {
-      "aa_muts": {
-        "KM532_sSgp1": [],
-        "KM532_sSgp2": []
-      }
-    },
-    "92_Z68497": {
+    "92": {
       "aa_muts": {
         "KM532_sSgp1": [
           "N75Y",
@@ -166,25 +166,25 @@
         ]
       }
     },
-    "94_GU390674": {
+    "94": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "Austria/OadD806/2019_MZ245724": {
+    "Austria/OadD806/2019": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "Austria/OadD823/2019_MZ245725": {
+    "Austria/OadD823/2019": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "GEM09121_KC520472": {
+    "GEM09121": {
       "aa_muts": {
         "KM532_sSgp1": [
           "D174N"
@@ -192,7 +192,7 @@
         "KM532_sSgp2": []
       }
     },
-    "GER09112_KC520473": {
+    "GER09112": {
       "aa_muts": {
         "KM532_sSgp1": [
           "A51V"
@@ -200,13 +200,13 @@
         "KM532_sSgp2": []
       }
     },
-    "NM08003_HQ541823": {
+    "NM08003": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "NM08010_HQ541824": {
+    "NM08010": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
@@ -218,39 +218,35 @@
         "KM532_sSgp2": []
       },
       "aa_sequences": {
-        "KM532_sSgp1": "MSDLVFYDVASTGANGFDPDAGYVDFCVKYGEAINLHSVRIFFLNAAKAKAALARKPERKASPKFGEWQVEVVNNHFPGNRNNPIDNNDLTIHRLSGYLARWVLEQFKENEDAAQRELIKTTVINPIAESNGIRWDNGAEIYLAFFPGTEMFLETFNFYPLTIGIYRVKQGMMDPQYLKKALRQRYGPLTADKWMSQKTVAIAKSLKDVEQLKWGRGGLSDTARTFLQKFGIRLP*",
-        "KM532_sSgp2": "MMSHPPVQMDLILTQGMWTSVLNMGKQLISIPLGSSSLMPQKPRLLSLVSQRGRLVLNLESGRWRLSIIIFLETGTTQLITTILPSTGCQGIWLDGC*"
+        "KM532_sSgp1": "MSDLVFYDVASTGANGFDPDAGYVDFCVKHGESINLHSVRIFFLNAAKAKAALARKPERKASPKFGEWQVEIVNNHFPGNRNNPIDNNDLTIHRLSGYLARWVLEQFKENEDAAQRELIKTTVINPIAESNGIRWDNGAEIYLAFFPGTEMFLETFNFYPLTIGIYRVKHGMMDPQYLKKALRQRYGSLTADKWMSQKTVAIAKSLKDVEQLKWGRGGLSDTARVFLQKFGIKLP*",
+        "KM532_sSgp2": "MMSHPPVQMDLILMQGMWTFVLNMENQSISIPLGSFSLMPLRPRLLSLVSRRGRLVLNLESGRWRSSIIIFLETGTTQLITTILPSTGCQGIWLDGC*"
       }
     },
     "NODE_0000001": {
       "aa_muts": {
-        "KM532_sSgp1": [],
-        "KM532_sSgp2": []
+        "KM532_sSgp1": [
+          "S33A",
+          "H170Q",
+          "V225T",
+          "K233R"
+        ],
+        "KM532_sSgp2": [
+          "F20S",
+          "E25G",
+          "N26K",
+          "S28L",
+          "F36S",
+          "L41Q",
+          "R42K",
+          "R51Q"
+        ]
       }
     },
     "NODE_0000002": {
       "aa_muts": {
-        "KM532_sSgp1": [],
-        "KM532_sSgp2": [
-          "T14M"
-        ]
-      }
-    },
-    "NODE_0000003": {
-      "aa_muts": {
-        "KM532_sSgp1": [
-          "Y30H",
-          "P188S"
-        ],
-        "KM532_sSgp2": []
-      }
-    },
-    "NODE_0000004": {
-      "aa_muts": {
         "KM532_sSgp1": [
           "R59G",
           "S62N",
-          "V72I",
           "V73I",
           "D86G",
           "E111D",
@@ -259,10 +255,25 @@
         ],
         "KM532_sSgp2": [
           "V56I",
-          "L66S",
           "I80V",
           "G91D",
           "I92T"
+        ]
+      }
+    },
+    "NODE_0000003": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
+      }
+    },
+    "NODE_0000004": {
+      "aa_muts": {
+        "KM532_sSgp1": [
+          "I72V"
+        ],
+        "KM532_sSgp2": [
+          "S66L"
         ]
       }
     },
@@ -274,11 +285,28 @@
     },
     "NODE_0000006": {
       "aa_muts": {
-        "KM532_sSgp1": [],
+        "KM532_sSgp1": [
+          "H30Y",
+          "S188P"
+        ],
         "KM532_sSgp2": []
       }
     },
     "NODE_0000007": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": [
+          "M14T"
+        ]
+      }
+    },
+    "NODE_0000008": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
+      }
+    },
+    "NODE_0000009": {
       "aa_muts": {
         "KM532_sSgp1": [
           "V28I",
@@ -287,7 +315,7 @@
         "KM532_sSgp2": []
       }
     },
-    "NODE_0000008": {
+    "NODE_0000010": {
       "aa_muts": {
         "KM532_sSgp1": [
           "E111D"
@@ -298,7 +326,7 @@
         ]
       }
     },
-    "NODE_0000009": {
+    "NODE_0000011": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": [
@@ -306,18 +334,6 @@
           "Q51R",
           "L66S"
         ]
-      }
-    },
-    "NODE_0000010": {
-      "aa_muts": {
-        "KM532_sSgp1": [],
-        "KM532_sSgp2": []
-      }
-    },
-    "NODE_0000011": {
-      "aa_muts": {
-        "KM532_sSgp1": [],
-        "KM532_sSgp2": []
       }
     },
     "NODE_0000012": {
@@ -346,9 +362,7 @@
     },
     "NODE_0000016": {
       "aa_muts": {
-        "KM532_sSgp1": [
-          "E111D"
-        ],
+        "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
@@ -450,7 +464,9 @@
     },
     "NODE_0000033": {
       "aa_muts": {
-        "KM532_sSgp1": [],
+        "KM532_sSgp1": [
+          "E111D"
+        ],
         "KM532_sSgp2": []
       }
     },
@@ -472,7 +488,25 @@
         "KM532_sSgp2": []
       }
     },
-    "PJ01_OP727994": {
+    "NODE_0000037": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
+      }
+    },
+    "NODE_0000038": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
+      }
+    },
+    "OUTGROUP": {
+      "aa_muts": {
+        "KM532_sSgp1": [],
+        "KM532_sSgp2": []
+      }
+    },
+    "PJ01": {
       "aa_muts": {
         "KM532_sSgp1": [
           "T155I"
@@ -484,31 +518,31 @@
         ]
       }
     },
-    "Prototype_92_Bardos_HM036208": {
+    "Prototype_92_Bardos_clone1": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "Prototype_92_Bardos_HM036211": {
+    "Prototype_92_Bardos_clone2": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "Prototype_Bardos_92_U47142": {
+    "Prototype_Bardos_92": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "QH07060_KC520474": {
+    "QH07060": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "Souche_D_C14019-29_HM036214": {
+    "Souche_D_C14019-29": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": [
@@ -516,19 +550,19 @@
         ]
       }
     },
-    "XJ0625_EU622820": {
+    "XJ0625": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "XJ0625_NC_055206": {
+    "XJ0625_refseq": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
       }
     },
-    "XJ0708_HM243139": {
+    "XJ0708": {
       "aa_muts": {
         "KM532_sSgp1": [
           "V28A"
@@ -536,7 +570,7 @@
         "KM532_sSgp2": []
       }
     },
-    "XJ0710_HM243142": {
+    "XJ0710": {
       "aa_muts": {
         "KM532_sSgp1": [],
         "KM532_sSgp2": []
@@ -544,7 +578,7 @@
     }
   },
   "reference": {
-    "KM532_sSgp1": "MSDLVFYDVASTGANGFDPDAGYVDFCVKYGEAINLHSVRIFFLNAAKAKAALARKPERKASPKFGEWQVEVVNNHFPGNRNNPIDNNDLTIHRLSGYLARWVLEQFKENEDAAQRELIKTTVINPIAESNGIRWDNGAEIYLAFFPGTEMFLETFNFYPLTIGIYRVKQGMMDPQYLKKALRQRYGPLTADKWMSQKTVAIAKSLKDVEQLKWGRGGLSDTARTFLQKFGIRLP*",
-    "KM532_sSgp2": "MMSHPPVQMDLILTQGMWTSVLNMGKQLISIPLGSSSLMPQKPRLLSLVSQRGRLVLNLESGRWRLSIIIFLETGTTQLITTILPSTGCQGIWLDGC*"
+    "KM532_sSgp1": "MSDLVFYDVASTGANGFDPDAGYVDFCVKHGESINLHSVRIFFLNAAKAKAALARKPERKASPKFGEWQVEIVNNHFPGNRNNPIDNNDLTIHRLSGYLARWVLEQFKENEDAAQRELIKTTVINPIAESNGIRWDNGAEIYLAFFPGTEMFLETFNFYPLTIGIYRVKHGMMDPQYLKKALRQRYGSLTADKWMSQKTVAIAKSLKDVEQLKWGRGGLSDTARVFLQKFGIKLP*",
+    "KM532_sSgp2": "MMSHPPVQMDLILMQGMWTFVLNMENQSISIPLGSFSLMPLRPRLLSLVSRRGRLVLNLESGRWRSSIIIFLETGTTQLITTILPSTGCQGIWLDGC*"
   }
 }

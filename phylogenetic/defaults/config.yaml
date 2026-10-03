@@ -49,6 +49,27 @@ qc_gate:
   exceptions:
     - "PJ01_OP727996"  # L build, 1 frameshift (Cai 2023; passaged 1x C6/36 + 2x BHK-21)
 
+# Outgroup rooting (user decision 2026-10-03, replacing --root best): Lumbo
+# virus, TAHV's closest relative (~89% nt on S; the published precedent is
+# Calzolari 2022 rooting TAHV trees with Lumbo). RefSeq segments of strain
+# SAAr 1881, committed at fixture/outgroup/<segment>.fasta with the controlled
+# header OUTGROUP (the tip name in every tree).
+#
+# Mechanics: mafft --add --keeplength joins the outgroup to the aligned
+# ingroup; iqtree + refine root on the OUTGROUP tip (this anchors the clock -
+# S gets its timetree attempt back); export then HIDES the outgroup tip via a
+# {"nodes": {OUTGROUP: {"hidden": "always"}}} node-data file instead of
+# pruning the tree (pruning would merge the outgroup's long branch into the
+# ingroup base and distort divergence display). Set enabled: false to build
+# without it.
+outgroup:
+  enabled: true
+  tip_name: "OUTGROUP"
+  accessions:
+    s: "NC_043631.1"  # Lumbo virus SAAr 1881 segment S (1077 nt)
+    m: "NC_043630.1"  # segment M (4490 nt)
+    l: "NC_043632.1"  # segment L (6980 nt)
+
 # --- Locked tree settings (user decisions 2026-10-02) ---
 tree:
   method: iqtree   # augur 34 passes fixed GTR + '--ninit 2 -n 2 --epsilon 0.05 -T AUTO --redo'
@@ -58,18 +79,17 @@ refine:
   date_confidence: true
   coalescent: opt       # no --stochastic-resolve: polytomies kept
   date_inference: marginal
-  root: best            # auto-best for v1; outgroup rooting deferred
+  root: best            # ignored while outgroup.enabled is true (rooted on the outgroup)
   clock_filter_iqd: 10  # loosened from default 4 to keep historic/imputed tips
   # Per-segment overrides for settings that cannot hold everywhere.
   overrides:
     s:
-      # S ships as a DIVERGENCE tree for v1: treetime's root-to-tip rate
-      # estimate is NEGATIVE on every rooting we tried (best / min_dev /
-      # skyline / rooting on each Asian tip) - the deep Asia-Europe split plus
-      # a temporally flat European lineage (1957-2021 strains nearly
-      # equidistant) give no usable clock. Matches the literature finding of
-      # no clear temporal clustering in TAHV S. Surfaced for review; a pinned
-      # clock or an external outgroup could revisit it later.
+      # S has no usable clock even with the outgroup: treetime's rate estimate
+      # stays negative (temporally flat European lineage 1957-2021; the 1962-
+      # dated Lumbo outgroup is not older than the old TAHV tips and so cannot
+      # anchor the regression - it would make the slope worse). S ships as an
+      # OUTGROUP-ROOTED divergence tree (root position from Lumbo, no dates).
+      # Evidence: docs/qc-review.md.
       timetree: false
       root: null
 ancestral:

@@ -115,18 +115,22 @@ Segments 54 S + 31 M + 25 L by NCBI label, +3 by coverage argmax, 8 unassigned
 15 lab-host kept, 12 duplicate-isolate flagged, 0 segment-label conflicts.
 ≈4 s wall.
 
-Phylo: S 39 / M 33 / L 24 tips after floor + QC gate (PJ01 L kept by
-exception). Wall ~56 s total, dominated by iqtree (~10 s/segment) and refine
-(~7 s/segment); nextclade/translate/ancestral < 1 s each.
+Phylo: S 39 / M 33 / L 24 ingroup tips after floor + QC gate (PJ01 L kept by
+exception); the Lumbo outgroup tip adds one hidden tip to the S tree. Wall
+~35 s total, dominated by iqtree (~10 s/segment) and refine (~7 s/segment);
+nextclade/translate/ancestral < 1 s each.
 
-Timetrees: M rate **5.8e-5** subs/site/yr (σ 2.6e-5), L **5.3e-5** (σ 1.8e-5)
-— both in the plausible 1e-5–1e-4 band. Root ages are poorly constrained (M
-95% CI spans ~3900 years) — small sample, reported as-is. **S has no timetree:
-** treetime's rate estimate is negative on every rooting (deep Asia/Europe
-split; the European lineage is temporally flat 1957→2021, matching the
-literature's "no clear temporal clustering" for TAHV S), so S ships as a
-divergence tree via `refine.overrides.s` — evidence in
-`docs/qc-review.md` §6.
+Timetrees: M rate **1.0e-4** subs/site/yr (σ 2.7e-5), L **7.6e-5** (σ 1.8e-5)
+— both in the plausible 1e-5–1e-4 band (they shifted up from 5.8e-5 / 5.3e-5
+in the no-outgroup build: the outgroup-inclusive alignment changes the tree
+the clock is fit on — reported, not hidden). Root ages are poorly constrained
+(small sample), reported as-is. **S has no timetree:** treetime's rate
+estimate is negative on every rooting tried — with and without the outgroup
+(deep Asia/Europe split; the European lineage is temporally flat 1957→2021,
+matching the literature's "no clear temporal clustering" for TAHV S; the
+1962-dated Lumbo outgroup is not older than the old TAHV tips and so cannot
+anchor the regression). S ships as an **outgroup-rooted divergence tree** via
+`refine.overrides.s` — evidence in `docs/qc-review.md` §6–7.
 
 Literature checks (numbers in `investigations/2026-10-02-tahyna-nextstrain/05-build.md`):
 Bardos-92 prototype nests inside shallow European diversity on all three
@@ -145,9 +149,41 @@ and L with S comparatively close to the Inner Mongolia strains.
    prototype-lineage inference (EU185046.1, lower confidence), release-year
    fallback (AX230490.1 only). Imputed records carry `date_imputed=true`,
    `date_source=<method tag>`.
-2. **QC gate + S timetree** — `docs/qc-review.md`: approved criteria, the
-   per-segment outcome distribution, the PJ01 exception, and the evidence
-   behind the S divergence-tree override.
+2. **QC gate + S timetree + outgroup** — `docs/qc-review.md`: approved
+   criteria, the per-segment outcome distribution, the PJ01 exception, the
+   S divergence-tree evidence, and the outgroup-rooting mechanics and effects
+   (§6–7).
+
+## Outgroup rooting (Lumbo)
+
+All three trees are rooted on **Lumbo virus** (TAHV's closest relative, ~89% nt
+on S; the published precedent — Calzolari 2022 — roots TAHV trees with Lumbo):
+RefSeq segments NC_043631.1 (S) / NC_043630.1 (M) / NC_043632.1 (L), strain
+SAAr 1881, isolated 1962, committed at `fixture/outgroup/<segment>.fasta`
+(tip name `OUTGROUP`), config-driven via `outgroup:` in
+`phylogenetic/defaults/config.yaml`. Mechanics: `mafft --add --keeplength`
+joins the outgroup to the aligned ingroup, iqtree + refine root on it, and
+export **hides** the tip (`hidden: always` node data) instead of pruning —
+pruning would merge the outgroup's long branch into the ingroup base and
+distort divergence display. For M/L treetime additionally prunes the undated
+outgroup itself during timetree computation, so those trees are ingroup-only.
+Observed effects and the S story: `docs/qc-review.md` §7.
+
+## Tangle naming (S↔M↔L tip matching)
+
+Auspice tangles connect tips whose top-level `name` is byte-identical across
+segment trees, so after the QC gate each segment's tips are renamed to
+segment-independent biological IDs (`phylogenetic/bin/tangle_names.py` +
+`phylogenetic/defaults/tip_name_aliases.tsv`): curated aliases for multi-record
+isolates (XJ0625 GenBank vs `XJ0625_refseq`, the two Bardos-92 clones
+`Prototype_92_Bardos_clone1/2`, the `181-57` spelling mismatch), otherwise the
+pure isolate name, tokenized. Accessions stay on every tip as
+`node_attrs.accession`. Ingest ids remain globally unique (one combined FASTA)
+— renaming happens per segment in phylo, where uniqueness within a segment is
+the invariant tangle matching needs (violations hard-error; the alias table is
+the fix). Verified intersection: **32 S↔M, 23 S↔L, 23 M↔L tangle lines**. The
+S:M tangle URL above shows them; rows pending curator confirmation
+(`92`/`Bardos 92`/`Prototype Bardos 92`) sit commented out in the table.
 
 ## Caveats
 
@@ -155,10 +191,6 @@ and L with S comparatively close to the Inner Mongolia strains.
   the same 1958 isolate (Camp 2021 S5), and XJ0625 contributes both a GenBank
   and a RefSeq trio. All 12 records are kept but flagged
   `duplicate_isolate=true` — for phylodynamic use, de-duplicate or thin.
-- **Outgroup rooting is deferred**: v1 roots auto (`--root best`). A planned
-  refinement roots on a California-serogroup relative (Snowshoe hare / Inkoo /
-  Jamestown Canyon) or on the 181/57 complete genomes EU277663-665 — which,
-  notably, are absent from the NCBI Datasets species-level pull.
 - The 8 unassigned records ("OccaBUN"/"AeveBUN"/"Carynthia"/"NMGBT007") align
   to no TAHV reference; check whether they are TAHV before ever forcing them
   into a build.
@@ -167,3 +199,12 @@ and L with S comparatively close to the Inner Mongolia strains.
 - Private-mutations QC gating becomes possible only after a first tree exists
   (build → nextclade with tree → re-gate → rebuild); divergence-band gating is
   the treeless proxy in use.
+- M/L clock rates shifted up ~1.7x when the outgroup joined the build
+  (5.8e-5 → 1.0e-4 on M; 5.3e-5 → 7.6e-5 on L) — the outgroup-inclusive
+  alignment changes the tree the clock is fit on. Both stay in-band; if you
+  need clock estimates for downstream inference, decide which configuration is
+  the operative one first.
+- The temporal `date` coloring ranges over the full data span; year-precision
+  records keep partial date strings on the S tree (no timetree → no
+  normalized dates), so use the categorical `year` coloring there if a tip
+  does not colour on the temporal scale.

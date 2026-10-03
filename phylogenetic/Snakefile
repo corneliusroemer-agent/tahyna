@@ -14,6 +14,7 @@ Run (from this directory):
     snakemake -s Snakefile -j4 --dry-run
     snakemake -s Snakefile -j4
 """
+import json
 import os
 
 workdir: workflow.current_basedir
@@ -21,6 +22,15 @@ workdir: workflow.current_basedir
 configfile: "defaults/config.yaml"
 
 SEGMENTS = sorted(config["segments"].keys())  # ['l', 'm', 's']
+OUTGROUP_ENABLED = config.get("outgroup", {}).get("enabled", False)
+OUTGROUP_TIP = config.get("outgroup", {}).get("tip_name", "OUTGROUP")
+
+
+def tree_alignment(wc) -> str:
+    """Alignment used by tree/refine/ancestral: tangle-named tips (the
+    outgroup-inclusive alignment passes through the rename; OUTGROUP keeps its
+    name because it is not in the alias/rename map)."""
+    return f"results/aligned_tangle_{wc.segment}.fasta"
 
 wildcard_constraints:
     segment = "|".join(SEGMENTS)
@@ -185,10 +195,84 @@ rule subset_alignment:
         """
 
 
+# --- Outgroup join (Lumbo; see config.yaml outgroup) ---------------------------
+if OUTGROUP_ENABLED:
+
+    rule mafft_add_outgroup:
+        input:
+            ingroup="results/aligned_qc_{segment}.fasta",
+            outgroup=lambda wc: f"../fixture/outgroup/{wc.segment}.fasta",
+        output:
+            "results/aligned_og_{segment}.fasta",
+        params:
+            threads=config["tree"]["nthreads"],
+        log:
+            "logs/mafft_add_outgroup_{segment}.log",
+        shell:
+            r"""
+            exec &> >(tee {log:q})
+            mafft \
+                --add {input.outgroup:q} \
+                --keeplength \
+                --thread {params.threads} \
+                {input.ingroup:q} \
+                > {output:q}
+            """
+
+    rule outgroup_hidden:
+        # Hide the outgroup tip in auspice instead of pruning the tree:
+        # pruning would merge the outgroup's long branch into the ingroup base
+        # and distort divergence display; the clock keeps its anchor.
+        output:
+            "results/outgroup_hidden_{segment}.json",
+        params:
+            payload=json.dumps({"nodes": {OUTGROUP_TIP: {"hidden": "always"}}}),
+        log:
+            "logs/outgroup_hidden_{segment}.log",
+        shell:
+            r"""
+            exec &> >(tee {log:q})
+            printf {params.payload:q} > {output:q}
+            """
+
+
+# --- Tangle naming -------------------------------------------------------------
+# Auspice tangles match tips by byte-exact top-level `name` across segment
+# trees, so tips are renamed to segment-independent biological IDs (curated
+# aliases + pure isolate names) after the QC gate. Ingest ids stay globally
+# unique (one combined FASTA); per-segment uniqueness is enforced here, where
+# it is what tangle matching needs.
+rule tangle_rename:
+    input:
+        metadata="results/qc_pass_{segment}_metadata.tsv",
+        fasta=lambda wc: (
+            f"results/aligned_og_{wc.segment}.fasta"
+            if OUTGROUP_ENABLED
+            else f"results/aligned_qc_{wc.segment}.fasta"
+        ),
+        aliases="defaults/tip_name_aliases.tsv",
+        script="bin/tangle_names.py",
+    output:
+        metadata="results/tangle_{segment}_metadata.tsv",
+        fasta="results/aligned_tangle_{segment}.fasta",
+    log:
+        "logs/tangle_rename_{segment}.log",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+        python3 {input.script:q} \
+            --metadata {input.metadata:q} \
+            --fasta {input.fasta:q} \
+            --aliases {input.aliases:q} \
+            --output-metadata {output.metadata:q} \
+            --output-fasta {output.fasta:q}
+        """
+
+
 # --- Tree chain ----------------------------------------------------------------
 rule tree:
     input:
-        "results/aligned_qc_{segment}.fasta",
+        alignment=tree_alignment,
     output:
         "results/tree_raw_{segment}.nwk",
     params:
@@ -209,14 +293,27 @@ rule tree:
 
 
 def refine_flags(wc) -> str:
-    """refine flag string for one build: locked defaults + per-segment overrides.
-
-    The S build overrides timetree/root (negative rate estimate on every
-    rooting; see config.yaml `refine.overrides` and docs/qc-review.md), so its
-    refine runs divergence-only.
+    """refine flag string for one build: outgroup rooting when enabled, with
+    per-segment overrides still able to retire the timetree (S: negative rate
+    estimate even outgroup-rooted - the tree ships divergence-only, rooted on
+    the outgroup; treetime also auto-prunes the undated outgroup tip from
+    timetrees, while for S the outgroup_hidden node-data hides it in auspice).
     """
     override = config["refine"].get("overrides", {}).get(wc.segment, {})
-    if not override.get("timetree", True):
+    timetree = override.get("timetree", True)
+
+    if OUTGROUP_ENABLED:
+        root = OUTGROUP_TIP
+        if not timetree:
+            return f"--root {root} "
+        return (
+            "--timetree --date-confidence "
+            f"--coalescent {config['refine']['coalescent']} "
+            f"--date-inference {config['refine']['date_inference']} "
+            f"--root {root} "
+        )
+
+    if not timetree:
         return ""
     root = override.get("root", config["refine"]["root"]) or config["refine"]["root"]
     return (
@@ -230,8 +327,8 @@ def refine_flags(wc) -> str:
 rule refine:
     input:
         tree="results/tree_raw_{segment}.nwk",
-        alignment="results/aligned_qc_{segment}.fasta",
-        metadata="results/qc_pass_{segment}_metadata.tsv",
+        alignment=tree_alignment,
+        metadata="results/tangle_{segment}_metadata.tsv",
     output:
         tree="results/tree_{segment}.nwk",
         node_data="results/refine_{segment}.json",
@@ -259,7 +356,7 @@ rule refine:
 rule ancestral:
     input:
         tree="results/tree_{segment}.nwk",
-        alignment="results/aligned_qc_{segment}.fasta",
+        alignment=tree_alignment,
     output:
         "results/nt_muts_{segment}.json",
     params:
@@ -306,7 +403,7 @@ rule translate:
 rule traits:
     input:
         tree="results/tree_{segment}.nwk",
-        metadata="results/qc_pass_{segment}_metadata.tsv",
+        metadata="results/tangle_{segment}_metadata.tsv",
     output:
         "results/traits_{segment}.json",
     params:
@@ -328,13 +425,14 @@ rule traits:
 rule export:
     input:
         tree="results/tree_{segment}.nwk",
-        node_data=[
-            "results/refine_{segment}.json",
-            "results/nt_muts_{segment}.json",
-            "results/aa_muts_{segment}.json",
-            "results/traits_{segment}.json",
-        ],
-        metadata="results/qc_pass_{segment}_metadata.tsv",
+        node_data=lambda wc: [
+            f"results/refine_{wc.segment}.json",
+            f"results/nt_muts_{wc.segment}.json",
+            f"results/aa_muts_{wc.segment}.json",
+            f"results/traits_{wc.segment}.json",
+        ]
+        + ([f"results/outgroup_hidden_{wc.segment}.json"] if OUTGROUP_ENABLED else []),
+        metadata="results/tangle_{segment}_metadata.tsv",
         auspice_config="defaults/auspice_config.json",
     output:
         "../auspice/tahyna_{segment}.json",

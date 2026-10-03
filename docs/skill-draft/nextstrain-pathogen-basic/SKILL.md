@@ -114,3 +114,57 @@ secondary prior art.
    reassortment (one segment's neighbour disagrees with the others).
 6. Auspice JSONs: keys tree/meta/version, tips == expected, genome_annotations
    populated, colorings count, root_sequence length == reference length.
+
+## Outgroup rooting (augur/treetime specifics)
+
+- Undated outgroup tips are PRUNED BY TREETIME during `augur refine
+  --timetree` ("pruning leaf <name>" in the log) - the timetree is ingroup-only
+  and no extra pruning step is needed for display. For divergence-only refines
+  the tip survives; hide it in auspice with a node-data file
+  (`{"nodes": {"<tip>": {"hidden": "always"}}}`) rather than pruning the
+  newick - pruning merges the outgroup's long branch into the ingroup base and
+  distorts divergence display for every ingroup tip.
+- An outgroup only anchors a root-to-tip clock if it is OLDER than the deep
+  ingroup split. A 1962 outgroup for lineages going back to 1957 does not
+  rescue a flat regression (and a dated outgroup YOUNGER than the split
+  actively steepens the slope the wrong way). Test the rate sign, keep the
+  divergence-tree fallback with the outgroup root.
+- Expect clock rates to MOVE when an outgroup joins the alignment (the iqtree
+  tree the clock is fit on changes; observed 1.7x on TAHV M/L, still in-band).
+  Report both configurations' rates rather than silently overwriting.
+- mafft --add --keeplength keeps ingroup coordinates (extra outgroup sequence
+  becomes deletions) - the ingroup alignment you already QC'd stays valid.
+
+## Colorings that augur's v2 config schema rejects
+
+- No `"info"` key on colorings, no `"version"` at top level, no `"metadata"`
+  (it is `metadata_columns`), no `aMin`/`aMax` on temporal colorings (auspice
+  auto-ranges from the data). `additionalProperties: false` throughout -
+  validate the config before a full run: `augur export v2` fails at the end
+  of the chain otherwise.
+- Export transfers a metadata column onto tips ONLY if it is listed in the
+  config colorings or filters, and only when the value is non-empty
+  (`is_valid("")` is false) - a flag that exists in metadata but not in the
+  config silently never reaches the JSON. Columns used only as tooltip text
+  belong in `metadata_columns`.
+- `nextstrain.org/community` serves `auspice/<name>.json` at
+  `/community/<owner>/<repo>/<name-without-<repo>_-prefix>`; underscores are
+  banned in URL PATH segments but fine in filenames.
+
+## Tanglegrams: tip naming across segment builds
+
+- Auspice tangle lines connect tips whose top-level `name` is byte-identical
+  across trees - no normalisation, no attribute lookup. `<isolate>_<accession>`
+  ids connect zero lines on multi-segment viruses. Read the state-derivation
+  module (`src/util/treeTangleHelpers.js`), not the component named after the
+  feature, to settle exact UI behaviour.
+- Segment-independent tip names must be unique PER SEGMENT, not globally: a
+  combined FASTA spanning segments needs globally unique headers, so aliasing
+  ids at INGEST is wrong (duplicate headers silently mis-join every seqName-
+  keyed lookup downstream). Rename per segment in phylo, after the QC gate,
+  from a curated accession -> tip alias table (the S-tip to M-tip pairing of
+  multi-record isolates is curator knowledge; ordinal suffixing pairs the
+  wrong tips as soon as one segment drops a record).
+- Keep a hard duplicate-name guard at the point of renaming (auspice silently
+  random-renames duplicates at render time). The guard pays for itself: on
+  TAHV it caught the ingest-side aliasing mistake within one run.

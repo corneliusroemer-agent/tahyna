@@ -178,3 +178,41 @@ M and L carry usable clocks on the same settings (see 05-build.md for the
 numbers), so the override is per-segment (`refine.overrides.s.timetree:
 false`). Revisit options for S later: external outgroup rooting, a pinned
 clock at a literature rate, or more S sampling.
+
+## 7. Outgroup rooting (2026-10-03, replaces --root best)
+
+Lumbo virus (TAHV's closest relative, ~89% nt on S; the Calzolari 2022
+precedent) RefSeq segments NC_043631.1 (S) / NC_043630.1 (M) / NC_043632.1 (L),
+strain SAAr 1881, isolated **1962** in Argentina. Committed at
+`fixture/outgroup/<segment>.fasta` with controlled tip name OUTGROUP.
+
+Mechanics: `mafft --add --keeplength` joins the outgroup to the aligned
+ingroup; iqtree + refine root on the OUTGROUP tip; export hides the tip via a
+`{"nodes": {OUTGROUP: {"hidden": "always"}}}` node-data file instead of
+pruning the tree (pruning would merge the outgroup's long branch into the
+ingroup base and distort divergence display). Config switch:
+`outgroup.enabled` in `phylogenetic/defaults/config.yaml`.
+
+Observed:
+
+- **S still does not timetree.** The rate estimate stays negative with the
+  outgroup rooted - the European lineage is temporally flat (1957-2021 at
+  near-constant divergence), and the 1962-dated outgroup is not older than the
+  old TAHV tips, so it cannot anchor the regression (a 1962 tip at ~11%
+  divergence would actively steepen the slope the wrong way). S ships as an
+  OUTGROUP-ROOTED divergence tree (`refine.overrides.s.timetree: false` ->
+  `--root OUTGROUP` only).
+- M and L timetrees run with the outgroup present; **treetime prunes the
+  undated outgroup tip itself** ("pruning leaf OUTGROUP" in the logs), so the
+  M/L trees display ingroup-only without extra work. The outgroup still shaped
+  those trees: rates shifted up from the no-outgroup build
+  (M 5.8e-5 -> 1.0e-4, at the top of the plausible 1e-5..1e-4 band; L
+  5.3e-5 -> 7.6e-5) because the outgroup-inclusive alignment changes the tree
+  the clock is fit on. Both remain in-band; the shift is reported, not hidden.
+- Root placement verified: the S tree root's children are [OUTGROUP, ingroup];
+  M/L roots sit at the outgroup attachment point (ingroup MRCA).
+
+Note for anyone retrying an S timetree: pinning a clock (`--clock-rate`) is
+excluded by the standing "unpinned" decision; an outgroup OLDER than 1957
+would be the other lever, and none is available (Lumbo 1962 is the closest
+relative with complete genomes).

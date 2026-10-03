@@ -1,238 +1,247 @@
 {
-  "alignment": "results/aligned_qc_s.fasta",
+  "alignment": "results/aligned_tangle_s.fasta",
   "generated_by": {
     "program": "augur",
     "version": "34.0.0"
   },
   "input_tree": "results/tree_raw_s.nwk",
   "nodes": {
-    "1014_GU390680": {
-      "branch_length": 0.00205058
+    "1014": {
+      "branch_length": 0.00204964
     },
-    "105_GU390675": {
+    "105": {
+      "branch_length": 3e-06
+    },
+    "106": {
       "branch_length": 0.0
     },
-    "106_GU390676": {
-      "branch_length": 1e-06
+    "181": {
+      "branch_length": 2.03e-06
     },
-    "181/57_GU390677": {
-      "branch_length": 0.00205221
+    "181-57": {
+      "branch_length": 0.00205171
     },
-    "181_GU390678": {
-      "branch_length": 1e-06
+    "22595-6": {
+      "branch_length": 3e-06
     },
-    "22595-6_HM036217": {
-      "branch_length": 1e-06
-    },
-    "236_GU390679": {
+    "236": {
       "branch_length": 0.0
     },
-    "29_GU390669": {
-      "branch_length": 0.00307785
+    "29": {
+      "branch_length": 0.00307697
     },
-    "4019_GU390681": {
+    "4019": {
       "branch_length": 1e-06
     },
-    "4020_GU390682": {
-      "branch_length": 1e-06
+    "4020": {
+      "branch_length": 3e-06
     },
-    "4030_GU390683": {
-      "branch_length": 0.00102389
+    "4030": {
+      "branch_length": 0.00102387
     },
-    "4033_GU390684": {
+    "4033": {
       "branch_length": 0.0
     },
-    "4034_GU390685": {
-      "branch_length": 0.00102491
+    "4034": {
+      "branch_length": 0.00102467
     },
-    "404118_ON156452": {
-      "branch_length": 0.00315203
+    "404118": {
+      "branch_length": 0.00315197
     },
-    "4057_GU390686": {
-      "branch_length": 0.00102389
+    "4057": {
+      "branch_length": 0.00102383
     },
-    "4060_GU390687": {
-      "branch_length": 0.00308704
+    "4060": {
+      "branch_length": 0.00308632
     },
-    "5060_GU390688": {
-      "branch_length": 0.00307797
+    "5060": {
+      "branch_length": 0.0030772
     },
-    "76_GU390670": {
+    "76": {
       "branch_length": 0.0
     },
-    "83_GU390671": {
+    "83": {
       "branch_length": 1e-06
     },
-    "89_GU390672": {
-      "branch_length": 0.00102389
+    "89": {
+      "branch_length": 0.00102443
     },
-    "90_GU390673": {
+    "90": {
       "branch_length": 1e-06
     },
-    "92_Z68497": {
-      "branch_length": 0.00620359
+    "92": {
+      "branch_length": 0.00620536
     },
-    "94_GU390674": {
+    "94": {
       "branch_length": 1e-06
     },
-    "Austria/OadD806/2019_MZ245724": {
-      "branch_length": 0.00107993
+    "Austria/OadD806/2019": {
+      "branch_length": 0.00108033
     },
-    "Austria/OadD823/2019_MZ245725": {
-      "branch_length": 0.00318702
+    "Austria/OadD823/2019": {
+      "branch_length": 0.00433313
     },
-    "GEM09121_KC520472": {
-      "branch_length": 0.00181161
+    "GEM09121": {
+      "branch_length": 0.00181519
     },
-    "GER09112_KC520473": {
-      "branch_length": 0.00362846
+    "GER09112": {
+      "branch_length": 0.00363467
     },
-    "NM08003_HQ541823": {
+    "NM08003": {
       "branch_length": 1e-06
     },
-    "NM08010_HQ541824": {
+    "NM08010": {
       "branch_length": 1e-06
     },
     "NODE_0000000": {
       "branch_length": 0.001
     },
     "NODE_0000001": {
-      "branch_length": 0.00411838
+      "branch_length": 0.09665993
     },
     "NODE_0000002": {
-      "branch_length": 0.00301818
+      "branch_length": 0.04828292
     },
     "NODE_0000003": {
-      "branch_length": 0.02378019
+      "branch_length": 2.33e-06
     },
     "NODE_0000004": {
-      "branch_length": 0.05509826
+      "branch_length": 0.01642517
     },
     "NODE_0000005": {
-      "branch_length": 1e-06
+      "branch_length": 0.01022265
     },
     "NODE_0000006": {
-      "branch_length": 0.00859749
+      "branch_length": 0.02698663
     },
     "NODE_0000007": {
-      "branch_length": 0.02640922
+      "branch_length": 0.00251033
     },
     "NODE_0000008": {
-      "branch_length": 0.01129325
+      "branch_length": 0.00412688
     },
     "NODE_0000009": {
-      "branch_length": 0.01405579
+      "branch_length": 0.02093831
     },
     "NODE_0000010": {
-      "branch_length": 0.00108966
+      "branch_length": 0.01143535
     },
     "NODE_0000011": {
-      "branch_length": 1e-06
+      "branch_length": 0.01463808
     },
     "NODE_0000012": {
-      "branch_length": 1e-06
+      "branch_length": 3e-06
     },
     "NODE_0000013": {
-      "branch_length": 0.00102389
+      "branch_length": 0.00102437
     },
     "NODE_0000014": {
-      "branch_length": 1e-06
+      "branch_length": 2.4e-06
     },
     "NODE_0000015": {
-      "branch_length": 1e-06
+      "branch_length": 2.51e-06
     },
     "NODE_0000016": {
-      "branch_length": 0.00102529
+      "branch_length": 0.00102543
     },
     "NODE_0000017": {
-      "branch_length": 1e-06
+      "branch_length": 0.00102435
     },
     "NODE_0000018": {
-      "branch_length": 1e-06
+      "branch_length": 2.12e-06
     },
     "NODE_0000019": {
       "branch_length": 1e-06
     },
     "NODE_0000020": {
-      "branch_length": 0.00102389
+      "branch_length": 0.0
     },
     "NODE_0000021": {
-      "branch_length": 1e-06
+      "branch_length": 0.0
     },
     "NODE_0000022": {
-      "branch_length": 0.00102389
+      "branch_length": 2.28e-06
     },
     "NODE_0000023": {
-      "branch_length": 1e-06
+      "branch_length": 2.11e-06
     },
     "NODE_0000024": {
-      "branch_length": 1e-06
+      "branch_length": 3e-06
     },
     "NODE_0000025": {
-      "branch_length": 0.00102389
+      "branch_length": 3e-06
     },
     "NODE_0000026": {
-      "branch_length": 1e-06
+      "branch_length": 2.78e-06
     },
     "NODE_0000027": {
-      "branch_length": 1e-06
+      "branch_length": 0.00102457
     },
     "NODE_0000028": {
-      "branch_length": 0.00102541
+      "branch_length": 3e-06
     },
     "NODE_0000029": {
-      "branch_length": 1e-06
+      "branch_length": 0.00102456
     },
     "NODE_0000030": {
-      "branch_length": 1e-06
+      "branch_length": 0.00102438
     },
     "NODE_0000031": {
-      "branch_length": 1e-06
+      "branch_length": 2.15e-06
     },
     "NODE_0000032": {
-      "branch_length": 1e-06
+      "branch_length": 3e-06
     },
     "NODE_0000033": {
-      "branch_length": 0.00102389
+      "branch_length": 0.00102525
     },
     "NODE_0000034": {
-      "branch_length": 1e-06
+      "branch_length": 2.24e-06
     },
     "NODE_0000035": {
-      "branch_length": 0.0
+      "branch_length": 2.26e-06
     },
     "NODE_0000036": {
+      "branch_length": 3e-06
+    },
+    "NODE_0000037": {
+      "branch_length": 2.21e-06
+    },
+    "NODE_0000038": {
+      "branch_length": 2.19e-06
+    },
+    "OUTGROUP": {
       "branch_length": 0.0
     },
-    "PJ01_OP727994": {
-      "branch_length": 0.03715299
+    "PJ01": {
+      "branch_length": 0.03825242
     },
-    "Prototype_92_Bardos_HM036208": {
+    "Prototype_92_Bardos_clone1": {
       "branch_length": 1e-06
     },
-    "Prototype_92_Bardos_HM036211": {
+    "Prototype_92_Bardos_clone2": {
       "branch_length": 1e-06
     },
-    "Prototype_Bardos_92_U47142": {
-      "branch_length": 0.00102562
+    "Prototype_Bardos_92": {
+      "branch_length": 0.00102541
     },
-    "QH07060_KC520474": {
+    "QH07060": {
+      "branch_length": 3e-06
+    },
+    "Souche_D_C14019-29": {
+      "branch_length": 0.00410701
+    },
+    "XJ0625": {
       "branch_length": 1e-06
     },
-    "Souche_D_C14019-29_HM036214": {
-      "branch_length": 0.00410761
-    },
-    "XJ0625_EU622820": {
+    "XJ0625_refseq": {
       "branch_length": 1e-06
     },
-    "XJ0625_NC_055206": {
-      "branch_length": 1e-06
+    "XJ0708": {
+      "branch_length": 0.00678957
     },
-    "XJ0708_HM243139": {
-      "branch_length": 0.00627072
-    },
-    "XJ0710_HM243142": {
-      "branch_length": 0.00308109
+    "XJ0710": {
+      "branch_length": 0.00307212
     }
   }
 }

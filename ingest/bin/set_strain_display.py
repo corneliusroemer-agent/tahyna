@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
-"""Build the display tip name ("strain + accession") in the curate stream.
+"""Build the record id ("strain + accession") in the curate stream.
 
 Coordinator decision (2026-10-02): displayed tip names are isolate name +
-accession, e.g. XJ0625 (OP727994); the pure isolate name must survive
-unmangled for tanglegram readability.
+accession; the pure isolate name must survive unmangled.
 
-Tool reality: the strain value is the record id everywhere downstream (FASTA
-headers, nextclade seqName, newick tip names, auspice nodes). Newick/FASTA
-ids are single tokens - whitespace, quotes and parentheses either split the id
-or are newick syntax. So the display form is the same name in one token:
+Tool reality: the strain value is the record id everywhere downstream (the
+combined FASTA header, nextclade seqName, newick tip names, auspice nodes),
+and the combined FASTA spans all segments - so ids must be globally unique.
+Newick/FASTA ids are single tokens (whitespace/quotes/parens are newick syntax
+or split FASTA ids), so the display form is one token:
 
-    strain   (id/display)  XJ0625_EU622819   Prototype_92_Bardos_HM036208
-    isolate  (pure name)   XJ0625            Prototype '92' Bardos
+    strain   (id)         XJ0625_EU622819   Prototype_92_Bardos_HM036208
+    isolate  (pure name)  XJ0625            Prototype '92' Bardos
+
+The tanglegram tip names (segment-independent biological IDs) are derived from
+these in the PHYLO workfow (phylogenetic/bin/tangle_names.py + defaults/
+tip_name_aliases.tsv), where per-segment naming makes byte-identical names
+across segment trees safe. Do NOT alias ids here: two records of one isolate
+would produce duplicate headers in the combined FASTA and mis-join every
+downstream lookup.
 
 Rules:
   - isolate := strain as it entered this step (pure lineage name; after
@@ -28,6 +35,7 @@ import argparse
 import json
 import re
 import sys
+from collections import Counter
 
 UNSAFE = re.compile(r"[\s'\"()[\]{}:;,|#>]+")
 VERSION_SUFFIX = re.compile(r"\.\d+$")
@@ -35,6 +43,16 @@ VERSION_SUFFIX = re.compile(r"\.\d+$")
 
 def token(text: str) -> str:
     return UNSAFE.sub("_", text).strip("_")
+
+
+def build(rec: dict) -> str:
+    accession = rec.get("accession") or ""
+    isolate = (rec.get("strain") or "").strip()
+    if isolate == accession or isolate == VERSION_SUFFIX.sub("", accession):
+        # strain was backfilled from the accession (no isolate lineage):
+        # the accession alone is already the isolate name.
+        return accession
+    return f"{token(isolate)}_{VERSION_SUFFIX.sub('', accession)}"
 
 
 def main() -> None:
@@ -55,8 +73,6 @@ def main() -> None:
         # undated at this point (imputed dates are applied later in the pipe)
         rec["year"] = (rec.get("date") or "")[:4].isdigit() and (rec.get("date") or "")[:4] or ""
 
-    from collections import Counter
-
     displays = Counter(build(rec) for rec in records)
     seen: dict = {}
     for rec in records:
@@ -74,16 +90,6 @@ def main() -> None:
     for rec in records:
         print(json.dumps(rec, ensure_ascii=False))
     print(f"set_strain_display: {len(records)} records, {len(seen)} unique strain ids", file=sys.stderr)
-
-
-def build(rec: dict) -> str:
-    accession = rec.get("accession") or ""
-    isolate = (rec.get("strain") or "").strip()
-    if isolate == accession or isolate == VERSION_SUFFIX.sub("", accession):
-        # strain was backfilled from the accession (no isolate lineage):
-        # the accession alone is already the isolate name.
-        return accession
-    return f"{token(isolate)}_{VERSION_SUFFIX.sub('', accession)}"
 
 
 if __name__ == "__main__":

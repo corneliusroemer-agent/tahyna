@@ -1,0 +1,33 @@
+# Curated accession -> tip_name alias table (tangle fix, investigations/.../06-auspice-tangle-condition.md).
+# Auspice tangles connect tips whose top-level `name` is byte-identical across
+# segment trees, so the name must be the segment-independent biological tip ID.
+# It is consumed PHYLO-SIDE (phylogenetic/bin/tangle_names.py, after the QC
+# gate): ingest ids must stay globally unique in the combined FASTA, so the
+# per-segment rename happens where per-segment uniqueness is safe. Key =
+# accession.version; a bare accession matches too. Values must be unique
+# within each segment's build (tangle_names.py hard-errors on collisions).
+# Rows only for multi-record isolates; every value must be a single safe token.
+# The S-tip-to-M-tip pairing of the Bardos clones is curator knowledge (Camp
+# 2021 S5: HM036208/09/10 = first cloned genome, HM036211/12/13 = second).
+# accession.version	tip_name
+EU622820.2	XJ0625
+EU622819.2	XJ0625
+EU665255.1	XJ0625
+NC_055206.1	XJ0625_refseq
+NC_055205.1	XJ0625_refseq
+NC_055207.1	XJ0625_refseq
+HM036208.1	Prototype_92_Bardos_clone1
+HM036209.1	Prototype_92_Bardos_clone1
+HM036210.1	Prototype_92_Bardos_clone1
+HM036211.1	Prototype_92_Bardos_clone2
+HM036212.1	Prototype_92_Bardos_clone2
+HM036213.1	Prototype_92_Bardos_clone2
+GU390677.1	181-57
+AF229129.1	181-57
+KF361879.1	181-57
+# PENDING CURATOR CONFIRMATION - are 92 / Bardos 92 / Prototype Bardos 92 the
+# same biological isolate as the Bardos-92 clones? Un comment once confirmed
+# (they are S/M/S single-segment records; no tangle lines until then):
+# Z68497.1	Bardos_92
+# AF123485.1	Bardos_92
+# U47142.1	Bardos_92

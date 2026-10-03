@@ -129,6 +129,22 @@ def main() -> None:
             for rec in group:
                 rec["assembly"] = isolate
 
+    # Hard guard: tip names must be unique WITHIN each segment build (auspice
+    # silently random-renames duplicates at render time, which breaks tangle
+    # pairing). Aliased names repeat across segments by design; that is fine.
+    per_segment_names = {}
+    for rec in assigned:
+        if rec["segment"]:
+            per_segment_names.setdefault(rec["segment"], {}).setdefault(rec["strain"], []).append(
+                rec["accession"]
+            )
+    for segment, names in sorted(per_segment_names.items()):
+        dupes = {name: accs for name, accs in names.items() if len(accs) > 1}
+        if dupes:
+            for name, accs in sorted(dupes.items()):
+                print(f"DUPLICATE tip name in segment {segment}: {name} <- {accs}", file=sys.stderr)
+            sys.exit(f"duplicate strain names within segment {segment}; fix defaults/tip_name_aliases.tsv")
+
     with open(args.output, "w", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=fieldnames, delimiter="\t", lineterminator="\n")
         writer.writeheader()
